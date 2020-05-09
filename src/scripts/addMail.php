@@ -1,7 +1,7 @@
 <?php
 if (isset($_POST['mail'])) {
     try {
-    $file = '../assets/adress.txt';
+    $file = '../assets/addresses.txt';
     $mail =  $_POST['mail'] . "\n";
     putenv("GNUPGHOME=/tmp");
     $pubkey = file_get_contents("../assets/jsonlines.asc");
