@@ -37,8 +37,8 @@ window.onload = function () {
             ).done(function (msg) {
                 var doneLabel = document.getElementById("doneLabel");
                 doneLabel.style.visibility = "visible";
-
-            });
+console.log(msg);
+            })
         }
 
     });

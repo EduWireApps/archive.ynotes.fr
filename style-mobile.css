@@ -38,7 +38,7 @@
         margin-top: 25vmin;
         background-color: #FF6A6A;
         font-size: 1.2em;
- 
+
         margin-left: auto;
         margin-right: auto;
     }
@@ -115,7 +115,7 @@
         margin-right: auto;
     }
 
-    #cautionText {
+    .cautionText {
         font-size: 3vmin;
     }
 
@@ -124,7 +124,7 @@
         -ms-text-size-adjust: 100%;
     }
 
-    #ynLogo {
+    .ynLogo {
 
         border-radius: 15%;
 
@@ -229,14 +229,11 @@
 
 
 
-    #accessPolicyConf {
-        font-size: 2.8vmin !important;
-        width: 60vmin;
-        height: 8.5vmin !important;
-        margin-top: -5vmin !important;
-    }
-
-
+    .shareBtn {
+   
+        padding: 2vmin 4vmin; /* Some padding */
+        
+      }
 
 
     .howitworks {

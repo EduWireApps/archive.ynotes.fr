@@ -19,7 +19,7 @@ body {
 }
 
 
-#ynLogo {
+.ynLogo {
     width: 7vmin;
     height: 7vmin;
     border-radius: 15%;
@@ -218,7 +218,7 @@ h2#availability {
     margin-right: auto;
 }
 
-#cautionText {
+.cautionText {
     margin-left: auto;
     margin-right: auto;
     width: 60vmin;
@@ -261,7 +261,9 @@ h2#availability {
 
 }
 
-
+#accessPolicyConf {
+    font-size: 1.8vmin;
+}
 #platforms {
     display: flex;
     justify-content: center;
@@ -559,11 +561,7 @@ padding-bottom: 4vmin;
 
 }
 
-#accessPolicyConf {
-    font-size: 0.6em;
-    margin-top: -1.5vmin;
-    height: 6.5vmin;
-}
+
 
 #machines {
     margin-top: -28vmin;
@@ -652,11 +650,14 @@ ol li::before {
     background-color: white; /* Blue background */
     border: none; /* Remove borders */
     color: black; /* White text */
-    padding: 2vmin 2vmin ; /* Some padding */
-    font-size: 2em; /* Set a font size */
+    padding: 2vmin 2vmin; /* Some padding */
+    font-size: 2vmin; /* Set a font size */
     cursor: pointer; /* Mouse pointer on hover */
     border-radius: 15px;
     transition: 0.5s;
+    text-align: center;
+    width: 6.5vmin;
+    height:  6.5vmin;
   }
   
   /* Darker background on mouse-over */
