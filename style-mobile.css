@@ -230,10 +230,12 @@
 
 
     .shareBtn {
-   
-        padding: 2vmin 4vmin; /* Some padding */
-        
-      }
+
+        padding: 2vmin 2vmin;
+        /* Some padding */
+        width: 12vmin;
+        height: 12vmin;
+    }
 
 
     .howitworks {
