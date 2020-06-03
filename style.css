@@ -1,671 +1,610 @@
 @font-face {
-    font-family: "Asap";
-    src: url(src/assets/Asap-Regular.ttf) format("truetype");
-
+  font-family: "Asap";
+  src: url(src/assets/Asap-Regular.ttf) format("truetype");
 }
 
 @font-face {
-    font-family: "Jost";
-    src: url(src/assets/Jost-VariableFont_ital\,wght.ttf) format("truetype");
-
+  font-family: "Jost";
+  src: url(src/assets/Jost-VariableFont_ital\,wght.ttf) format("truetype");
 }
 
 body {
-    max-width: 100%;
-    margin-right: 0;
-    margin-left: 0;
-    margin-bottom: 0;
-    font-family: "Asap";
+  max-width: 100%;
+  margin-right: 0;
+  margin-left: 0;
+  margin-bottom: 0;
+  font-family: "Asap";
 }
 
-
 .ynLogo {
-    width: 7vmin;
-    height: 7vmin;
-    border-radius: 15%;
+  width: 7vmin;
+  height: 7vmin;
+  border-radius: 15%;
 }
 
 #headerText {
-    margin-left: 0.5vmin;
+  margin-left: 0.5vmin;
 }
-
 
 #header {
-    font-family: "Asap";
-    font-size: 3em;
-    text-align: center;
-    color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  font-family: "Asap";
+  font-size: 3em;
+  text-align: center;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-
 hr {
-    margin-top: 1.2vmin;
+  margin-top: 1.2vmin;
 
-    width: 85vmin;
+  width: 85vmin;
 }
 
 h1 {
-    font-family: "Jost";
-    font-weight: 300;
-    color: black;
-    text-align: center;
+  font-family: "Jost";
+  font-weight: 300;
+  color: black;
+  text-align: center;
 }
 
 h2 {
-    font-family: "Jost";
-    color: black;
-
+  font-family: "Jost";
+  color: black;
 }
 
-
-
 #headerChoices {
-    margin-top: 1.2vmax;
+  margin-top: 1.2vmax;
 
-    display: flex;
-    justify-content: center;
-
-
+  display: flex;
+  justify-content: center;
 }
 
 h2#availability {
-    padding-top: 2vmin;
-    font-family: "Jost";
-    font-weight: 400;
+  padding-top: 2vmin;
+  font-family: "Jost";
+  font-weight: 400;
 }
 
 .headerChoice {
-    margin-right: 4vmin;
-    margin-left: 4vmin;
-    font-family: "Asap";
-    font-size: 1.3em;
-    text-align: center;
-    color: black;
-    padding-left: 1vmin;
-    padding-right: 1vmin;
-    padding-top: 1vmin;
-    padding-bottom: 1vmin;
-    transition: 0.3s;
-    display: inline;
-
-
+  margin-right: 4vmin;
+  margin-left: 4vmin;
+  font-family: "Asap";
+  font-size: 1.3em;
+  text-align: center;
+  color: black;
+  padding-left: 1vmin;
+  padding-right: 1vmin;
+  padding-top: 1vmin;
+  padding-bottom: 1vmin;
+  transition: 0.3s;
+  display: inline;
 }
 
 .headerChoice:hover {
-    cursor: pointer;
-    border-radius: 20vmin;
-    background: black;
-    color: white;
-
+  cursor: pointer;
+  border-radius: 20vmin;
+  background: black;
+  color: white;
 }
 
 .section {
-    width: 100%;
-    padding-top: 0.5vmin;
-    padding-bottom: 0.5vmin;
-    text-align: center;
-    align-content: center;
-
+  width: 100%;
+  padding-top: 0.5vmin;
+  padding-bottom: 0.5vmin;
+  text-align: center;
+  align-content: center;
 }
 
 #sec1 {
-
-    margin-top: 5vmin;
-    background-color: white;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-
+  margin-top: 5vmin;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 #circles1 {
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 100%;
-    z-index: 0;
-    width: 55vmin;
-    height: 55vmin;
-    background-color: #F1F1F1;
-    opacity: 60%;
-
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 100%;
+  z-index: 0;
+  width: 55vmin;
+  height: 55vmin;
+  background-color: #f1f1f1;
+  opacity: 60%;
 }
 
 #screen1 {
-    z-index: 3;
-    width: 29vmin;
-    height: 55vmin;
+  z-index: 3;
+  width: 29vmin;
+  height: 55vmin;
 }
 
 .presentation {
-    z-index: 2;
-    margin-left: -2vmin;
-    border-top-right-radius: 2vmin;
-    border-bottom-right-radius: 2vmin;
-    font-family: "Asap";
+  z-index: 2;
+  margin-left: -2vmin;
+  border-top-right-radius: 2vmin;
+  border-bottom-right-radius: 2vmin;
+  font-family: "Asap";
 }
 
 #presentationTextsContainer {
-    font-family: "Asap";
-    z-index: 2;
+  font-family: "Asap";
+  z-index: 2;
 }
 
 #presentationText {
-
-    font-size: 3.2vmin;
-    width: 40vmin;
-    background-color: #525252;
-    color: white;
-    padding-top: 1vmin;
-    padding-bottom: 1vmin;
-    padding-left: 4vmin;
-    padding-right: 4vmin;
-
-
+  font-size: 3.2vmin;
+  width: 40vmin;
+  background-color: #525252;
+  color: white;
+  padding-top: 1vmin;
+  padding-bottom: 1vmin;
+  padding-left: 4vmin;
+  padding-right: 4vmin;
 }
 
 #presentationText2 {
-
-    font-size: 3.2vmin;
-    width: 35vmin;
-    background-color: #6666ff;
-    color: white;
-    padding-top: 1vmin;
-    padding-bottom: 1vmin;
-    padding-left: 4vmin;
-    padding-right: 2vmin;
-
-
-
-
+  font-size: 3.2vmin;
+  width: 35vmin;
+  background-color: #6666ff;
+  color: white;
+  padding-top: 1vmin;
+  padding-bottom: 1vmin;
+  padding-left: 4vmin;
+  padding-right: 2vmin;
 }
 
 #presentationText3 {
-
-    font-size: 3.2vmin;
-    width: 35vmin;
-    background-color: #DA4F15;
-    color: white;
-    padding-top: 1vmin;
-    padding-bottom: 1vmin;
-    padding-left: 4vmin;
-    padding-right: 2vmin;
-
-
-
-
+  font-size: 3.2vmin;
+  width: 35vmin;
+  background-color: #da4f15;
+  color: white;
+  padding-top: 1vmin;
+  padding-bottom: 1vmin;
+  padding-left: 4vmin;
+  padding-right: 2vmin;
 }
 #sec1-5 {
-    margin-top: 8vmin;
-    background-color: #FF6A6A;
-    font-size: 1.1em;
-  
+  margin-top: 8vmin;
+  background-color: #ff6a6a;
+  font-size: 1.1em;
 }
-#infosec1-5
-{
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
+#infosec1-5 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
 }
 #sec2 {
-    
-    background-color: #EAEAEA;
-    margin-left: auto;
-    margin-right: auto;
+  background-color: #eaeaea;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .cautionText {
-    margin-left: auto;
-    margin-right: auto;
-    width: 60vmin;
-    text-align: center;
-    font-size: 0.8em;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60vmin;
+  text-align: center;
+  font-size: 0.8em;
 }
 
 .platformBlock {
-    display: flex;
-    flex-direction: column;
-    width: 12vmin;
+  display: flex;
+  flex-direction: column;
+  width: 12vmin;
 
-    justify-content: end;
-    padding-left: 8vmin;
-    padding-right: 8vmin;
+  justify-content: end;
+  padding-left: 8vmin;
+  padding-right: 8vmin;
 }
 
 .platformLogo {
-
-    width: 12vmin;
-    height: 12vmin;
-    transition: 0.3s;
-
+  width: 12vmin;
+  height: 12vmin;
+  transition: 0.3s;
 }
 
 .platformLogo.ios:hover {
-    fill: #0066ff;
-
-
+  fill: #0066ff;
 }
 
 .platformLogo.android:hover {
-    fill: #00cc66;
-    cursor: pointer;
-
+  fill: #00cc66;
+  cursor: pointer;
 }
 
 .platformLabel {
-    margin-top: -0.5vmin;
-
+  margin-top: -0.5vmin;
 }
 
 #accessPolicyConf {
-    font-size: 1.8vmin;
+  font-size: 1.8vmin;
 }
 #platforms {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .skewBtn {
-    width: 35vmin;
-    height: 6vmin;
-    outline: none;
-    cursor: pointer;
-    background: none;
-    -webkit-transition: .5s;
-    transition: .5s;
-    font-size: 3vmin;
-    border-radius: 5px;
-    font-family: "Asap", sans-serif;
+  width: 35vmin;
+  height: 6vmin;
+  outline: none;
+  cursor: pointer;
+  background: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  font-size: 3vmin;
+  border-radius: 5px;
+  font-family: "Asap", sans-serif;
 }
 
 .skewBtn:hover {
-    border: none;
-    color: white;
-    font-size: 1.75em;
-    -webkit-transform: scale(1.05);
-    transform: scale(1.05);
+  border: none;
+  color: white;
+  font-size: 1.75em;
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .blue {
-    border: 0.2vmin solid #29CB30;
-    border-radius: 25vmin;
-    color: black;
+  border: 0.2vmin solid #29cb30;
+  border-radius: 25vmin;
+  color: black;
 }
 
 .blue:hover {
-    background-color: #29CB30;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
+  background-color: #29cb30;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .hiddenInput {
-    padding: 0 18px;
-    background-color: transparent;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
+  padding: 0 18px;
+  background-color: transparent;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
 }
 
 .formInput {
-    font-family: 'Jost', sans-serif;
-    color: #333;
-    font-size: 1.2rem;
-    margin: 0 auto;
-    padding: 1.5rem 2rem;
-    border-radius: 0.2rem;
-    background-color: rgb(255, 255, 255);
-    border: none;
-    width: 40vmin;
-    height: 8vmin;
-    display: block;
-    border-bottom: 0.3rem solid transparent;
-    transition: all 0.3s;
+  font-family: "Jost", sans-serif;
+  color: #333;
+  font-size: 1.5em;
+  margin: 0 auto;
+  border-radius: 0.2rem;
+  background-color: rgb(255, 255, 255);
+  padding: 1vmin;
+  border: none;
+  width: 40vmin;
+  height: 3vmin;
+  display: block;
+  border-bottom: 0.3rem solid transparent;
+  transition: all 0.3s;
 }
 
-.formInput:placeholder-shown+.formLabel {
-    opacity: 0;
-    visibility: hidden;
-    -webkit-transform: translateY(-4rem);
-    transform: translateY(-4rem);
+.formInput:placeholder-shown + .formLabel {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translateY(-4rem);
+  transform: translateY(-4rem);
 }
 
 .formLabel {
-    font-family: 'Jost', sans-serif;
-    font-size: 1.2rem;
-    margin-left: 2rem;
-    margin-top: 0.7rem;
-    display: block;
-    transition: all 0.3s;
-    transform: translateY(0rem);
+  font-family: "Jost", sans-serif;
+  font-size: 1.2rem;
+  margin-left: 2rem;
+  margin-top: 0.7rem;
+  display: block;
+  transition: all 0.3s;
+  transform: translateY(0rem);
 }
 
 a {
-    color: inherit;
-    text-decoration: none;
+  color: inherit;
+  text-decoration: none;
 }
 
 #sendBtn {
-    font-family: "Asap";
-    padding: 0.4vmin 0.6vmin;
-    font-size: 2em;
-    font-weight: 900;
-    border-radius: 2vmin;
-    color: #fff;
-    background-color: #29CB30;
-    border: 2px solid #29CB30;
-    cursor: pointer;
-    width: max-content;
-    transition: 0.25s ease;
-    visibility: hidden;
-    margin-top: 0.2vmin;
-    margin-bottom: 0.2vmin;
-
-
+  font-family: "Asap";
+  padding: 0.4vmin 0.6vmin;
+  font-size: 2em;
+  font-weight: 900;
+  border-radius: 2vmin;
+  color: #fff;
+  background-color: #29cb30;
+  border: 2px solid #29cb30;
+  cursor: pointer;
+  width: max-content;
+  transition: 0.25s ease;
+  visibility: hidden;
+  margin-top: 0.2vmin;
+  margin-bottom: 0.2vmin;
 }
 
 #doneLabel {
-    font-family: "Asap";
-    color: green;
-    visibility: hidden;
-    transition: 0.25s ease;
+  font-family: "Asap";
+  color: green;
+  visibility: hidden;
+  transition: 0.25s ease;
 }
 
 #sendBtn:hover {
-
-    background-color: transparent;
-    border: 2px solid #29CB30;
-    color: #29CB30;
-
+  background-color: transparent;
+  border: 2px solid #29cb30;
+  color: #29cb30;
 }
 
 .titleSection {
-    font-family: "Asap";
-    text-align: left;
-    margin-left: 4vmin;
-    font-size: 2.2em;
+  font-family: "Asap";
+  text-align: left;
+  margin-left: 4vmin;
+  font-size: 2.2em;
 }
 
 #sec3 {
-    padding-top: 3vmin;
-    width: 100%;
-    background-color: #FFDBB8;
-
+  padding-top: 3vmin;
+  width: 100%;
+  background-color: #ffdbb8;
 }
 
 #storiesContainer {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    justify-content: space-evenly;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 #story1 {
+  font-family: "Jost";
+  width: 30vmin;
 
-    font-family: "Jost";
-    width: 30vmin;
-
-    text-align: center;
-    text-justify: distribute;
-
-
-
+  text-align: center;
+  text-justify: distribute;
 }
 
 #story2 {
+  font-family: "Jost";
+  width: 30vmin;
 
-    font-family: "Jost";
-    width: 30vmin;
-
-
-    text-align: center;
-    text-justify: distribute;
-
-
+  text-align: center;
+  text-justify: distribute;
 }
 
 #story3 {
+  font-family: "Jost";
+  width: 30vmin;
 
-    font-family: "Jost";
-    width: 30vmin;
-
-
-    text-align: center;
-    text-justify: distribute;
-
+  text-align: center;
+  text-justify: distribute;
 }
 
 .storyContainer {
-    font-size: 1.2em;
-    display: flex;
-    flex-direction: column;
-    justify-content: baseline;
-    align-items: center;
+  font-size: 1.2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  align-items: center;
 }
 
 #bag {
-    width: 15vmin;
-    height: 17vmin;
-
+  width: 15vmin;
+  height: 17vmin;
 }
 
 #circleBag {
-    width: 20vmin;
-    height: 20vmin;
-    border-radius: 100%;
-    background-color: #89D169;
-
+  width: 20vmin;
+  height: 20vmin;
+  border-radius: 100%;
+  background-color: #89d169;
 }
 
 #hashtag {
-    width: 16vmin;
-    height: 16vmin;
-    margin-top: 2vmin;
-
-
+  width: 16vmin;
+  height: 16vmin;
+  margin-top: 2vmin;
 }
 
 #circleHashtag {
-    width: 20vmin;
-    height: 20vmin;
-    border-radius: 100%;
-    background-color: #F6AE4D;
-
+  width: 20vmin;
+  height: 20vmin;
+  border-radius: 100%;
+  background-color: #f6ae4d;
 }
 
 #dove {
-    width: 16vmin;
-    height: 19vmin;
-
+  width: 16vmin;
+  height: 19vmin;
 }
 
 #circleDove {
-    width: 20vmin;
-    height: 20vmin;
-    border-radius: 100%;
-    background-color: #69D1D0;
-
-
+  width: 20vmin;
+  height: 20vmin;
+  border-radius: 100%;
+  background-color: #69d1d0;
 }
 
 .illu {
-    transition: 0.3s;
+  transition: 0.3s;
 }
 
 .illu:hover {
-
-    transform: scale(1.05)
+  transform: scale(1.05);
 }
 
 #manAskingHimself {
+  text-align: center;
+  margin-right: -2.5vmin;
 
-
-    text-align: center;
-    margin-right: -2.5vmin;
-
-    z-index: 10;
-    width: 20vmin;
-    height: 40vmin;
+  z-index: 10;
+  width: 20vmin;
+  height: 40vmin;
 }
 
 .rules {
-    font-size: 1.5em;
-    z-index: 450;
-    margin-top: 2vmin;
-    border: black dashed 0.2vmin;
-    padding-bottom: 1vmin;
-    padding-left: 2vmin;
-    padding-right: 6vmin;
-    text-align: center;
-    background-color: whitesmoke;
-    width: 60vmin;
-    height: 36vmin;
-    display: flex;
+  font-size: 1.5em;
+  z-index: 450;
+  margin-top: 2vmin;
+  border: black dashed 0.2vmin;
+  padding-bottom: 1vmin;
+  padding-left: 2vmin;
+  padding-right: 6vmin;
+  text-align: center;
+  background-color: whitesmoke;
+  width: 60vmin;
+  height: 36vmin;
+  display: flex;
 
-    flex-direction: column;
-    align-items: center;
-
+  flex-direction: column;
+  align-items: center;
 }
 
 #whyChange1 {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    align-items: center;
-    font-size: 1.65vmin;
-
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  font-size: 1.65vmin;
 }
 
 #sec4 {
-padding-bottom: 4vmin;
-    width: 100%;
-
+  padding-bottom: 4vmin;
+  width: 100%;
 }
 
 .changeTitle {
-    font-size: 2.3em;
-    text-align: center;
+  font-size: 2.3em;
+  text-align: center;
 }
 
 #rulesList {
-
-    z-index: 450;
-    list-style-position: inside;
-    list-style-type: "\2714\0020";
-    width: 100%;
-    text-align: left;
-
+  z-index: 450;
+  list-style-position: inside;
+  list-style-type: "\2714\0020";
+  width: 100%;
+  text-align: left;
 }
 
-
-
 #machines {
-    margin-top: -28vmin;
-    height: 38vmin;
-    width: 97vmin;
-    z-index: 1;
+  margin-top: -28vmin;
+  height: 38vmin;
+  width: 97vmin;
+  z-index: 1;
 }
 
 .howitworks {
-
-    z-index: 450;
-    margin-top: 2vmin;
-    margin-left: auto;
-    margin-right: auto;
-    border: black dashed 0.2vmin;
-    padding-bottom: 1vmin;
-    padding-left: 4vmin;
-    padding-right: 4vmin;
-    text-align: center;
-    background-color: whitesmoke;
-    width: 45vmin;
-    height: 41vmin;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
+  z-index: 450;
+  margin-top: 2vmin;
+  margin-left: auto;
+  margin-right: auto;
+  border: black dashed 0.2vmin;
+  padding-bottom: 1vmin;
+  padding-left: 4vmin;
+  padding-right: 4vmin;
+  text-align: center;
+  background-color: whitesmoke;
+  width: 45vmin;
+  height: 36vmin;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .workModeItem {
-    font-size: 2.4vmin;
+  font-size: 2.4vmin;
 }
 
 #workModeList {
-    text-align: left;
+  text-align: left;
 }
 
 ol {
-    list-style: none;
-    counter-reset: my-awesome-counter;
-
+  list-style: none;
+  counter-reset: my-awesome-counter;
 }
 
 ol li {
-    margin-bottom: 0.5vmin;
-    counter-increment: my-awesome-counter;
-    position: relative;
+  margin-bottom: 0.5vmin;
+  counter-increment: my-awesome-counter;
+  position: relative;
 }
 
 ol li::before {
-    content: counter(my-awesome-counter);
-    color: white;
-    font-size: 1.18em;
-    font-weight: bold;
-    position: absolute;
-    --size: 4vmin;
-    left: calc(-1 * var(--size) - 10px);
-    line-height: var(--size);
-    width: var(--size);
-    height: var(--size);
-    top: 0;
-    transform: rotate(-10deg);
-    background: #55CE8A;
-    border-radius: 50%;
-    text-align: center;
-    box-shadow: 1px 1px 0 #999;
+  content: counter(my-awesome-counter);
+  color: white;
+  font-size: 1.18em;
+  font-weight: bold;
+  position: absolute;
+  --size: 4vmin;
+  left: calc(-1 * var(--size) - 10px);
+  line-height: var(--size);
+  width: var(--size);
+  height: var(--size);
+  top: 0;
+  transform: rotate(-10deg);
+  background: #55ce8a;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 1px 1px 0 #999;
 }
 
 #sec5 {
-    background-color: #273F64 ;
-    color: white;
-   
+  background-color: #273f64;
+  color: white;
 }
 
 #contactTitle {
   color: white;
 }
 #contact {
+  margin-right: auto;
+  margin-left: auto;
+  width: 90vmin;
+  font-size: 1.35em;
+  padding-bottom: 0.5vmin;
+  text-align: left;
+}
+.shareBtn {
+  background-color: white; /* Blue background */
+  border: none; /* Remove borders */
+  color: black; /* White text */
+  padding: 1vmin 2vmin; 
+  padding-top: 2vmin;/* Some padding */
+  font-size: 2vmin; /* Set a font size */
+  cursor: pointer; /* Mouse pointer on hover */
+  border-radius: 15px;
+  transition: 0.5s;
+
+  width: 6.5vmin;
+  height: 6.5vmin;
+  display: inline-block;
+
+}
+
+/* Darker background on mouse-over */
+.shareBtn:hover {
+  background-color: black;
+  color: white;
+}
+#share {
+  margin-bottom: 4vmin;
+}
+#listJobs{
     margin-right: auto;
     margin-left: auto;
     width: 90vmin;
     font-size: 1.35em;
     padding-bottom: 0.5vmin;
-    text-align: left;
-}
-.shareBtn {
-    background-color: white; /* Blue background */
-    border: none; /* Remove borders */
-    color: black; /* White text */
-    padding: 2vmin 2vmin; /* Some padding */
-    font-size: 2vmin; /* Set a font size */
-    cursor: pointer; /* Mouse pointer on hover */
-    border-radius: 15px;
-    transition: 0.5s;
-    text-align: center;
-    width: 6.5vmin;
-    height:  6.5vmin;
-  }
-  
-  /* Darker background on mouse-over */
-  .shareBtn:hover {
-    background-color:  black;
-    color: white;
-  }
- #share {
+    list-style: square;
+  text-align: left;
     
-     margin-bottom:  4vmin;
- }
+}
+.jobsItem{
+    margin-bottom: 2.5vmin;
+font-size: 2vmin;
+}

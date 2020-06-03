@@ -86,7 +86,12 @@
         height: 10vmin;
         font-size: 5vmin;
     }
-
+    #accessPolicyConf {
+ text-align: center;
+        font-size: 5vmin;
+        height: 15vmin;
+        width: 65vmin;
+      }
     .skewBtn:hover {
 
         font-size: 4.6vmin;
@@ -96,7 +101,8 @@
     .formInput {
         margin-left: auto;
         margin-right: auto;
-        width: 90vmin;
+        width: 80vmin;
+        padding: 3vmin;
         height: 8vmin;
 
     }
@@ -107,6 +113,7 @@
         width: 40vmin;
         height: 15vmin;
         font-size: x-large;
+        margin-bottom: 0vmin;
     }
 
     .formLabel {
@@ -116,6 +123,7 @@
     }
 
     .cautionText {
+        margin-top: 1vmin;
         font-size: 3vmin;
     }
 
@@ -207,7 +215,7 @@
         padding-right: 5vmin;
 
         width: 78vmin;
-        height: 110vmin;
+        height: 120vmin;
 
 
     }
@@ -249,7 +257,7 @@
         padding-right: 5vmin;
 
         width: 78vmin;
-        height: 120vmin;
+        height: 115vmin !important;; 
 
 
 
@@ -286,6 +294,7 @@
 
 
     #sec4 {
+       
         padding-bottom: 8vmin;
     }
 
@@ -293,7 +302,20 @@
         font-size: 5.5vmin;
         width: 75vmin;
     }
-
+    #listJobs{
+        margin-right: auto;
+        margin-left: auto;
+        font-size: 5.5vmin;
+        width: 75vmin;
+        
+        list-style: square;
+      text-align: left;
+        
+    }
+    .jobsItem{
+        font-size: 5.5vmin;
+        width: 75vmin;
+    }
 
 
 
