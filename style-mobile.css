@@ -92,6 +92,12 @@
         height: 15vmin;
         width: 65vmin;
       }
+      #accessFAQ {
+        text-align: center;
+               font-size: 5vmin;
+               height: 15vmin;
+               width: 65vmin;
+             }
     .skewBtn:hover {
 
         font-size: 4.6vmin;

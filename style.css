@@ -225,6 +225,10 @@ h2#availability {
 #accessPolicyConf {
   font-size: 1.8vmin;
 }
+#accessFAQ {
+  margin-top: 1.8vmin;
+  font-size: 1.8vmin;
+}
 #platforms {
   display: flex;
   justify-content: center;
