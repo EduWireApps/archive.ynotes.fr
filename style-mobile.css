@@ -1,403 +1,403 @@
 @media (min-width: 640px) {
-    .hideNotMobile {
-        display: none;
-    }
+  .hideNotMobile {
+    display: none;
+  }
 }
 
 @media (max-width: 640px) {
-    .hideMobile {
-        display: none !important;
-    }
-
-    html,
-    body {
-        width: 100%;
-        height: 100%;
-        margin: 0px;
-        padding: 0px;
-        overflow-x: hidden;
-    }
-
-    #presentationtext,
-    #presentationtext2,
-    #presentationtext3 {
-        font-size: 3vmin;
-    }
-
-    .titleSection {
-        font-size: 8vmin;
-    }
-
-    #sec1 {
-        padding-top: 30vmin;
-        transform: scale(1.3);
-
-    }
-
-    #sec1-5 {
-        margin-top: 25vmin;
-        background-color: #FF6A6A;
-        font-size: 1.2em;
-
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    #sec2 {
-
-        padding-top: 4vmin;
-        padding-left: 2vmin;
-        padding-right: 4vmin;
-    }
-
-    h2 {
-        max-width: 90%;
-    }
-
-    #availability {
-        font-size: 6vmin;
-    }
-
-    #platforms {
-        display: flex;
-        justify-content: space-around;
-
-    }
-
-    .platformLabel {
-        width: 18vmin;
-    }
-
-    .platformBlock {
-        width: 18vmin;
-
-    }
-
-    .platformLogo {
-        transform: scale(1.5);
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-
-    .skewBtn {
-        width: 45vmin;
-        height: 10vmin;
-        font-size: 5vmin;
-    }
-    #accessPolicyConf {
- text-align: center;
-        font-size: 5vmin;
-        height: 15vmin;
-        width: 65vmin;
-      }
-      #accessFAQ {
-        text-align: center;
-               font-size: 5vmin;
-               height: 15vmin;
-               width: 65vmin;
-             }
-    .skewBtn:hover {
-
-        font-size: 4.6vmin;
-
-    }
-
-    .formInput {
-        margin-left: auto;
-        margin-right: auto;
-        width: 80vmin;
-        padding: 3vmin;
-        height: 8vmin;
-
-    }
-
-    #sendBtn {
-        margin-left: auto;
-        margin-right: auto;
-        width: 40vmin;
-        height: 15vmin;
-        font-size: x-large;
-        margin-bottom: 0vmin;
-    }
-
-    .formLabel {
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .cautionText {
-        margin-top: 1vmin;
-        font-size: 3vmin;
-    }
-
-    html {
-        -webkit-text-size-adjust: 100%;
-        -ms-text-size-adjust: 100%;
-    }
-
-    .ynLogo {
-
-        border-radius: 15%;
-
-        width: 12vmin;
-        height: 12vmin;
-    }
-
-    #ynLogoContainer {
-        float: left;
-        padding: 10px 20px;
-    }
-
-    .header {
-
-
-
-        font-family: "Asap";
-        background-color: #fff;
-        box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
-        position: fixed;
-        width: 100%;
-        z-index: 10000;
-    }
-
-    .header ul {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        overflow: hidden;
-        background-color: #fff;
-    }
-
-    .story {
-
-        font-size: 6vmin;
-        width: 80% !important;
-        text-align: center !important;
-    }
-
-    #storiesContainer {
-        display: block;
-    }
-
-    #circleDove,
-    #circleHashtag {
-        margin-top: 12vmin;
-        width: 27vmin;
-        height: 27vmin;
-    }
-
-    #circleBag {
-        margin-top: 5vmin;
-        width: 27vmin;
-        height: 27vmin;
-    }
-
-    #dove {
-        width: 28vmin;
-        height: 30vmin;
-    }
-
-    #hashtag {
-        width: 22vmin;
-        height: 22vmin;
-
-    }
-
-    #bag {
-        width: 18vmin;
-        height: 21vmin;
-    }
-
-    .rules {
-        font-size: 6vmin;
-        z-index: 450;
-        margin-top: 2vmin;
-
-        padding-bottom: 1vmin;
-        padding-left: 0vmin;
-        padding-right: 5vmin;
-
-        width: 78vmin;
-        height: 120vmin;
-
-
-    }
-
-    .changeTitle {
-        font-size: 6vmin;
-    }
-
-    #manAskingHimself {
-
-
-        text-align: center;
-        margin-left: -4vmin;
-        margin-bottom: -70vmin;
-        z-index: 10;
-        width: 20vmin;
-        height: 40vmin;
-    }
-
-
-
-    .shareBtn {
-
-        padding: 2vmin 2vmin;
-        /* Some padding */
-        width: 12vmin;
-        height: 12vmin;
-    }
-
-
-    .howitworks {
-
-        font-size: 5.8vmin !important;
-        z-index: 450;
-        margin-top: 2vmin;
-
-        padding-bottom: 1vmin;
-        padding-left: 0vmin;
-        padding-right: 5vmin;
-
-        width: 78vmin;
-        height: 115vmin !important;; 
-
-
-
-    }
-
-    .workModeItem {
-        font-size: 5.6vmin;
-    }
-
-    ol li::before {
-        content: counter(my-awesome-counter);
-        color: white;
-        font-size: 1.18em;
-        font-weight: bold;
-        position: absolute;
-        --size: 8vmin;
-        left: calc(-1 * var(--size) - 10px);
-        line-height: var(--size);
-        width: var(--size);
-        height: var(--size);
-        top: 0;
-        transform: rotate(-10deg);
-        background: #55CE8A;
-        border-radius: 50%;
-
-    }
-
-    .header li a {
-        display: block;
-        padding: 20px 20px;
-        border-right: 1px solid #f4f4f4;
-        text-decoration: none;
-    }
-
-
-    #sec4 {
-       
-        padding-bottom: 8vmin;
-    }
-
-    #contact {
-        font-size: 5.5vmin;
-        width: 75vmin;
-    }
-    #listJobs{
-        margin-right: auto;
-        margin-left: auto;
-        font-size: 5.5vmin;
-        width: 75vmin;
-        
-        list-style: square;
-      text-align: left;
-        
-    }
-    .jobsItem{
-        font-size: 5.5vmin;
-        width: 75vmin;
-    }
-
-
-
-
-
-    .header li a:hover {
-        background-color: #f4f4f4;
-    }
-
-
-
-    .header .menu {
-        clear: both;
-        max-height: 0;
-        transition: max-height .2s ease-out;
-    }
-
-    .header .menu-icon {
-        cursor: pointer;
-
-        float: right;
-        padding: 28px 20px;
-        position: relative;
-        user-select: none;
-    }
-
-    .header .menu-icon .navicon {
-        background: #333;
-        display: block;
-        height: 2px;
-        position: relative;
-        transition: background .2s ease-out;
-        width: 18px;
-    }
-
-    .header .menu-icon .navicon:before,
-    .header .menu-icon .navicon:after {
-        background: #333;
-        content: '';
-        display: block;
-        height: 100%;
-        position: absolute;
-        transition: all .2s ease-out;
-        width: 100%;
-    }
-
-    .header .menu-icon .navicon:before {
-        top: 5px;
-    }
-
-    .header .menu-icon .navicon:after {
-        top: -5px;
-    }
-
-    .header .menu-btn {
-        display: none;
-    }
-
-    .header .menu-btn:checked~.menu {
-        max-height: 240px;
-    }
-
-    .header .menu-btn:checked~.menu-icon .navicon {
-        background: transparent;
-    }
-
-    .header .menu-btn:checked~.menu-icon .navicon:before {
-        transform: rotate(-45deg);
-    }
-
-    .header .menu-btn:checked~.menu-icon .navicon:after {
-        transform: rotate(45deg);
-    }
-
-    .header .menu-btn:checked~.menu-icon:not(.steps) .navicon:before,
-    .header .menu-btn:checked~.menu-icon:not(.steps) .navicon:after {
-        top: 0;
-    }
+  .hideMobile {
+    display: none !important;
+  }
+
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+  }
+
+  #presentationtext,
+  #presentationtext2,
+  #presentationtext3 {
+    font-size: 3vmin;
+  }
+
+  .titleSection {
+    font-size: 8vmin;
+  }
+
+  #sec1 {
+    padding-top: 30vmin;
+    transform: scale(1.3);
+  }
+
+  #sec1-5 {
+    margin-top: 25vmin;
+    background-color: #ff6a6a;
+    font-size: 1.2em;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #sec2 {
+    padding-top: 4vmin;
+  
+  }
+
+  h2 {
+    max-width: 90%;
+  }
+
+  #availability {
+    font-size: 6vmin;
+  }
+
+  #platforms {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .platformLabel {
+    width: 70vmin;
+  }
+
+  .platformBlock {
+    display: flex;
+   margin-left: auto;
+   margin-right: auto;
+    width: 85vmin;
+    min-width: 65vmin;
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 8vmin;
+    justify-content: center;
+
+  }
+  .platformBlock.ios:hover {
+    background-color: #0066ff;
+    color: white;
+    transform: scale(1.1, 1.1);
+    -webkit-box-shadow: -5px 6px 23px -10px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -5px 6px 23px -10px rgba(0, 0, 0, 0.75);
+    box-shadow: -5px 6px 23px -10px rgba(0, 0, 0, 0.75);
+  }
+  .platformBlock.android:hover > .platformLogo {
+    fill: white;
+  }
+  .platformBlock.ios:hover > .platformLogo {
+    fill: white;
+  }
+  .platformBlock.android:hover {
+    background-color: #00cc66;
+    transform: scale(1.1, 1.1);
+    -webkit-box-shadow: -5px 6px 23px -10px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -5px 6px 23px -10px rgba(0, 0, 0, 0.75);
+    box-shadow: -5px 6px 23px -10px rgba(0, 0, 0, 0.75);
+  }
+  .platformLogo {
+    width: 18vmin;
+    height: 18vmin;
+    transition: 0.3s;
+  }
+
+  #playStoreBadge {
+    margin-top: -3vmin;
+    width: 55vmin;
+  }
+  .skewBtn {
+    width: 45vmin;
+    height: 10vmin;
+    font-size: 5vmin;
+  }
+  #accessPolicyConf {
+    text-align: center;
+    font-size: 5vmin;
+    height: 15vmin;
+    width: 65vmin;
+  }
+  #accessFAQ {
+    text-align: center;
+    font-size: 5vmin;
+    height: 15vmin;
+    width: 65vmin;
+  }
+  .skewBtn:hover {
+    font-size: 4.6vmin;
+  }
+
+  .formInput {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80vmin;
+    padding: 3vmin;
+    height: 8vmin;
+  }
+
+  #sendBtn {
+    margin-left: auto;
+    margin-right: auto;
+    width: 40vmin;
+    height: 15vmin;
+    font-size: x-large;
+    margin-bottom: 0vmin;
+  }
+
+  .formLabel {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .cautionText {
+    margin-top: 1vmin;
+    font-size: 3vmin;
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+  }
+
+  .ynLogo {
+    border-radius: 15%;
+
+    width: 12vmin;
+    height: 12vmin;
+  }
+
+  #ynLogoContainer {
+    float: left;
+    padding: 10px 20px;
+  }
+
+  .header {
+    font-family: "Asap";
+    background-color: #fff;
+    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    z-index: 10000;
+  }
+
+  .header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: #fff;
+  }
+
+  .story {
+    font-size: 6vmin;
+    width: 80% !important;
+    text-align: center !important;
+  }
+
+  #storiesContainer {
+    display: block;
+  }
+
+  #circleDove,
+  #circleHashtag {
+    margin-top: 12vmin;
+    width: 27vmin;
+    height: 27vmin;
+  }
+
+  #circleBag {
+    margin-top: 5vmin;
+    width: 27vmin;
+    height: 27vmin;
+  }
+
+  #dove {
+    width: 28vmin;
+    height: 30vmin;
+  }
+
+  #hashtag {
+    width: 22vmin;
+    height: 22vmin;
+  }
+
+  #bag {
+    width: 18vmin;
+    height: 21vmin;
+  }
+
+  .rules {
+    font-size: 6vmin;
+    z-index: 450;
+    margin-top: 2vmin;
+
+    padding-bottom: 1vmin;
+    padding-left: 0vmin;
+    padding-right: 5vmin;
+
+    width: 78vmin;
+    height: 120vmin;
+  }
+
+  .changeTitle {
+    font-size: 6vmin;
+  }
+
+  #manAskingHimself {
+    text-align: center;
+    margin-left: -4vmin;
+    margin-bottom: -70vmin;
+    z-index: 10;
+    width: 20vmin;
+    height: 40vmin;
+  }
+
+  .shareBtn {
+    padding: 2vmin 2vmin;
+    /* Some padding */
+    width: 12vmin;
+    height: 12vmin;
+  }
+
+  .howitworks {
+    font-size: 5.8vmin !important;
+    z-index: 450;
+    margin-top: 2vmin;
+
+    padding-bottom: 1vmin;
+    padding-left: 0vmin;
+    padding-right: 5vmin;
+
+    width: 78vmin;
+    height: 115vmin !important;
+  }
+
+  .workModeItem {
+    font-size: 5.6vmin;
+  }
+
+  ol li::before {
+    content: counter(my-awesome-counter);
+    color: white;
+    font-size: 1.18em;
+    font-weight: bold;
+    position: absolute;
+    --size: 8vmin;
+    left: calc(-1 * var(--size) - 10px);
+    line-height: var(--size);
+    width: var(--size);
+    height: var(--size);
+    top: 0;
+    transform: rotate(-10deg);
+    background: #55ce8a;
+    border-radius: 50%;
+  }
+
+  .header li a {
+    display: block;
+    padding: 20px 20px;
+    border-right: 1px solid #f4f4f4;
+    text-decoration: none;
+  }
+
+  #sec4 {
+    padding-bottom: 8vmin;
+  }
+
+  #contact {
+    font-size: 5.5vmin;
+    width: 75vmin;
+  }
+  #listJobs {
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 5.5vmin;
+    width: 75vmin;
+
+    list-style: square;
+    text-align: left;
+  }
+  .jobsItem {
+    font-size: 5.5vmin;
+    width: 75vmin;
+  }
+
+  .header li a:hover {
+    background-color: #f4f4f4;
+  }
+
+  .header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+  }
+
+  .header .menu-icon {
+    cursor: pointer;
+
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+  }
+
+  .header .menu-icon .navicon {
+    background: #333;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background 0.2s ease-out;
+    width: 18px;
+  }
+
+  .header .menu-icon .navicon:before,
+  .header .menu-icon .navicon:after {
+    background: #333;
+    content: "";
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all 0.2s ease-out;
+    width: 100%;
+  }
+
+  .header .menu-icon .navicon:before {
+    top: 5px;
+  }
+
+  .header .menu-icon .navicon:after {
+    top: -5px;
+  }
+
+  .header .menu-btn {
+    display: none;
+  }
+
+  .header .menu-btn:checked ~ .menu {
+    max-height: 240px;
+  }
+
+  .header .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+  }
+
+  .header .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+  }
+
+  .header .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+  }
+
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+  }
 }

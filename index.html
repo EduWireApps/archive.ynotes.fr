@@ -61,23 +61,20 @@
     </div>
     <div class="section" id="sec1-5">
       <p id="infosec1-5">
-        <u><b>Attention :</b></u> Notez que yNotes est un client open source
-        <u>non-officiel</u> actuellement compatible ou partiellement compatible avec les services
-        <b>EcoleDirecte et Pronote</b> qui sont deux marques déposées. La compatibilité devrait
-        s'élargir mais peut également changer à tout moment après décision des
-        services officiels.
+        Notez que yNotes est un client open source
+        <u>non-officiel</u> actuellement compatible ou partiellement compatible
+        avec les services <b>EcoleDirecte</b> et <b>Pronote</b> qui sont deux
+        produits déposés. La compatibilité devrait s'élargir mais peut également
+        changer à tout moment après décision des services officiels.
       </p>
     </div>
     <div class="section" id="sec2">
       <h2 class="titleSection">Commencer</h2>
-      <h2 id="availability">
-        L'application sera disponible sur les systèmes d'exploitations suivants
-        :
-      </h2>
+    
       <div id="platforms">
-        <div class="platformBlock">
+        <div class="platformBlock android">
           <svg
-            class="platformLogo android"
+            class="platformLogo"
             enable-background="new 0 0 24 24"
             height="24"
             viewBox="0 0 24 24"
@@ -89,9 +86,17 @@
               />
             </g>
           </svg>
-          <p class="platformLabel">Android, <b>bientôt</b></p>
+
+          <a
+            href="https://play.google.com/store/apps/details?id=fr.ynotes&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
+            ><img
+              id="playStoreBadge"
+              alt="Disponible sur Google Play"
+              src="https://play.google.com/intl/en_us/badges/static/images/badges/fr_badge_web_generic.png"
+          /></a>
         </div>
-        <div class="platformBlock">
+
+        <div class="platformBlock ios">
           <svg
             class="platformLogo ios"
             enable-background="new 0 0 24 24"
@@ -106,39 +111,9 @@
               />
             </g>
           </svg>
-          <p class="platformLabel">iOS, <b>l'année prochaine</b></p>
+          <p class="platformLabel">Pas encore disponible</p>
         </div>
       </div>
-      <h2>
-        Pas envie d'attendre ? <br />Vous pouvez rejoindre la file d'attente
-        pour devenir bêta testeur <b>Android</b>
-      </h2>
-      <button class="skewBtn blue" id="btnMail">Je suis pressé</button>
-      <div class="hiddenInput">
-        <h3>Entrez votre mail ici :</h3>
-        <input
-          type="text"
-          class="formInput"
-          id="mail"
-          placeholder="Votre adresse mail"
-          required=""
-        />
-        <label id="name" class="formLabel"
-          ><i>Nous ne vendons pas votre adresse mail.</i></label
-        >
-        <div id="btnWithDoneLabel">
-          <button id="sendBtn">Envoyer</button>
-          <div id="doneLabel">
-            &#10003; C'est fait : nous vous recontacterons d'ici peu !
-          </div>
-        </div>
-      </div>
-      <h3 class="cautionText">
-        <i
-          >L'application bêta peut présenter des problèmes car l'application est
-          encore en phase de développement.</i
-        >
-      </h3>
     </div>
     <div class="section" id="sec3">
       <h2 class="titleSection">Le projet</h2>
@@ -232,7 +207,7 @@
           </button>
         </div>
       </div>
-     
+
       <h2 class="changeTitle">Le fonctionnement :</h2>
 
       <div id="whyChange2">
@@ -264,13 +239,9 @@
           class="hideMobile"
         />
       </div>
-      <button
-      class="skewBtn blue"
-      id="accessFAQ"
-      onclick="location.href='faq'"
-    >
-      Foire aux questions
-    </button>
+      <button class="skewBtn blue" id="accessFAQ" onclick="location.href='faq'">
+        Foire aux questions
+      </button>
     </div>
     <div class="section" id="sec5">
       <h2 class="titleSection" id="contactTitle">Contact</h2>

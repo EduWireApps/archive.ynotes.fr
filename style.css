@@ -183,6 +183,7 @@ h2#availability {
   background-color: #eaeaea;
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 5vmin;
 }
 
 .cautionText {
@@ -197,31 +198,56 @@ h2#availability {
   display: flex;
   flex-direction: column;
   width: 12vmin;
-
-  justify-content: end;
+  justify-content: start;
+text-align: center;
+ align-items: center;
+  background-color: white;
+  border-radius: 15px;
+ margin-left: 4vmin;
   padding-left: 8vmin;
   padding-right: 8vmin;
+  transition: 0.3s;
 }
+.platformBlock.ios:hover {
+  background-color: #0066ff;
+  color: white;
+  transform: scale(1.1, 1.1);
+  -webkit-box-shadow: -5px 6px 23px -10px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -5px 6px 23px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: -5px 6px 23px -10px rgba(0, 0, 0, 0.75);
+}
+.platformBlock.android:hover>.platformLogo {
 
+  fill: white;
+  
+}
+.platformBlock.ios:hover>.platformLogo {
+  fill: white;
+  
+}
+.platformBlock.android:hover {
+  background-color: #00cc66;
+  transform: scale(1.1, 1.1);
+  -webkit-box-shadow: -5px 6px 23px -10px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -5px 6px 23px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: -5px 6px 23px -10px rgba(0, 0, 0, 0.75);
+}
 .platformLogo {
   width: 12vmin;
   height: 12vmin;
   transition: 0.3s;
 }
 
-.platformLogo.ios:hover {
-  fill: #0066ff;
-}
 
-.platformLogo.android:hover {
-  fill: #00cc66;
-  cursor: pointer;
-}
+
+
 
 .platformLabel {
   margin-top: -0.5vmin;
 }
-
+.platformSmallLabel {
+  margin-top: -0.2vmin;
+}
 #accessPolicyConf {
   font-size: 1.8vmin;
 }
@@ -233,7 +259,10 @@ h2#availability {
   display: flex;
   justify-content: center;
 }
-
+#playStoreBadge{
+  margin-top: -3vmin;
+  width: 21vmin;
+}
 .skewBtn {
   width: 35vmin;
   height: 6vmin;

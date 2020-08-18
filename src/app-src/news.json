@@ -19,6 +19,16 @@
       "title": "Mise à jour 0.8.4",
       "ticketnb": "4",
       "content": "Le support de Pronote par connexion directe est quasiment effectif !"
+    },
+    {
+      "title": "Mise à jour 0.8.6",
+      "ticketnb": "5",
+      "content": "yNotes est maintenant disponible sur le Google Play Store !"
+    },
+    {
+      "title": "Mise à jour 0.8.7",
+      "ticketnb": "6",
+      "content": "Nouvelle fonction de connexion transparente : les temps de chargement sont réduits pour que vous puissiez profiter de votre app plus rapidement."
     }
   ]
 }
