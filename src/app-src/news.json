@@ -29,6 +29,11 @@
       "title": "Mise à jour 0.8.7",
       "ticketnb": "6",
       "content": "Nouvelle fonction de connexion transparente : les temps de chargement sont réduits pour que vous puissiez profiter de votre app plus rapidement."
+    },
+    {
+      "title": "Mise à jour 0.8.10",
+      "ticketnb": "7",
+      "content": "Le menu Organisation est maintenant disponible."
     }
   ]
 }
