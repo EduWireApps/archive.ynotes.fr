@@ -259,7 +259,7 @@ text-align: center;
   display: flex;
   justify-content: center;
 }
-#playStoreBadge{
+.badge{
   margin-top: -3vmin;
   width: 21vmin;
 }

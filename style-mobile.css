@@ -44,7 +44,6 @@
 
   #sec2 {
     padding-top: 4vmin;
-  
   }
 
   h2 {
@@ -71,15 +70,14 @@
 
   .platformBlock {
     display: flex;
-   margin-left: auto;
-   margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
     width: 85vmin;
     min-width: 65vmin;
     padding-left: 0;
     padding-right: 0;
     margin-bottom: 8vmin;
     justify-content: center;
-
   }
   .platformBlock.ios:hover {
     background-color: #0066ff;
@@ -108,7 +106,7 @@
     transition: 0.3s;
   }
 
-  #playStoreBadge {
+  .badge {
     margin-top: -3vmin;
     width: 55vmin;
   }
