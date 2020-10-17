@@ -1,45 +1,97 @@
-window.onload = function () {
-    var btn = document.getElementById("btnMail");
-    var inputMail = document.getElementById("mail");
-    btn.addEventListener("click", function () {
-        var content = this.nextElementSibling;
-        if (content.style.maxHeight) {
-            content.style.maxHeight = null;
-            window.scrollBy(0, 0);
-        } else {
-            content.style.maxHeight = content.scrollHeight + "px";
-            window.scrollBy(0, 100)
+(function () {
+  "use strict";
+
+  var error = false;
+
+  window.addEventListener("load", function () {
+    document.getElementById("date").innerHTML = new Date().getFullYear();
+    loadContributors();
+    if (!error) {
+      document.getElementById("contributors").innerHTML = "";
+    }
+
+    var menu = document.getElementById("menu"),
+      brand = document.getElementById("brand");
+
+    document
+      .getElementById("menuToggle")
+      .addEventListener("click", function () {
+        menu.classList.toggle("h-0");
+        this.classList.toggle("is-active");
+        menu.classList.toggle("-translate-x-full");
+        menu.classList.toggle("opacity-0");
+        brand.classList.toggle("mb-4");
+      });
+  });
+
+  function loadContributors() {
+    requestApi(
+      "https://api.github.com/repos/ModernChocolate/ynotes/contributors",
+      true
+    );
+    requestApi(
+      "https://api.github.com/repos/ModernChocolate/ynotes-website/contributors",
+      false
+    );
+  }
+
+  function requestApi(url, app) {
+    var xhr = new XMLHttpRequest();
+
+    xhr.open("GET", url, true);
+    xhr.onload = function () {
+      if (this.status == 200) {
+        var users = JSON.parse(this.responseText);
+        for (var i in users) {
+          createUserWidget(
+            users[i].login,
+            users[i].html_url,
+            users[i].avatar_url,
+            users[i].contributions,
+            app
+          );
         }
-    });
-    inputMail.addEventListener("input", function (e) {
+      } else {
+        error = true;
+      }
+    };
+    xhr.send();
+  }
 
-        var sendBtn = document.getElementById("sendBtn");
-        var patt = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/
-        if (patt.test(e.target.value)) {
+  function createUserWidget(name, url, img_url, contributions, app) {
+    var main = document.createElement("div"),
+      content = document.createElement("a"),
+      avatar = document.createElement("img"),
+      infos = document.createElement("div"),
+      username = document.createElement("h2"),
+      contribution = document.createElement("p");
+    main.appendChild(content);
+    content.appendChild(avatar);
+    content.appendChild(infos);
+    infos.appendChild(username);
+    infos.appendChild(contribution);
+    main.classList = "p-2 lg:w-1/3 md:w-1/2 w-full";
+    content.classList =
+      "h-full flex items-center border-gray-200 border p-4 rounded-lg shadow bg-gray-100";
+    content.href = url;
+    content.target = "_blank";
+    content.rel = "noopener noreferrer";
+    avatar.classList =
+      "w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 border-2 border-gray-500";
+    avatar.src = img_url;
+    avatar.alt = name;
+    infos.classList = "flex-grow";
+    username.classList = "text-gray-900 title-font font-medium";
+    contribution.classList = "text-gray-500";
+    username.innerHTML = name;
+    if (app) {
+      contribution.innerHTML =
+        "A contribué " + contributions + " fois à l'application";
+    } else {
+      contribution.innerHTML =
+        "A contribué " + contributions + " fois au site web";
+    }
 
-            sendBtn.style.visibility = "visible";
-        } else {
-
-            sendBtn.style.visibility = "hidden";
-        }
-    });
-    $('#sendBtn').click(function () {
-        var patt = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/
-
-        if (patt.test($('#mail').val())) {
-
-            $.post(
-
-                "src/scripts/addMail.php", {
-                    mail: $('#mail').val()
-                }
-
-            ).done(function (msg) {
-                var doneLabel = document.getElementById("doneLabel");
-                doneLabel.style.visibility = "visible";
-console.log(msg);
-            })
-        }
-
-    });
-};
+    document.getElementById("contributors").appendChild(main);
+  }
+})();
