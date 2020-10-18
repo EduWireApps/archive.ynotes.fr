@@ -7,17 +7,7 @@
     "build": "postcss tailwind.css -o dist/src/style/style.min.css",
     "dev": "live-server dist"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ModernChocolate/ynotes-website.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ModernChocolate/ynotes-website/issues"
-  },
-  "homepage": "https://github.com/ModernChocolate/ynotes-website#readme",
+ 
   "dependencies": {
     "autoprefixer": "^9.0.0",
     "live-server": "^1.2.1",
