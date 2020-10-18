@@ -1,3 +1,4 @@
 addresses.txt
 .vscode
 node_modules/
+dist/src/style/*
