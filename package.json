@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.html",
   "scripts": {
-    "build": "postcss tailwind.css -o dist/src/style/style.min.css",
-    "dev": "live-server dist"
+    "prod": "postcss tailwind.css -o dist/src/style/style.min.css -- prod",
+    "dev": "postcss tailwind.css -o dist/src/style/style.min.css -- dev",
+    "serve": "live-server dist"
   },
- 
   "dependencies": {
     "autoprefixer": "^9.0.0",
     "live-server": "^1.2.1",
