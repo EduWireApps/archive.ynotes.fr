@@ -3,9 +3,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>yNotes: application de gestion de notes</title>
-    <link href="./index.css" rel="stylesheet">
-
-    <link href="./hamburgers.min.css" rel="stylesheet" />
+    <link href="./src/style/style.min.css" rel="stylesheet">
     <link rel="icon" href="./src/assets/favicon.ico" />
     <style>
       html {
@@ -34,10 +32,10 @@
           >
             <img
               src="./src/assets/brandLogo.png"
-              class="w-10 h-10 text-white bg-indigo-500 rounded-md"
+              class="w-10 h-10 text-white rounded-md"
               alt="logo"
             />
-            <span class="ml-3 text-2xl">Notes</span>
+            <span class="ml-3 text-2xl text-space-500">Notes</span>
           </a>
           <div class="md:hidden block">
             <button
@@ -186,16 +184,16 @@
         </div>
       </div>
     </section>
-    <section class="text-gray-700 body-font bg-blue-100" id="projet">
+    <section class="text-space-100 body-font bg-space-500" id="projet">
       <div class="container px-5 py-24 mx-auto">
         <div class="text-center mb-20">
           <h1
-            class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4"
+            class="sm:text-3xl text-2xl font-medium title-font text-white mb-4"
           >
             Le projet
           </h1>
           <div class="flex mt-6 justify-center">
-            <div class="w-16 h-1 rounded-full bg-indigo-500 inline-flex"></div>
+            <div class="w-16 h-1 rounded-full bg-gray-100 inline-flex"></div>
           </div>
         </div>
         <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
@@ -203,12 +201,12 @@
             class="p-4 md:w-1/3 md:mb-0 mb-6 flex flex-col text-center items-center"
           >
             <div
-              class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-200 text-indigo-500 mb-5 flex-shrink-0 shadow"
+              class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-gray-200 mb-5 flex-shrink-0 shadow"
             >
               <img src="./src/assets/bag.png" class="w-10" alt="bag" />
             </div>
             <div class="flex-grow">
-              <h2 class="text-gray-900 text-lg title-font font-medium mb-3">
+              <h2 class="text-white text-lg title-font font-medium mb-3">
                 L'objectif
               </h2>
               <p class="leading-relaxed text-base text-justify">
@@ -225,18 +223,18 @@
             class="p-4 md:w-1/3 md:mb-0 mb-6 flex flex-col text-center items-center"
           >
             <div
-              class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-200 text-indigo-500 mb-5 flex-shrink-0 shadow"
+              class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-gray-200 mb-5 flex-shrink-0 shadow"
             >
               <img src="./src/assets/hashtag.png" class="w-10" alt="hashtag" />
             </div>
             <div class="flex-grow">
-              <h2 class="text-gray-900 text-lg title-font font-medium mb-3">
+              <h2 class="text-white text-lg title-font font-medium mb-3">
                 Une application moderne et élégante
               </h2>
               <p class="leading-relaxed text-base text-justify">
                 yNotes est développé avec le nouveau framework
                 <a
-                  class="text-indigo-600"
+                  class="text-indigo-400"
                   href="https://flutter.dev"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -251,12 +249,12 @@
             class="p-4 md:w-1/3 md:mb-0 mb-6 flex flex-col text-center items-center"
           >
             <div
-              class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-200 text-indigo-500 mb-5 flex-shrink-0 shadow"
+              class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-gray-200 mb-5 flex-shrink-0 shadow"
             >
               <img src="./src/assets/dove.png" class="w-10" alt="dove" />
             </div>
             <div class="flex-grow">
-              <h2 class="text-gray-900 text-lg title-font font-medium mb-3">
+              <h2 class="text-white text-lg title-font font-medium mb-3">
                 Open-source
               </h2>
               <p class="leading-relaxed text-base text-justify">
@@ -266,7 +264,7 @@
                 sont pas collectées mais stockées localement. Le code source est
                 disponible sur
                 <a
-                  class="text-indigo-600"
+                  class="text-indigo-400"
                   href="https://github.com/ModernChocolate/ynotes"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -287,7 +285,7 @@
             Pourquoi changer ?
           </h1>
           <div class="flex mt-6 justify-center">
-            <div class="w-16 h-1 rounded-full bg-indigo-500 inline-flex"></div>
+            <div class="w-16 h-1 rounded-full bg-space-500 inline-flex"></div>
           </div>
         </div>
         <div class="flex flex-wrap w-full">
@@ -304,7 +302,7 @@
                 <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
               </div>
               <div
-                class="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10"
+                class="flex-shrink-0 w-10 h-10 rounded-full bg-space-500 inline-flex items-center justify-center text-white relative z-10"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -340,7 +338,7 @@
                 <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
               </div>
               <div
-                class="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10"
+                class="flex-shrink-0 w-10 h-10 rounded-full bg-space-500 inline-flex items-center justify-center text-white relative z-10"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -375,7 +373,7 @@
                 <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
               </div>
               <div
-                class="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10"
+                class="flex-shrink-0 w-10 h-10 rounded-full bg-space-500 inline-flex items-center justify-center text-white relative z-10"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -407,7 +405,7 @@
             </div>
             <div class="flex relative">
               <div
-                class="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10"
+                class="flex-shrink-0 w-10 h-10 rounded-full bg-space-500 inline-flex items-center justify-center text-white relative z-10"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -457,7 +455,7 @@
                 <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
               </div>
               <div
-                class="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10"
+                class="flex-shrink-0 w-10 h-10 rounded-full bg-space-500 inline-flex items-center justify-center text-white relative z-10"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -493,7 +491,7 @@
                 <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
               </div>
               <div
-                class="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10"
+                class="flex-shrink-0 w-10 h-10 rounded-full bg-space-500 inline-flex items-center justify-center text-white relative z-10"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -534,7 +532,7 @@
                 <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
               </div>
               <div
-                class="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10"
+                class="flex-shrink-0 w-10 h-10 rounded-full bg-space-500 inline-flex items-center justify-center text-white relative z-10"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -565,7 +563,7 @@
             </div>
             <div class="flex relative">
               <div
-                class="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10"
+                class="flex-shrink-0 w-10 h-10 rounded-full bg-space-500 inline-flex items-center justify-center text-white relative z-10"
               >
                 <svg
                   fill="none"
@@ -611,27 +609,27 @@
           <a
             href="./files/legal/PDCYNotes.pdf"
             target="_blank"
-            class="shadow text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg mr-4"
+            class="shadow text-white bg-space-500 border-0 py-2 px-8 focus:outline-none hover:bg-space-400 rounded text-lg mr-4"
             >Charte de confidentialité</a
           >
           <a
             href="./faq/"
-            class="shadow text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg"
+            class="shadow text-white bg-space-500 border-0 py-2 px-8 focus:outline-none hover:bg-space-400 rounded text-lg"
             >FAQ</a
           >
         </div>
       </div>
     </section>
-    <section class="text-gray-700 body-font bg-blue-100">
+    <section class="text-gray-700 body-font bg-space-500">
       <div class="container px-5 py-24 mx-auto">
         <div class="text-center mb-20 w-full">
           <h1
-            class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4"
+            class="sm:text-3xl text-2xl font-medium title-font text-white mb-4"
           >
             Contributeurs
           </h1>
           <div class="flex mt-6 justify-center">
-            <div class="w-16 h-1 rounded-full bg-indigo-500 inline-flex"></div>
+            <div class="w-16 h-1 rounded-full bg-gray-100 inline-flex"></div>
           </div>
         </div>
         <div class="flex flex-wrap -m-2" id="contributors">
@@ -641,7 +639,7 @@
             >
               <div class="animate-pulse flex flex-1 items-center">
                 <div
-                  class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 bg-gray-400"
+                  class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
                 ></div>
                 <div class="flex-grow">
                   <div class="h-6 bg-gray-400 rounded mb-2"></div>
@@ -656,7 +654,7 @@
             >
               <div class="animate-pulse flex flex-1 items-center">
                 <div
-                  class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 bg-gray-400"
+                  class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
                 ></div>
                 <div class="flex-grow">
                   <div class="h-6 bg-gray-400 rounded mb-2"></div>
@@ -671,7 +669,7 @@
             >
               <div class="animate-pulse flex flex-1 items-center">
                 <div
-                  class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 bg-gray-400"
+                  class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
                 ></div>
                 <div class="flex-grow">
                   <div class="h-6 bg-gray-400 rounded mb-2"></div>
@@ -683,16 +681,16 @@
         </div>
       </div>
     </section>
-    <section class="text-gray-700 bg-blue-100 body-font">
+    <section class="text-gray-700 bg-space-500 body-font">
       <div class="container px-5 py-24 mx-auto flex flex-wrap">
         <div class="text-center mb-20 w-full">
           <h1
-            class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4"
+            class="sm:text-3xl text-2xl font-medium title-font text-white mb-4"
           >
             Nous recherchons
           </h1>
           <div class="flex mt-6 justify-center">
-            <div class="w-16 h-1 rounded-full bg-indigo-500 inline-flex"></div>
+            <div class="w-16 h-1 rounded-full bg-gray-100 inline-flex"></div>
           </div>
         </div>
         <div class="flex flex-wrap -m-4">
@@ -701,7 +699,7 @@
               class="flex border-2 rounded-lg border-gray-200 p-8 sm:flex-row flex-col bg-gray-100 shadow"
             >
               <div
-                class="w-16 h-16 sm:mr-8 sm:mb-0 mb-4 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0 shadow"
+                class="w-16 h-16 sm:mr-8 sm:mb-0 mb-4 inline-flex items-center justify-center rounded-full bg-space-400 text-gray-100 flex-shrink-0 shadow"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -733,7 +731,7 @@
               class="flex border-2 rounded-lg border-gray-200 p-8 sm:flex-row flex-col bg-gray-100 shadow"
             >
               <div
-                class="w-16 h-16 sm:mr-8 sm:mb-0 mb-4 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0 shadow"
+                class="w-16 h-16 sm:mr-8 sm:mb-0 mb-4 inline-flex items-center justify-center rounded-full bg-space-400 text-gray-100 flex-shrink-0 shadow"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -773,7 +771,7 @@
             Nous contacter
           </h1>
           <div class="flex mt-6 justify-center">
-            <div class="w-16 h-1 rounded-full bg-indigo-500 inline-flex"></div>
+            <div class="w-16 h-1 rounded-full bg-space-500 inline-flex"></div>
           </div>
         </div>
         <div class="lg:w-1/2 md:w-2/3 mx-auto">
@@ -782,7 +780,7 @@
               <span class="inline-flex">
                 <a
                   href="mailto:contact@ynotes.fr"
-                  class="text-indigo-500 bg-gray-100 shadow p-4 rounded-full hover:text-indigo-700 hover:bg-gray-300"
+                  class="text-space-500 bg-gray-100 shadow p-4 rounded-full hover:text-space-700 hover:bg-gray-300"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -803,7 +801,7 @@
                   href="https://discord.gg/gDWyrbR"
                   target="_blank"
                   rel="noreferrer noopener"
-                  class="ml-4 text-indigo-500 bg-gray-100 shadow p-4 rounded-full hover:text-indigo-700 hover:bg-gray-300"
+                  class="ml-4 text-space-500 bg-gray-100 shadow p-4 rounded-full hover:text-space-700 hover:bg-gray-300"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -835,7 +833,7 @@
         >
           <img
             src="./src/assets/brandLogo.png"
-            class="w-10 h-10 text-white bg-indigo-500 rounded-md"
+            class="w-10 h-10 text-white bg-space-500 rounded-md"
             alt="logo"
           />
           <span class="ml-3 text-2xl">Notes</span>
@@ -866,7 +864,7 @@
       </div>
     </footer>
     <div>
-      <script src="./main.js"></script>
+      <script src="./src/scripts/main.js"></script>
     </div>
   </body>
 </html>

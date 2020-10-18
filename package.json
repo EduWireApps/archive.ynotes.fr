@@ -2,22 +2,19 @@
   "name": "ynotes-website",
   "version": "1.0.0",
   "description": "",
-  "main": "main.js",
+  "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prod": "postcss tailwind.css -o dist/src/style/style.min.css -- prod",
+    "dev": "postcss tailwind.css -o dist/src/style/style.min.css -- dev",
+    "serve": "live-server dist"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ModernChocolate/ynotes-website.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ModernChocolate/ynotes-website/issues"
-  },
-  "homepage": "https://github.com/ModernChocolate/ynotes-website#readme",
   "dependencies": {
+    "autoprefixer": "^9.0.0",
+    "live-server": "^1.2.1",
+    "postcss-cli": "^8.1.0",
     "tailwindcss": "^1.9.4"
+  },
+  "devDependencies": {
+    "cssnano": "^4.1.10"
   }
 }
