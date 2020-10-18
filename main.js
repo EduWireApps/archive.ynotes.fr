@@ -2,7 +2,7 @@
   "use strict";
 
   var error = false;
-
+  var listUrl = [];
   window.addEventListener("load", function () {
     document.getElementById("date").innerHTML = new Date().getFullYear();
     loadContributors();
@@ -84,14 +84,34 @@
     username.classList = "text-gray-900 title-font font-medium";
     contribution.classList = "text-gray-500";
     username.innerHTML = name;
-    if (app) {
-      contribution.innerHTML =
-        "A contribué " + contributions + " fois à l'application";
-    } else {
-      contribution.innerHTML =
-        "A contribué " + contributions + " fois au site web";
-    }
 
+    //Check if this user is already on the page
+    if (listUrl.includes(url)) {
+     
+      contribution.innerHTML = "A contribué au site web et à l'application.";
+      //Delete the old one
+      if (document.getElementById("contributors").children.length > 0) {
+        for (var i in document.getElementById("contributors").children) {
+          if (
+            document.getElementById("contributors").children.item(i) != null &&
+            document
+              .getElementById("contributors")
+              .children.item(i)
+              .children.item(0).href === url
+          ) {
+            console.log("delete");
+            document.getElementById("contributors").children.item(i).remove();
+          }
+        }
+      }
+    } else {
+      if (app) {
+        contribution.innerHTML = "A contribué à l'application.";
+      } else {
+        contribution.innerHTML = "A contribué au site web.";
+      }
+      listUrl.push(url);
+    }
     document.getElementById("contributors").appendChild(main);
   }
 })();
