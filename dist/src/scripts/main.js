@@ -3,9 +3,12 @@
 
   var error = false;
   var listUrl = [];
+  var exceptionsUsers = ["ModernChocolate"];
+  var exceptionAdded = false;
   window.addEventListener("load", function () {
     document.getElementById("date").innerHTML = new Date().getFullYear();
     loadContributors();
+
     if (!error) {
       document.getElementById("contributors").innerHTML = "";
     }
@@ -58,7 +61,24 @@
     xhr.send();
   }
 
-  function createUserWidget(name, url, img_url, contributions, app) {
+  function createUserWidget(
+    name,
+    url,
+    img_url,
+    contributions,
+    app,
+    customSentence
+  ) {
+    if (!exceptionAdded) {
+      name = "ModernChocolate (JsonLines)";
+      url = "https://github.com/ModernChocolate";
+      img_url = "https://avatars1.githubusercontent.com/u/45465075?v=4";
+      contributions = 4;
+      app = false;
+      customSentence = "Initiateur du projet.";
+      exceptionAdded = true;
+    }
+
     var main = document.createElement("div"),
       content = document.createElement("a"),
       avatar = document.createElement("img"),
@@ -84,34 +104,38 @@
     username.classList = "text-gray-900 title-font font-medium";
     contribution.classList = "text-gray-500";
     username.innerHTML = name;
-
-    //Check if this user is already on the page
-    if (listUrl.includes(url)) {
-     
-      contribution.innerHTML = "A contribué au site web et à l'application.";
-      //Delete the old one
-      if (document.getElementById("contributors").children.length > 0) {
-        for (var i in document.getElementById("contributors").children) {
-          if (
-            document.getElementById("contributors").children.item(i) != null &&
-            document
-              .getElementById("contributors")
-              .children.item(i)
-              .children.item(0).href === url
-          ) {
-            console.log("delete");
-            document.getElementById("contributors").children.item(i).remove();
+    if (customSentence != null) {
+      contribution.innerHTML = customSentence;
+      document.getElementById("contributors").appendChild(main);
+    } else if (!exceptionsUsers.includes(name)) {
+      //Check if this user is already on the page
+      if (listUrl.includes(url)) {
+        contribution.innerHTML = "A contribué au site web et à l'application.";
+        //Delete the old one
+        if (document.getElementById("contributors").children.length > 0) {
+          for (var i in document.getElementById("contributors").children) {
+            if (
+              document.getElementById("contributors").children.item(i) !=
+                null &&
+              document
+                .getElementById("contributors")
+                .children.item(i)
+                .children.item(0).href === url
+            ) {
+              console.log("delete");
+              document.getElementById("contributors").children.item(i).remove();
+            }
           }
         }
-      }
-    } else {
-      if (app) {
-        contribution.innerHTML = "A contribué à l'application.";
       } else {
-        contribution.innerHTML = "A contribué au site web.";
+        if (app) {
+          contribution.innerHTML = "A contribué à l'application.";
+        } else {
+          contribution.innerHTML = "A contribué au site web.";
+        }
+        listUrl.push(url);
       }
-      listUrl.push(url);
+      document.getElementById("contributors").appendChild(main);
     }
-    document.getElementById("contributors").appendChild(main);
   }
 })();
