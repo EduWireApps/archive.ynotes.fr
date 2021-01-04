@@ -1,19 +1,20 @@
-### Upload */dist* content on the ftp server
+# ynotes-website
 
-### To run the project locally (requires npm installed) 
+## Build Setup
 
 ```bash
-#Install dependencies
-npm install
+# install dependencies
+$ yarn install
 
-#Build css file : all styles includes : for dev purpose ONLY
-npm run dev
+# serve with hot reload at localhost:3000
+$ yarn dev
 
-#Launch live server with hot reload
-npm run serve
+# build for production and launch server
+$ yarn build
+$ yarn start
+
+# generate static project
+$ yarn generate
 ```
 
-### Before pushing
-```bash
-npm run prod
-```
+For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
