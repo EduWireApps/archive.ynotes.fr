@@ -1,11 +1,25 @@
 <template>
   <div
-    class="fixed w-screen h-16 bg-white top-0 left-0 flex items-center shadow"
+    class="fixed w-screen h-16 top-0 left-0 flex items-center transition-colors z-50"
+    :class="transparent ? null : 'bg-white shadow'"
+    :style="transparent ? 'backdrop-filter: blur(6px);' : null"
   >
     <Container class="flex justify-between items-center">
       <nuxt-link to="/" class="flex items-center space-x-3">
-        <img src="~/assets/images/logo.png" class="h-8 w-8 rounded" alt="" />
-        <div class="text-3xl font-semibold text-space-500">yNotes</div>
+        <img
+          :src="
+            require(`~/assets/images/logo${transparent ? 'White' : 'Blue'}.png`)
+          "
+          class="h-8 w-8 rounded"
+          alt="Logo"
+        />
+        <div
+          class="text-3xl font-semibold"
+          :class="transparent ? 'text-white' : 'text-space-500'"
+          :style="transparent ? 'text-shadow: 1px 1px 2px #000' : null"
+        >
+          yNotes
+        </div>
       </nuxt-link>
       <div class="space-x-2 flex items-center">
         <HeaderButton link="#projet">Le projet</HeaderButton>
@@ -34,7 +48,13 @@
 </template>
 
 <script>
-export default {};
+export default {
+  computed: {
+    transparent() {
+      return this.$store.state.header.transparent;
+    }
+  }
+};
 </script>
 
 <style></style>

@@ -1,12 +1,8 @@
 <template>
   <div class="h-screen bg-gray-50 flex flex-col scroll-smooth">
     <Header />
-    <div class="mt-16">
-      <Container>
-        <div class="my-10">
-          <Nuxt />
-        </div>
-      </Container>
+    <div :class="$store.state.header.marginTop ? 'mt-16' : null">
+      <Nuxt />
     </div>
     <Footer />
   </div>
