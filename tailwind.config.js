@@ -1,3 +1,5 @@
+const defaultTheme = require("tailwindcss/defaultTheme");
+
 module.exports = {
   purge: [
     "./components/**/*.{vue,js}",
@@ -27,6 +29,9 @@ module.exports = {
           lighter: "#404040",
           darker: "#1f1e1e"
         }
+      },
+      minHeight: {
+        "24": defaultTheme.spacing[24]
       }
     }
   },

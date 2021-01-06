@@ -1,7 +1,7 @@
 <template>
   <XyzTransition appear duration="auto">
     <section
-      class="flex bg-gradient-to-t from-space-400 to-space-500 h-screen pt-10"
+      class="flex bg-gradient-to-t from-space-400 to-space-500 h-screen pt-16"
     >
       <div class="w-1/2 h-full p-10">
         <img
@@ -17,18 +17,12 @@
             class="text-6xl font-bold mb-8 xyz-nested"
             xyz="fade up delay-3 duration-6"
           >
-            Votre application scolaire connectée
+            {{ content.cta }}
           </h1>
-          <List
-            :texts="[
-              'Gérez vos notes, vos devoirs et même votre emploi du temps',
-              'Contrôlez votre contenu en toute sécurité',
-              'Accédez à vos notes dans une interface élégante'
-            ]"
-          />
+          <List :texts="content.keypoints" />
           <div xyz="fade up stagger ease-in-out delay-20">
             <h2 class="text-3xl font-semibold mb-3 xyz-nested">
-              Téléchargez-la dès maintenant !
+              {{ content.download }}
             </h2>
             <a
               href="https://play.google.com/store/apps/details?id=fr.ynotes"
@@ -61,7 +55,11 @@
 </template>
 
 <script>
-export default {};
+export default {
+  props: {
+    content: Object
+  }
+};
 </script>
 
 <style></style>

@@ -1,0 +1,34 @@
+{
+  "hero": {
+    "cta": "Votre application scolaire connectée",
+    "keypoints": [
+      "Gérez vos notes, vos devoirs et même votre emploi du temps",
+      "Contrôlez votre contenu en toute sécurité",
+      "Accédez à vos notes dans une interface élégante"
+    ],
+    "download": "Téléchargez-la dès maintenant !"
+  },
+  "warning": {
+    "title": "Avertissement",
+    "text": "yNotes est un client open-source <i>non-officiel</i> actuellement compatible avec les services <strong>EcoleDirecte</strong> et <strong>Pronote</strong> qui sont deux produits déposés. Nous sommes en train d'implémenter les différentes fonctionnalités déjà mises à disposition par ces services. Cependant, des modifications peuvent avoir lieu suite à une décision des services officiels."
+  },
+  "features": [
+    {
+      "title": "Toutes les fonctionnalités de base...",
+      "keypoints": [
+        "Vos notes",
+        "Votre messagerie",
+        "Votre agenda",
+        "Vos devoirs"
+      ],
+      "imgPath": "images/phoneScreen.png",
+      "imgLeft": false
+    },
+    {
+      "title": "...et bien plus encore !",
+      "imgPath": "images/phoneScreen.png",
+      "imgLeft": true,
+      "text": "yNotes apporte un grand nombre de fonctionnalités très pratiques !"
+    }
+  ]
+}

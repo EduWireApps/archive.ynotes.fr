@@ -1,21 +1,23 @@
 <template>
   <div>
-    <Hero v-observe-visibility="updateHeaderTransparency" />
-    <Warning />
-    <Features />
-    <div class="h-screen bg-space-500"></div>
+    <Hero
+      v-observe-visibility="updateHeaderTransparency"
+      :content="content.hero"
+    />
+    <Warning :content="content.warning" />
+    <Features :content="content.features" />
   </div>
 </template>
 
 <script>
+import content from "@/assets/content/index.json";
+
 export default {
-  // data() {
-  //   return {
-  //     show: {
-  //       warning: false
-  //     }
-  //   };
-  // },
+  data() {
+    return {
+      content: content
+    };
+  },
   mounted() {
     this.$store.commit("header/setTransparent", { t: true });
     this.$store.commit("header/setMarginTop", { t: false });
