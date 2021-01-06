@@ -29,6 +29,54 @@
       "imgPath": "images/phoneScreen.png",
       "imgLeft": true,
       "text": "yNotes apporte un grand nombre de fonctionnalités très pratiques !"
+    },
+    {
+      "title": "Visualisez des statistiques plus avancées",
+      "keypoints": [
+        "Lorem ipsum",
+        "Lorem ipsum",
+        "Lorem ipsum"
+      ],
+      "imgPath": "images/phoneScreen.png",
+      "imgLeft": false,
+      "textBefore": true,
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut placerat nisl interdum felis tristique rhoncus. Aliquam in lacus laoreet, cursus ante nec, cursus turpis."
+    },
+    {
+      "title": "Un agenda amélioré",
+      "keypoints": [
+        "Lorem ipsum",
+        "Lorem ipsum",
+        "Lorem ipsum"
+      ],
+      "imgPath": "images/phoneScreen.png",
+      "imgLeft": true,
+      "textBefore": true,
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut placerat nisl interdum felis tristique rhoncus. Aliquam in lacus laoreet, cursus ante nec, cursus turpis."
+    },
+    {
+      "title": "Soyez notifiez en (quasi) temps réel",
+      "keypoints": [
+        "Lorem ipsum",
+        "Lorem ipsum",
+        "Lorem ipsum"
+      ],
+      "imgPath": "images/phoneScreen.png",
+      "imgLeft": false,
+      "textBefore": true,
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut placerat nisl interdum felis tristique rhoncus. Aliquam in lacus laoreet, cursus ante nec, cursus turpis."
+    },
+    {
+      "title": "Gestionnaire de fichiers amélioré",
+      "keypoints": [
+        "Lorem ipsum",
+        "Lorem ipsum",
+        "Lorem ipsum"
+      ],
+      "imgPath": "images/phoneScreen.png",
+      "imgLeft": true,
+      "textBefore": true,
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut placerat nisl interdum felis tristique rhoncus. Aliquam in lacus laoreet, cursus ante nec, cursus turpis."
     }
   ]
 }
