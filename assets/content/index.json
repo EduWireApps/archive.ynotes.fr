@@ -31,52 +31,87 @@
       "text": "yNotes apporte un grand nombre de fonctionnalités très pratiques !"
     },
     {
-      "title": "Visualisez des statistiques plus avancées",
+      "title": "SpaceStats : statistiques avancées",
       "keypoints": [
-        "Lorem ipsum",
-        "Lorem ipsum",
-        "Lorem ipsum"
+        "Evolution des notes sur le trimestre",
+        "Impact d'une note sur la moyenne de la matière concernée et la moyenne générale",
+        "Et bien d'autres à venir..."
       ],
       "imgPath": "images/phoneScreen.png",
       "imgLeft": false,
       "textBefore": true,
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut placerat nisl interdum felis tristique rhoncus. Aliquam in lacus laoreet, cursus ante nec, cursus turpis."
+      "text": "Les gestionnaires de vie scolaire proposent bien quelques statistiques... mais c'est loin d'être suffisant. yNotes palie ce manque en vous proposant de superbes stats !",
+      "status": {
+        "variant": "warning",
+        "text": "En cours"
+      }
     },
     {
       "title": "Un agenda amélioré",
       "keypoints": [
-        "Lorem ipsum",
-        "Lorem ipsum",
-        "Lorem ipsum"
+        "Ajoutez un évènement sur le temps scolaire",
+        "Organisez votre temps extrascolaire sans passer par d'autres applications"
       ],
       "imgPath": "images/phoneScreen.png",
       "imgLeft": true,
       "textBefore": true,
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut placerat nisl interdum felis tristique rhoncus. Aliquam in lacus laoreet, cursus ante nec, cursus turpis."
+      "text": "En plus de l'agenda fourni par les services, yNotes rajoute des fonctionnalités très pratique !",
+      "status": {
+        "variant": "warning",
+        "text": "En cours"
+      }
     },
     {
       "title": "Soyez notifiez en (quasi) temps réel",
       "keypoints": [
-        "Lorem ipsum",
-        "Lorem ipsum",
-        "Lorem ipsum"
+        "Notification de nouvelle note",
+        "Notification de nouvel email"
       ],
       "imgPath": "images/phoneScreen.png",
       "imgLeft": false,
       "textBefore": true,
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut placerat nisl interdum felis tristique rhoncus. Aliquam in lacus laoreet, cursus ante nec, cursus turpis."
+      "status": {
+        "variant": "warning",
+        "text": "En cours"
+      },
+      "text": "Vous aimeriez être au courant lorsqu'une nouvelle note est disponible ? C'est désormais possible, et ce n'est pas tout !"
     },
     {
       "title": "Gestionnaire de fichiers amélioré",
       "keypoints": [
-        "Lorem ipsum",
-        "Lorem ipsum",
-        "Lorem ipsum"
+        "Téléchargez votre document une seule fois",
+        "Organisez vos documents dans des dossiers",
+        "Renommez vos fichiers",
+        "Supprimez-les"
       ],
       "imgPath": "images/phoneScreen.png",
       "imgLeft": true,
       "textBefore": true,
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut placerat nisl interdum felis tristique rhoncus. Aliquam in lacus laoreet, cursus ante nec, cursus turpis."
+      "status": {
+        "variant": "warning",
+        "text": "En cours"
+      },
+      "text": "Télécharger des documents, c'est bien. Savoir où ils sont enregistrés et pouvoir les modifier depuis l'application, c'est mieux."
     }
-  ]
+  ],
+  "project": {
+    "title": "Le projet",
+    "items": [
+      {
+        "title": "L'objectif",
+        "content": "Débuté en 2019, yNotes a pour objectif de fournir une alternative puissante aux applications mobiles des gestionnaires de vie scolaire tels qu'EcoleDirecte et Pronote, dont les fonctionnalités sont limitées. Les utilisateurs doivent donc retrouver l'environnement proposé par ces services, mais aussi de nouvelles fonctionnalités pratiques et utiles.",
+        "imgPath": "images/bag.png"
+      },
+      {
+        "title": "Une application moderne et élégante",
+        "content": "yNotes est développé avec le nouveau framework Flutter de Google : plus rapide, plus léger et plus efficace, il permet de réaliser de belles interfaces en Dart.",
+        "imgPath": "images/hashtag.png"
+      },
+      {
+        "title": "Open-source",
+        "content": "En tant que projet open-source, tout le monde (vous peut-être) peut proposer des modifications, mais également constater la façon dont vos données sont respectueusement traitées. Elles ne sont pas collectées mais stockées localement. Le code source est disponible sur Github.",
+        "imgPath": "images/dove.png"
+      }
+    ]
+  }
 }

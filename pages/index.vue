@@ -5,7 +5,15 @@
       :content="content.hero"
     />
     <Warning :content="content.warning" />
-    <Features :content="content.features" />
+    <Project id="projet" :content="content.project"/>
+    <div class="bg-red-500 text-white p-8">comment ça marche</div>
+    <Features id="fonctionnalites" :content="content.features" />
+    <div class="bg-red-500 text-white p-8">Comment nous <i>n'exploitons pas</i> vos données</div>
+    <div class="bg-red-500 text-white p-8">Contributeurs</div>
+    <div class="bg-red-500 text-white p-8">Besoin de monde</div>
+    <div class="bg-red-500 text-white p-8">Link FAQ</div>
+    <div class="bg-red-500 text-white p-8">Link Help center</div>
+    <div class="bg-red-500 text-white p-8">Link contact page</div>
   </div>
 </template>
 

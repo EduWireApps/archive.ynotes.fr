@@ -1,5 +1,5 @@
 <template>
-  <div class="h-screen bg-gray-50 flex flex-col scroll-smooth">
+  <div class="h-screen bg-gray-50 flex flex-col">
     <Header />
     <div :class="$store.state.header.marginTop ? 'mt-16' : null">
       <Nuxt />
@@ -13,7 +13,9 @@ export default {};
 </script>
 
 <style>
-.scroll-smooth {
+html,
+body {
   scroll-behavior: smooth;
+  scroll-margin-top: 4rem;
 }
 </style>

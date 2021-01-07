@@ -1,7 +1,7 @@
 <template>
   <XyzTransition appear duration="auto">
     <section
-      class="flex bg-gradient-to-t from-space-400 to-space-500 h-screen pt-16"
+      class="flex bg-gradient-to-b from-space-500 to-space-400 h-screen pt-16"
     >
       <div class="w-1/2 h-full p-10">
         <img
@@ -20,7 +20,7 @@
             {{ content.cta }}
           </h1>
           <List :texts="content.keypoints" />
-          <div xyz="fade up stagger ease-in-out delay-20">
+          <div xyz="fade up stagger ease-in-out delay-20" class="mb-8">
             <h2 class="text-3xl font-semibold mb-3 xyz-nested">
               {{ content.download }}
             </h2>
@@ -47,6 +47,22 @@
                 <span class="title-font font-medium">Google Play</span>
               </span>
             </a>
+          </div>
+          <div xyz="fade up stagger ease-in-out delay-25">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              class="h-12 w-12 animate-float xyz-nested"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M15 13l-3 3m0 0l-3-3m3 3V8m0 13a9 9 0 110-18 9 9 0 010 18z"
+              />
+            </svg>
           </div>
         </div>
       </div>

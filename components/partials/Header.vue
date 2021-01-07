@@ -22,13 +22,22 @@
         </div>
       </nuxt-link>
       <div class="space-x-2 flex items-center">
-        <HeaderButton link="#projet">Le projet</HeaderButton>
-        <HeaderButton link="#pourquoi-changer">Pourquoi changer ?</HeaderButton>
+        <HeaderButton link="/" v-if="$route.fullPath !== '/'"
+          >Accueil</HeaderButton
+        >
+        <HeaderButton link="#projet" v-if="$route.fullPath === '/'"
+          >Le projet</HeaderButton
+        >
+        <HeaderButton link="#fonctionnalites" v-if="$route.fullPath === '/'"
+          >Fonctionnalités</HeaderButton
+        >
+        <HeaderButton link="/contact">Contact</HeaderButton>
         <HeaderButton link="/centre-d-aide">Centre d'aide</HeaderButton>
         <HeaderButton
           link="https://github.com/ModernChocolate/ynotes"
           :external="true"
           :button="true"
+          class="transition-colors"
           >Github
           <svg
             xmlns="http://www.w3.org/2000/svg"
