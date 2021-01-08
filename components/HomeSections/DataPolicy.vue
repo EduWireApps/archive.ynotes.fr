@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-space-400 py-12 shadow-xl">
+  <section class="bg-space-500 py-12 shadow-xl">
     <Container>
       <IsVisible v-slot="props">
         <template>

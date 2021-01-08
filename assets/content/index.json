@@ -138,5 +138,30 @@
         "content": "Vous accédez à vos données et profitez des fonctionnalités de yNotes !"
       }
     ]
+  },
+  "datapolicy": {
+    "title": "Nous n'exploitons pas vos données",
+    "steps": [
+      {
+        "svg": "folder",
+        "title": "Stockage",
+        "content": "Vos données sont et restent stockées localement sur votre appareil."
+      },
+      {
+        "svg": "cloud-upload",
+        "title": "Collecte",
+        "content": "Les services que nous utilisons ne collectent pas vos données."
+      },
+      {
+        "svg": "currency-dollar",
+        "title": "Vente",
+        "content": "Pas de cookies, de publicités, d'espionnage ou de vente de quoi que ce soit vous concernant. Ce qui est à vous reste à vous."
+      },
+      {
+        "svg": "question-mark-circle",
+        "title": "Toujours pas convaincu ?",
+        "content": "Un doute concernant l'utilisation de vos données ? Rendez-vous sur Github pour consulter le code source."
+      }
+    ]
   }
 }

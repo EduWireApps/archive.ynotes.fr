@@ -6,11 +6,9 @@
     />
     <Warning :content="content.warning" />
     <Project id="projet" :content="content.project" />
-    <HowItWorks :content="content.howitworks"/>
+    <HowItWorks :content="content.howitworks" />
     <Features id="fonctionnalites" :content="content.features" />
-    <div class="bg-red-500 text-white p-8">
-      Comment nous <i>n'exploitons pas</i> vos données
-    </div>
+    <DataPolicy :content="content.datapolicy" />
     <div class="bg-red-500 text-white p-8">Contributeurs</div>
     <div class="bg-red-500 text-white p-8">Besoin de monde</div>
     <div class="bg-red-500 text-white p-8">Link FAQ</div>
