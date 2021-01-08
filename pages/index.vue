@@ -6,7 +6,7 @@
     />
     <Warning :content="content.warning" />
     <Project id="projet" :content="content.project" />
-    <div class="bg-red-500 text-white p-8">comment ça marche</div>
+    <HowItWorks :content="content.howitworks"/>
     <Features id="fonctionnalites" :content="content.features" />
     <div class="bg-red-500 text-white p-8">
       Comment nous <i>n'exploitons pas</i> vos données

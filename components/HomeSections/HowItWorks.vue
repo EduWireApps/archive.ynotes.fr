@@ -1,0 +1,50 @@
+<template>
+  <section class="bg-space-400 py-12 shadow-xl">
+    <Container>
+      <IsVisible v-slot="props">
+        <template>
+          <div>
+            <XyzTransition appear duration="auto">
+              <div xyz="fade delay-4" v-if="props.show">
+                <h2
+                  xyz="fade up delay-3 duration-6"
+                  class="text-5xl font-bold mb-8 text-white text-center xyz-nested"
+                >
+                  {{ content.title }}
+                </h2>
+                <div class="space-y-8 xyz-nested" xyz="fade up-2 delay-4">
+                  <div
+                    v-for="(e, index) in content.items"
+                    :key="index"
+                    class="flex items-center xyz-nested"
+                    :class="index % 2 === 0 ? null : 'flex-row-reverse'"
+                  ></div>
+                </div>
+                <div class="pt-16 text-white max-w-3xl mx-auto" xyz="fade up stagger ease-in-out delay-8">
+                  <HiwStep
+                    v-for="(s, index) in content.steps"
+                    :key="index"
+                    :svg="s.svg"
+                    :title="s.title"
+                    :content="s.content"
+                    :last="index == Object.keys(content.steps).length - 1"
+                  />
+                </div>
+              </div>
+            </XyzTransition>
+          </div>
+        </template>
+      </IsVisible>
+    </Container>
+  </section>
+</template>
+
+<script>
+export default {
+  props: {
+    content: Object
+  }
+};
+</script>
+
+<style></style>

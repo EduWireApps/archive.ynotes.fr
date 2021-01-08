@@ -113,5 +113,30 @@
         "imgPath": "images/dove.png"
       }
     ]
+  },
+  "howitworks": {
+    "title": "Comment ça marche ?",
+    "steps": [
+      {
+        "svg": "login",
+        "title": "Etape 1",
+        "content": "Vous vous connectez avec vos identifiants scolaires (EcoleDirecte ou Pronote) qui sont conservés localement."
+      },
+      {
+        "svg": "cog",
+        "title": "Etape 2",
+        "content": "Nous utilisons les APIs des services pour accéder à vos notes."
+      },
+      {
+        "svg": "cloud-download",
+        "title": "Etape 3",
+        "content": "Nous récupérons vos données scolaires (toujours localement) et vous y accédez librement."
+      },
+      {
+        "svg": "tick",
+        "title": "Prêt !",
+        "content": "Vous accédez à vos données et profitez des fonctionnalités de yNotes !"
+      }
+    ]
   }
 }
