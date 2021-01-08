@@ -12,14 +12,6 @@
                 >
                   {{ content.title }}
                 </h2>
-                <div class="space-y-8 xyz-nested" xyz="fade up-2 delay-4">
-                  <div
-                    v-for="(e, index) in content.items"
-                    :key="index"
-                    class="flex items-center xyz-nested"
-                    :class="index % 2 === 0 ? null : 'flex-row-reverse'"
-                  ></div>
-                </div>
                 <div class="pt-16 text-white max-w-3xl mx-auto" xyz="fade up stagger ease-in-out delay-8">
                   <Step
                     v-for="(s, index) in content.steps"

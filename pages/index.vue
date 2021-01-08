@@ -9,7 +9,7 @@
     <HowItWorks :content="content.howitworks" />
     <Features id="fonctionnalites" :content="content.features" />
     <DataPolicy :content="content.datapolicy" />
-    <div class="bg-red-500 text-white p-8">Contributeurs</div>
+    <!-- <Contributors :content="content.contributors" /> -->
     <div class="bg-red-500 text-white p-8">Besoin de monde</div>
     <div class="bg-red-500 text-white p-8">Link FAQ</div>
     <div class="bg-red-500 text-white p-8">Link Help center</div>

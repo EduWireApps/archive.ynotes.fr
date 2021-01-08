@@ -163,5 +163,15 @@
         "content": "Un doute concernant l'utilisation de vos données ? Rendez-vous sur Github pour consulter le code source."
       }
     ]
+  },
+  "contributors": {
+    "title": "Contributeurs",
+    "content": "Un grand merci à tous les contributeurs de ce projet, à quelque échelle que ce soit.",
+    "fetch": {
+      "excludedUsers": ["ModernChocolate"],
+      "customUsers": [{
+        "login": "ModernChocolate"
+      }]
+    }
   }
 }
