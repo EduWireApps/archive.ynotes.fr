@@ -17,5 +17,6 @@ html,
 body {
   scroll-behavior: smooth;
   scroll-margin-top: 4rem;
+  /* @apply overflow-x-hidden; */
 }
 </style>

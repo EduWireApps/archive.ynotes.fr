@@ -40,12 +40,13 @@
                 </div>
               </div>
             </div>
-            <img
-              :src="require(`~/assets/${imgPath}`)"
-              class="w-96 mx-20 xyz-nested animate-float"
-              xyz="fade delay-4 up-3"
-              :style="`animation-delay:${index * 200}ms`"
-            />
+            <Floating>
+              <img
+                :src="require(`~/assets/${imgPath}`)"
+                class="w-96 mx-20 xyz-nested "
+                xyz="fade delay-4 up-3"
+              />
+            </Floating>
           </div>
         </XyzTransition>
       </div>
