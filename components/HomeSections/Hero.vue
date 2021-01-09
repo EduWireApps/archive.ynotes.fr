@@ -26,11 +26,11 @@
             xyz="fade up stagger ease-in-out delay-20"
             class="flex flex-col justify-center mb-4 lg:mb-8 md:justify-start"
           >
-            <h2
+            <h3
               class="mx-auto mb-3 text-xl font-semibold lg:text-3xl xyz-nested whitespace-nowrap md:ml-0"
             >
               {{ content.download }}
-            </h2>
+            </h3>
             <a
               href="https://play.google.com/store/apps/details?id=fr.ynotes"
               target="_blank"
@@ -54,22 +54,6 @@
                 <span class="font-medium title-font">Google Play</span>
               </span>
             </a>
-          </div>
-          <div xyz="fade up stagger ease-in-out delay-25">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              class="w-12 h-12 mx-auto animate-bounce xyz-nested md:ml-0"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M15 13l-3 3m0 0l-3-3m3 3V8m0 13a9 9 0 110-18 9 9 0 010 18z"
-              />
-            </svg>
           </div>
         </div>
       </div>

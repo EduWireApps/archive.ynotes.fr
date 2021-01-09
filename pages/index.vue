@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="home">
     <Hero
       v-observe-visibility="updateHeaderTransparency"
       :content="content.hero"
@@ -36,4 +36,13 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+.home h2 {
+  @apply relative inline-block z-50 no-underline;
+}
+.home h2::after {
+  content: "";
+  @apply absolute z-0 w-full h-6 left-0 -bottom-3 bg-space-300;
+  z-index: -1;
+}
+</style>

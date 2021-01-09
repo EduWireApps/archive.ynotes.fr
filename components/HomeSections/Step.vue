@@ -90,11 +90,11 @@
       </svg>
     </div>
     <div class="flex-grow pl-4">
-      <h2
+      <h3
         class="mb-1 text-lg font-semibold tracking-wide uppercase md:text-xl lg:text-2xl xyz-nested"
       >
         {{ title }}
-      </h2>
+      </h3>
       <p class="lg:text-xl md:text-lg text-justify">
         {{ content }}
       </p>
