@@ -8,15 +8,12 @@
   </div>
 </template>
 
-<script>
-export default {};
-</script>
+<script></script>
 
 <style>
 html,
 body {
   scroll-behavior: smooth;
   scroll-margin-top: 4rem;
-  /* @apply overflow-x-hidden; */
 }
 </style>

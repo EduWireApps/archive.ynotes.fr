@@ -26,7 +26,7 @@ export default {
   },
   mounted() {
     this.$store.commit("header/settopStyle", { t: true });
-    this.$store.commit("header/setMarginTop", { t: false });
+    this.$store.commit("header/setMarginTop", { m: false });
   },
   methods: {
     updateHeaderTransparency(isVisible, entry) {
