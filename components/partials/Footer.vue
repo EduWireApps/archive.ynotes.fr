@@ -19,20 +19,20 @@
       <span
         class="inline-flex lg:ml-auto md:mt-0 md:ml-2 mt-4 flex-col md:flex-row justify-center lg:justify-start"
       >
-        <a
-          href="./files/legal/PDCYNotes.pdf"
+        <nuxt-link
+          to="/legal/PDCYNotes.pdf"
           target="_blank"
           class="text-gray-500"
         >
           Politique de confidentialité
-        </a>
-        <a
-          href="./files/legal/CGUYNotes.pdf"
+        </nuxt-link>
+        <nuxt-link
+          to="/legal/CGUYNotes.pdf"
           target="_blank"
           class="ml-3 text-gray-500"
         >
           Conditions d'utilisation
-        </a>
+        </nuxt-link>
       </span>
       <span
         class="inline-flex ml-2 md:mt-0 mt-2 justify-center md:justify-start space-x-2"
