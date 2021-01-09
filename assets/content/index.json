@@ -186,20 +186,22 @@
     "content": "Pour mener à bien ce projet, nous avons besoin de vous et de vos compétences !",
     "keypoints": ["Des développeurs", "Des graphistes"]
   },
-  "faq": {
-    "title": "Vous avez des questions ?",
-    "content": "Nous avons les réponses",
-    "link": {
-      "text": "Consulter la FAQ",
-      "link": "/faq"
-    }
-  },
-  "helpcenter": {
-    "title": "Un problème ?",
-    "content": "Pas de panique, nous avons un centre d'aide pour vous faciliter la vie",
-    "link": {
-      "text": "Centre d'aide",
-      "link": "/centre-d-aide"
-    }
+  "contact": {
+    "title": "Question, problème ou autre ?",
+    "content": "Pas de panique ! Nous avons tout ce qu'il vous faut",
+    "links": [
+      {
+        "text": "FAQ",
+        "url": "/faq"
+      },
+      {
+        "text": "Centre d'aide",
+        "url": "/centre-d-aide"
+      },
+      {
+        "text": "Contactez-nous",
+        "url": "/contact"
+      }
+    ]
   }
 }

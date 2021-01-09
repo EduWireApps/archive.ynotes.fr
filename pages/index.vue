@@ -11,9 +11,7 @@
     <DataPolicy :content="content.datapolicy" />
     <Contributors :content="content.contributors" />
     <Recruitement :content="content.recruitement" />
-    <Faq :content="content.faq" />
-    <HelpCenter :content="content.helpcenter" />
-    <div class="bg-red-500 text-white p-8">Link contact page</div>
+    <Contact :content="content.contact" class="pb-48" />
   </div>
 </template>
 

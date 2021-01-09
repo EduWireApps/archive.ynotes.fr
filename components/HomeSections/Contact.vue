@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-space-500 py-12 shadow-xl">
+  <section class="bg-space-500 py-12">
     <Container>
       <IsVisible v-slot="props" once>
         <template>
@@ -18,13 +18,15 @@
                 >
                   {{ content.content }}
                 </p>
-                <div class="flex justify-center">
+                <div class="flex justify-center space-x-4">
                   <nuxt-link
-                    :to="content.link.link"
+                    v-for="(l, i) in content.links"
+                    :key="i"
+                    :to="l.url"
                     xyz="fade up delay-8 duration-6"
                     class="xyz-nested text-center inline-block duration-150 ease-in-out focus:outline-none px-6 py-4 text-xl uppercase font-semibold rounded-full transition-colors bg-white text-space-500 hover:bg-gray-200"
                   >
-                    {{ content.link.text }}
+                    {{ l.text }}
                   </nuxt-link>
                 </div>
               </div>
