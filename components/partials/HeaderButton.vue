@@ -6,10 +6,10 @@
     class="font-semibold transition duration-150 ease-in-out focus:outline-none flex items-center px-2 py-1 rounded-full"
     :class="
       button
-        ? transparent
+        ? topStyle
           ? 'bg-white text-space-500 hover:bg-gray-300'
           : 'bg-gradient-to-r from-space-400 to-space-500 text-white hover:opacity-80'
-        : transparent
+        : topStyle
         ? 'text-white hover:text-gray-300'
         : 'text-gray-700 hover:bg-gray-200 hover:text-gray-900'
     "
@@ -32,8 +32,8 @@ export default {
     }
   },
   computed: {
-    transparent() {
-      return this.$store.state.header.transparent;
+    topStyle() {
+      return this.$store.state.header.topStyle;
     }
   }
 };

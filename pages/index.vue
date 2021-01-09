@@ -25,12 +25,12 @@ export default {
     };
   },
   mounted() {
-    this.$store.commit("header/setTransparent", { t: true });
+    this.$store.commit("header/settopStyle", { t: true });
     this.$store.commit("header/setMarginTop", { t: false });
   },
   methods: {
     updateHeaderTransparency(isVisible, entry) {
-      this.$store.commit("header/setTransparent", { t: isVisible });
+      this.$store.commit("header/settopStyle", { t: isVisible });
     }
   }
 };

@@ -1,11 +1,11 @@
 export const state = () => ({
-  transparent: false,
+  topStyle: false,
   marginTop: true
 });
 
 export const mutations = {
-  setTransparent(state, { t }) {
-    state.transparent = t;
+  settopStyle(state, { t }) {
+    state.topStyle = t;
   },
   setMarginTop(state, { m }) {
     state.marginTop = m;
