@@ -25,7 +25,7 @@
                   <a
                     v-for="(c, index) in contributors"
                     :key="index"
-                    class="bg-white rounded-2xl shadow-xl px-4 py-2 flex"
+                    class="bg-white rounded-2xl shadow-xl p-4 flex items-center"
                     :href="c.user.html_url"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -35,7 +35,7 @@
                       class="h-20 w-20 rounded-full shadow-lg border-2 border-gray-300 border-opacity-20"
                       alt=""
                     />
-                    <div class="px-4 py-2">
+                    <div class="px-4 flex flex-col justify-center">
                       <span class="font-semibold text-lg">{{
                         c.user.login
                       }}</span>
@@ -94,14 +94,14 @@ export default {
   },
   async created() {
     const contributors = [
-      [],
-      []
-      // await this.$axios.$get(
-      //   "https://api.github.com/repos/ModernChocolate/ynotes/contributors"
-      // ),
-      // await this.$axios.$get(
-      //   "https://api.github.com/repos/ModernChocolate/ynotes-website/contributors"
-      // )
+      // [],
+      // []
+      await this.$axios.$get(
+        "https://api.github.com/repos/ModernChocolate/ynotes/contributors"
+      ),
+      await this.$axios.$get(
+        "https://api.github.com/repos/ModernChocolate/ynotes-website/contributors"
+      )
     ];
     this.customUsers.forEach(el => {
       this.addContributor({
@@ -133,19 +133,16 @@ export default {
         });
       }
     });
-    console.log(this.contributors);
     contributors[1].forEach(el => {
       let added = false;
       for (let index = 0; index < this.contributors.length; index++) {
         if (!added) {
-          console.log(this.contributors[index].user + " " + el.login);
-          if (this.contributors[index].user == el.login) {
+          if (this.contributors[index].user.login == el.login) {
             added = true;
           }
         }
       }
       if (!this.excludedUsers.includes(el.login) && !added) {
-        console.log(el.login);
         this.addContributor({
           login: el.login,
           html_url: el.html_url,

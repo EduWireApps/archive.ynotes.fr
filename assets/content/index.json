@@ -177,32 +177,21 @@
           "app": true,
           "website": true,
           "customSentence": "Initiateur du projet"
-        },
-        {
-          "login": "ModernChocolate (JsonLines)",
-          "html_url": "https://github.com/ModernChocolate",
-          "avatar_url": "https://avatars1.githubusercontent.com/u/45465075?v=4",
-          "app": true,
-          "website": true,
-          "customSentence": "Initiateur du projet"
-        },
-        {
-          "login": "ModernChocolate (JsonLines)",
-          "html_url": "https://github.com/ModernChocolate",
-          "avatar_url": "https://avatars1.githubusercontent.com/u/45465075?v=4",
-          "app": true,
-          "website": true,
-          "customSentence": "Initiateur du projet"
-        },
-        {
-          "login": "ModernChocolate (JsonLines)",
-          "html_url": "https://github.com/ModernChocolate",
-          "avatar_url": "https://avatars1.githubusercontent.com/u/45465075?v=4",
-          "app": false,
-          "website": true,
-          "customSentence": ""
         }
       ]
+    }
+  },
+  "recruitement": {
+    "title": "Nous avons besoin de vous !",
+    "content": "Pour mener à bien ce projet, nous avons besoin de vous et de vos compétences !",
+    "keypoints": ["Des développeurs", "Des graphistes"]
+  },
+  "faq": {
+    "title": "Vous avez des questions ?",
+    "content": "Nous avons les réponses",
+    "link": {
+      "text": "Consulter la FAQ",
+      "link": "/faq"
     }
   }
 }

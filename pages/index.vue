@@ -10,8 +10,8 @@
     <Features :content="content.features" />
     <DataPolicy :content="content.datapolicy" />
     <Contributors :content="content.contributors" />
-    <div class="bg-red-500 text-white p-8">Besoin de monde</div>
-    <div class="bg-red-500 text-white p-8">Link FAQ</div>
+    <Recruitement :content="content.recruitement" />
+    <Faq :content="content.faq" />
     <div class="bg-red-500 text-white p-8">Link Help center</div>
     <div class="bg-red-500 text-white p-8">Link contact page</div>
   </div>
