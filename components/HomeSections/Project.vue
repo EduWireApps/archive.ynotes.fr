@@ -1,7 +1,7 @@
 <template>
   <section class="bg-space-400 py-12 shadow-xl">
     <Container>
-      <IsVisible v-slot="props">
+      <IsVisible v-slot="props" once>
         <template>
           <div>
             <XyzTransition appear duration="auto">
@@ -12,7 +12,7 @@
                 >
                   {{ content.title }}
                 </h2>
-                <div class="space-y-8 xyz-nested" xyz="fade up-2 delay-4">
+                <div class="space-y-8" xyz="fade up-2 delay-8 duration-10 stagger">
                   <div
                     v-for="(e, index) in content.items"
                     :key="index"

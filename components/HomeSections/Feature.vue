@@ -1,5 +1,5 @@
 <template>
-  <IsVisible v-slot="props">
+  <IsVisible v-slot="props" once :theresold="0.5">
     <template>
       <div>
         <XyzTransition appear duration="auto">

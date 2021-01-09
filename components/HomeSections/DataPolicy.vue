@@ -1,7 +1,7 @@
 <template>
   <section class="bg-space-500 py-12 shadow-xl">
     <Container>
-      <IsVisible v-slot="props">
+      <IsVisible v-slot="props" once>
         <template>
           <div>
             <XyzTransition appear duration="auto">

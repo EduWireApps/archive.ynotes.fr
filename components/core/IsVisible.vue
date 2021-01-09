@@ -1,10 +1,11 @@
 <template>
   <div
-  class="min-h-24"
+    class="min-h-24"
     v-observe-visibility="{
       callback: checkVisibility,
-      throttle: 0,
-      thereshold: 0
+      throttle: throttle,
+      thereshold: thereshold,
+      rootMargin: rootMargin
     }"
   >
     <slot :show="show" />
@@ -13,6 +14,15 @@
 
 <script>
 export default {
+  props: {
+    once: {
+      type: Boolean,
+      default: false
+    },
+    throttle: { type: Number, default: 0 },
+    thereshold: { type: Number, default: 0 },
+    rootMargin: { type: String, default: "0" }
+  },
   data() {
     return {
       show: false
@@ -20,8 +30,12 @@ export default {
   },
   methods: {
     checkVisibility(isVisible, entry) {
-      if (!isVisible || this.show) return;
-      this.show = true;
+      if (this.once) {
+        if (!isVisible || this.show) return;
+        this.show = true;
+      } else {
+        this.show = true;
+      }
     }
   }
 };

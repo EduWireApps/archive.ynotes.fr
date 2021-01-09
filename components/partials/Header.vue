@@ -23,12 +23,6 @@
       </nuxt-link>
       <div class="space-x-2 flex items-center">
         <HeaderButton link="/">Accueil</HeaderButton>
-        <HeaderButton link="/#projet" v-if="$route.fullPath === '/'"
-          >Le projet</HeaderButton
-        >
-        <HeaderButton link="/#fonctionnalites" v-if="$route.fullPath === '/'"
-          >Fonctionnalités</HeaderButton
-        >
         <HeaderButton link="/contact">Contact</HeaderButton>
         <HeaderButton link="/centre-d-aide">Centre d'aide</HeaderButton>
         <HeaderButton

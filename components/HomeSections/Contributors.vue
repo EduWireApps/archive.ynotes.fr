@@ -1,7 +1,7 @@
 <template>
   <section class="bg-space-500 py-12 shadow-xl">
     <Container>
-      <IsVisible v-slot="props">
+      <IsVisible v-slot="props" once>
         <template>
           <div>
             <XyzTransition appear duration="auto">
@@ -18,11 +18,42 @@
                 >
                   {{ content.content }}
                 </p>
-                <div class="text-white" v-for="(c, i) in contributors" :key="i">
-                  {{ c }}
-                </div>
-                <div class="grid grid-cols-3 gap-2">
-                  <div></div>
+                <div
+                  class="grid grid-cols-3 gap-2 pb-12"
+                  v-if="contributors.length > 0"
+                >
+                  <a
+                    v-for="(c, index) in contributors"
+                    :key="index"
+                    class="bg-white rounded-2xl shadow-xl px-4 py-2 flex"
+                    :href="c.user.html_url"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      :src="c.user.avatar_url"
+                      class="h-20 w-20 rounded-full shadow-lg border-2 border-gray-300 border-opacity-20"
+                      alt=""
+                    />
+                    <div class="px-4 py-2">
+                      <span class="font-semibold text-lg">{{
+                        c.user.login
+                      }}</span>
+                      <p v-if="c.customSentence !== ''">
+                        {{ c.customSentence }}
+                      </p>
+                      <p v-else>
+                        A contribué
+                        {{ c.contributed.app ? "à l'application" : null }}
+                        {{
+                          c.contributed.app && c.contributed.website
+                            ? " et "
+                            : null
+                        }}
+                        {{ c.contributed.website ? "au site internet" : null }}
+                      </p>
+                    </div>
+                  </a>
                 </div>
               </div>
             </XyzTransition>
@@ -45,60 +76,86 @@ export default {
   props: {
     content: Object
   },
+  methods: {
+    addContributor(el) {
+      this.contributors.push({
+        user: {
+          login: el.login,
+          html_url: el.html_url,
+          avatar_url: el.avatar_url
+        },
+        contributed: {
+          app: el.app,
+          website: el.website
+        },
+        customSentence: el.customSentence
+      });
+    }
+  },
   async created() {
     const contributors = [
-      await this.$axios.$get(
-        "https://api.github.com/repos/ModernChocolate/ynotes/contributors"
-      ),
-      await this.$axios.$get(
-        "https://api.github.com/repos/ModernChocolate/ynotes-website/contributors"
-      )
+      [],
+      []
+      // await this.$axios.$get(
+      //   "https://api.github.com/repos/ModernChocolate/ynotes/contributors"
+      // ),
+      // await this.$axios.$get(
+      //   "https://api.github.com/repos/ModernChocolate/ynotes-website/contributors"
+      // )
     ];
+    this.customUsers.forEach(el => {
+      this.addContributor({
+        login: el.login,
+        html_url: el.html_url,
+        avatar_url: el.avatar_url,
+        app: el.app,
+        website: el.website,
+        customSentence: el.customSentence
+      });
+    });
     contributors[0].forEach(el => {
       if (!this.excludedUsers.includes(el.login)) {
-        console.log(contributors[1])
-        console.log(el.login)
-        console.log(Object.keys(contributors[1]).indexOf(el.login));
-        this.contributors.push({
-          user: {
-            login: el.login,
-            html_url: el.html_url,
-            avatar_url: el.avatar_url
-          },
-          contributed: {
-            app: true,
-            website: false
+        let website = false;
+        for (let index = 0; index < contributors[1].length; index++) {
+          if (!website) {
+            if (contributors[1][index].login == el.login) {
+              website = true;
+            }
           }
+        }
+        this.addContributor({
+          login: el.login,
+          html_url: el.html_url,
+          avatar_url: el.avatar_url,
+          app: true,
+          website: website,
+          customSentence: ""
         });
       }
     });
     console.log(this.contributors);
-    // contributors[1].forEach(el => {
-    //   let added = false;
-    //   this.contributors.forEach(el2 => {
-    //     if (!added) {
-    //       console.log(Object.keys(el2.user).indexOf(el.login));
-    //       if (Object.keys(el2.user).indexOf(el.login) > -1) {
-    //         el2.contributed.website = true;
-    //         added = true;
-    //       }
-    //     }
-    //   });
-    //   if (!this.excludedUsers.includes(el.login) && !added) {
-    //     console.log(el.login);
-    //     this.contributors.push({
-    //       user: {
-    //         login: el.login,
-    //         html_url: el.html_url,
-    //         avatar_url: el.avatar_url
-    //       },
-    //       contributed: {
-    //         app: false,
-    //         website: true
-    //       }
-    //     });
-    //   }
-    // });
+    contributors[1].forEach(el => {
+      let added = false;
+      for (let index = 0; index < this.contributors.length; index++) {
+        if (!added) {
+          console.log(this.contributors[index].user + " " + el.login);
+          if (this.contributors[index].user == el.login) {
+            added = true;
+          }
+        }
+      }
+      if (!this.excludedUsers.includes(el.login) && !added) {
+        console.log(el.login);
+        this.addContributor({
+          login: el.login,
+          html_url: el.html_url,
+          avatar_url: el.avatar_url,
+          app: false,
+          website: true,
+          customSentence: ""
+        });
+      }
+    });
   }
 };
 </script>

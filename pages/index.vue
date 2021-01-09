@@ -5,11 +5,11 @@
       :content="content.hero"
     />
     <Warning :content="content.warning" />
-    <Project id="projet" :content="content.project" />
+    <Project :content="content.project" />
     <HowItWorks :content="content.howitworks" />
-    <Features id="fonctionnalites" :content="content.features" />
+    <Features :content="content.features" />
     <DataPolicy :content="content.datapolicy" />
-    <!-- <Contributors :content="content.contributors" /> -->
+    <Contributors :content="content.contributors" />
     <div class="bg-red-500 text-white p-8">Besoin de monde</div>
     <div class="bg-red-500 text-white p-8">Link FAQ</div>
     <div class="bg-red-500 text-white p-8">Link Help center</div>

@@ -169,9 +169,40 @@
     "content": "Un grand merci à tous les contributeurs de ce projet, à quelque échelle que ce soit.",
     "fetch": {
       "excludedUsers": ["ModernChocolate"],
-      "customUsers": [{
-        "login": "ModernChocolate"
-      }]
+      "customUsers": [
+        {
+          "login": "ModernChocolate (JsonLines)",
+          "html_url": "https://github.com/ModernChocolate",
+          "avatar_url": "https://avatars1.githubusercontent.com/u/45465075?v=4",
+          "app": true,
+          "website": true,
+          "customSentence": "Initiateur du projet"
+        },
+        {
+          "login": "ModernChocolate (JsonLines)",
+          "html_url": "https://github.com/ModernChocolate",
+          "avatar_url": "https://avatars1.githubusercontent.com/u/45465075?v=4",
+          "app": true,
+          "website": true,
+          "customSentence": "Initiateur du projet"
+        },
+        {
+          "login": "ModernChocolate (JsonLines)",
+          "html_url": "https://github.com/ModernChocolate",
+          "avatar_url": "https://avatars1.githubusercontent.com/u/45465075?v=4",
+          "app": true,
+          "website": true,
+          "customSentence": "Initiateur du projet"
+        },
+        {
+          "login": "ModernChocolate (JsonLines)",
+          "html_url": "https://github.com/ModernChocolate",
+          "avatar_url": "https://avatars1.githubusercontent.com/u/45465075?v=4",
+          "app": false,
+          "website": true,
+          "customSentence": ""
+        }
+      ]
     }
   }
 }
