@@ -1,18 +1,18 @@
 <template>
   <XyzTransition appear duration="auto">
     <section
-      class="flex flex-col-reverse lg:h-screen pt-16 bg-gradient-to-b from-space-500 to-space-400 md:flex-row"
+      class="flex flex-col-reverse pt-16 lg:h-screen bg-gradient-to-b from-space-500 to-space-400 md:flex-row"
     >
       <div class="w-full h-full p-5 md:w-1/2 md:p-10">
         <img
           xyz="fade left delay-4"
           src="~/assets/images/phoneScreen.png"
-          class="mx-auto lg:h-full xyz-nested"
+          class="mx-auto px-10 lg:px-0 lg:h-full xyz-nested"
           alt=""
         />
       </div>
       <div
-        class="flex items-center justify-center w-full h-full max-w-lg p-5 mx-auto md:w-1/2 md:p-10 md:max-w-none md:my-auto"
+        class="flex items-center justify-center w-full h-full max-w-lg p-5 pt-16 md:pt-0 mx-auto md:w-1/2 md:p-10 md:max-w-none md:my-auto"
       >
         <div class="text-white">
           <h1

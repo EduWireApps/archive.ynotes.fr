@@ -4,23 +4,25 @@
       <div>
         <XyzTransition appear duration="auto">
           <div
-            class="flex"
-            :class="imgLeft ? 'flex-row-reverse' : null"
+            class="flex flex-col mb-8 md:flex-row md:mb-0"
+            :class="imgLeft ? 'md:flex-row-reverse' : null"
             v-if="props.show"
             xyz="fade delay-4"
           >
-            <div class="w-full text-space-700 flex items-center">
-              <div class="text-white">
+            <div
+              class="flex items-center w-full text-space-700 text-center md:text-left"
+            >
+              <div class="text-white mx-auto">
                 <div
-                  v-if="status !== {}"
-                  class="uppercase font-semibold px-3 py-1 rounded-full inline-block mb-2 shadow xyz-nested"
+                  v-if="Object.keys(status).length > 0"
+                  class="inline-block px-3 py-1 mb-2 font-semibold uppercase rounded-full shadow xyz-nested"
                   xyz="fade up delay-8 duration-8"
                   :class="statusClass"
                 >
                   {{ status.text }}
                 </div>
                 <h2
-                  class="text-5xl font-bold mb-8 xyz-nested"
+                  class="mb-8 text-2xl font-bold sm:text-3xl lg:text-5xl xyz-nested"
                   xyz="fade up delay-3 duration-6"
                 >
                   {{ title }}
@@ -29,10 +31,14 @@
                   class="flex"
                   :class="`flex-col${textBefore ? '-reverse' : ''}`"
                 >
-                  <List v-if="els" :texts="els" />
+                  <List
+                    v-if="els"
+                    :texts="els"
+                    class="mx-auto md:ml-0 text-left"
+                  />
                   <p
                     v-if="text"
-                    class="mb-6 text-xl xyz-nested"
+                    class="mb-6 md:text-lg lg:text-xl xyz-nested"
                     xyz="fade up delay-6 duration-6"
                   >
                     {{ text }}
@@ -43,7 +49,7 @@
             <Floating>
               <img
                 :src="require(`~/assets/${imgPath}`)"
-                class="w-96 mx-20 xyz-nested "
+                class="w-1/2 md:w-1/3 my-auto mx-auto lg:mx-20 lg:w-96 xyz-nested "
                 xyz="fade delay-4 up-3"
               />
             </Floating>

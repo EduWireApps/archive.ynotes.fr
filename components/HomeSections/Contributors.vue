@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-space-500 py-12">
+  <section class="py-12 bg-space-500">
     <Container>
       <IsVisible v-slot="props" once>
         <template>
@@ -8,35 +8,35 @@
               <div xyz="fade delay-4" v-if="props.show">
                 <h2
                   xyz="fade up delay-3 duration-6"
-                  class="text-5xl font-bold mb-8 text-white text-center xyz-nested"
+                  class="mb-8 text-2xl font-bold text-center text-white sm:text-3xl lg:text-5xl xyz-nested"
                 >
                   {{ content.title }}
                 </h2>
                 <p
                   xyz="fade up delay-6 duration-6"
-                  class="mb-6 text-xl xyz-nested text-center text-white"
+                  class="mb-6 text-center text-white md:text-lg lg:text-xl xyz-nested"
                 >
                   {{ content.content }}
                 </p>
                 <div
-                  class="grid grid-cols-3 gap-2 pb-12"
+                  class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 pb-12"
                   v-if="contributors.length > 0"
                 >
                   <a
                     v-for="(c, index) in contributors"
                     :key="index"
-                    class="bg-white rounded-2xl shadow-xl p-4 flex items-center"
+                    class="flex items-center p-4 bg-white shadow-xl rounded-2xl"
                     :href="c.user.html_url"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     <img
                       :src="c.user.avatar_url"
-                      class="h-20 w-20 rounded-full shadow-lg border-2 border-gray-300 border-opacity-20"
+                      class="w-20 h-20 border-2 border-gray-300 rounded-full shadow-lg border-opacity-20"
                       alt=""
                     />
-                    <div class="px-4 flex flex-col justify-center">
-                      <span class="font-semibold text-lg">{{
+                    <div class="flex flex-col justify-center px-4 overflow-hidden">
+                      <span class="text-lg font-semibold">{{
                         c.user.login
                       }}</span>
                       <p v-if="c.customSentence !== ''">

@@ -1,14 +1,14 @@
 <template>
-  <div class="flex relative pb-12 xyz-nested">
+  <div class="relative flex pb-12 xyz-nested">
     <div
       v-if="!last"
-      class="h-full w-10 absolute inset-0 flex items-center justify-center xyz-nested"
+      class="absolute inset-0 flex items-center justify-center w-10 h-full xyz-nested"
       xyz="delay-15 fade"
     >
-      <div class="h-full w-1 bg-space-200 pointer-events-none"></div>
+      <div class="w-1 h-full pointer-events-none bg-space-200"></div>
     </div>
     <div
-      class="flex-shrink-0 w-10 h-10 rounded-full bg-white inline-flex items-center justify-center text-space-500 relative z-10 shadow"
+      class="relative z-10 inline-flex items-center justify-center flex-shrink-0 w-10 h-10 bg-white rounded-full shadow text-space-500"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -91,11 +91,11 @@
     </div>
     <div class="flex-grow pl-4">
       <h2
-        class="text-2xl font-semibold mb-1 uppercase tracking-wide xyz-nested"
+        class="mb-1 text-lg font-semibold tracking-wide uppercase md:text-xl lg:text-2xl xyz-nested"
       >
         {{ title }}
       </h2>
-      <p class="text-xl">
+      <p class="lg:text-xl md:text-lg text-justify">
         {{ content }}
       </p>
     </div>

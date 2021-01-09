@@ -1,6 +1,6 @@
 <template>
   <footer class="text-gray-600 body-font">
-    <Container class="py-8 flex items-center sm:flex-row flex-col">
+    <Container class="py-8 flex items-center md:flex-row flex-col">
       <nuxt-link to="/" class="flex items-center space-x-2">
         <img
           src="~/assets/images/logoBlue.png"
@@ -12,12 +12,12 @@
         </div>
       </nuxt-link>
       <p
-        class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4"
+        class="text-sm text-gray-500 md:ml-4 md:pl-4 md:border-l-2 md:border-gray-200 md:py-2 md:mt-0 mt-4"
       >
         © {{ new Date().getFullYear() }} yNotes
       </p>
       <span
-        class="inline-flex md:ml-auto md:mt-0 mt-4 justify-center md:justify-start"
+        class="inline-flex lg:ml-auto md:mt-0 md:ml-2 mt-4 flex-col md:flex-row justify-center lg:justify-start"
       >
         <a
           href="./files/legal/PDCYNotes.pdf"
@@ -35,7 +35,7 @@
         </a>
       </span>
       <span
-        class="inline-flex ml-2 sm:mt-0 mt-2 justify-center sm:justify-start space-x-2"
+        class="inline-flex ml-2 md:mt-0 mt-2 justify-center md:justify-start space-x-2"
       >
         <a
           :href="`mailto:${content.email}`"

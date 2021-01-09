@@ -1,6 +1,6 @@
 <template>
   <section class="bg-gradient-to-b from-space-400 to-space-500">
-    <Container class="py-20">
+    <Container class="py-12 lg:py-20">
       <Feature
         v-for="(f, index) in content"
         :key="index"

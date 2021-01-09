@@ -1,25 +1,25 @@
 <template>
-  <section class="bg-space-400 py-12">
+  <section class="py-12 bg-space-400">
     <Container>
       <IsVisible v-slot="props" once>
         <template>
           <div>
             <XyzTransition appear duration="auto">
               <div
-                class="rounded-xl bg-red-100 py-4 px-8"
+                class="px-4 py-4 bg-red-100 rounded-xl lg:px-8"
                 role="alert"
                 v-if="props.show"
                 xyz="fade"
               >
                 <h3
-                  class="font-bold text-2xl text-red-600 flex items-center mb-2"
+                  class="flex items-center mb-2 text-xl font-bold text-red-600 lg:text-2xl"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
-                    class="h-8 w-8 mr-2"
+                    class="w-8 h-8 mr-2"
                   >
                     <path
                       stroke-linecap="round"
@@ -29,7 +29,7 @@
                     /></svg
                   >{{ content.title }}
                 </h3>
-                <p class="text-justify text-red-500 font-medium text-lg" v-html="content.text">
+                <p class="font-medium text-justify text-red-500 lg:text-lg" v-html="content.text">
                 </p>
               </div>
             </XyzTransition>

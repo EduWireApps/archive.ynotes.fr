@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-space-500 py-12">
+  <section class="py-12 bg-space-500">
     <Container>
       <IsVisible v-slot="props" once>
         <template>
@@ -8,17 +8,17 @@
               <div xyz="fade delay-4" v-if="props.show">
                 <h2
                   xyz="fade up delay-3 duration-6"
-                  class="text-5xl font-bold mb-8 text-white text-center xyz-nested"
+                  class="mb-8 text-2xl font-bold text-center text-white sm:text-3xl lg:text-5xl xyz-nested"
                 >
                   {{ content.title }}
                 </h2>
                 <p
                   xyz="fade up delay-6 duration-6"
-                  class="mb-10 text-xl xyz-nested text-center text-white"
+                  class="mb-10 text-center text-white md:text-lg lg:text-xl xyz-nested"
                 >
                   {{ content.content }}
                 </p>
-                <div class="text-white flex justify-center">
+                <div class="flex justify-center text-white">
                   <div class="inline-block">
                     <List :texts="content.keypoints" />
                   </div>

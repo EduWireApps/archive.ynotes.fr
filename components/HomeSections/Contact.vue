@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-space-500 py-12">
+  <section class="py-12 bg-space-500">
     <Container>
       <IsVisible v-slot="props" once>
         <template>
@@ -8,23 +8,23 @@
               <div xyz="fade delay-4" v-if="props.show">
                 <h2
                   xyz="fade up delay-3 duration-6"
-                  class="text-5xl font-bold mb-8 text-white text-center xyz-nested"
+                  class="mb-8 text-2xl font-bold text-center text-white sm:text-3xl lg:text-5xl xyz-nested"
                 >
                   {{ content.title }}
                 </h2>
                 <p
                   xyz="fade up delay-6 duration-6"
-                  class="mb-12 text-xl xyz-nested text-center text-white"
+                  class="mb-12 text-center text-white md:text-lg lg:text-xl xyz-nested"
                 >
                   {{ content.content }}
                 </p>
-                <div class="flex justify-center space-x-4">
+                <div class="flex flex-col justify-center space-y-4 md:flex-row md:space-y-0 md:space-x-4">
                   <nuxt-link
                     v-for="(l, i) in content.links"
                     :key="i"
                     :to="l.url"
                     xyz="fade up delay-8 duration-6"
-                    class="xyz-nested text-center inline-block duration-150 ease-in-out focus:outline-none px-6 py-4 text-xl uppercase font-semibold rounded-full transition-colors bg-white text-space-500 hover:bg-gray-200"
+                    class="inline-block px-6 py-4 text-xl font-semibold text-center uppercase transition-colors duration-150 ease-in-out bg-white rounded-full xyz-nested focus:outline-none text-space-500 hover:bg-gray-200"
                   >
                     {{ l.text }}
                   </nuxt-link>
