@@ -1,34 +1,41 @@
 <template>
   <XyzTransition appear duration="auto">
     <section
-      class="flex bg-gradient-to-b from-space-500 to-space-400 h-screen pt-16"
+      class="flex flex-col-reverse lg:h-screen pt-16 bg-gradient-to-b from-space-500 to-space-400 md:flex-row"
     >
-      <div class="w-1/2 h-full p-10">
+      <div class="w-full h-full p-5 md:w-1/2 md:p-10">
         <img
           xyz="fade left delay-4"
           src="~/assets/images/phoneScreen.png"
-          class="h-full mx-auto xyz-nested"
+          class="mx-auto lg:h-full xyz-nested"
           alt=""
         />
       </div>
-      <div class="w-1/2 p-10 h-full flex items-center">
+      <div
+        class="flex items-center justify-center w-full h-full max-w-lg p-5 mx-auto md:w-1/2 md:p-10 md:max-w-none md:my-auto"
+      >
         <div class="text-white">
           <h1
-            class="text-6xl font-bold mb-8 xyz-nested"
+            class="mb-4 text-3xl font-bold text-center sm:text-4xl lg:text-6xl md:mb-8 xyz-nested md:text-left"
             xyz="fade up delay-3 duration-6"
           >
             {{ content.cta }}
           </h1>
           <List :texts="content.keypoints" />
-          <div xyz="fade up stagger ease-in-out delay-20" class="mb-8">
-            <h2 class="text-3xl font-semibold mb-3 xyz-nested">
+          <div
+            xyz="fade up stagger ease-in-out delay-20"
+            class="flex flex-col justify-center mb-4 lg:mb-8 md:justify-start"
+          >
+            <h2
+              class="mx-auto mb-3 text-xl font-semibold lg:text-3xl xyz-nested whitespace-nowrap md:ml-0"
+            >
               {{ content.download }}
             </h2>
             <a
               href="https://play.google.com/store/apps/details?id=fr.ynotes"
               target="_blank"
               rel="noopener noreferrer"
-              class="shadow inline-flex py-3 px-5 rounded-lg items-center focus:outline-none bg-white text-space-500 hover:bg-gray-300 hover:text-space-700 transition duration-200 ease-out xyz-nested"
+              class="inline-flex items-center px-5 py-3 mx-auto transition duration-200 ease-out bg-white rounded-lg shadow md:ml-0 focus:outline-none text-space-500 hover:bg-gray-300 hover:text-space-700 xyz-nested"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -41,10 +48,10 @@
                 ></path>
               </svg>
               <span
-                class="ml-4 flex items-start flex-col leading-none whitespace-nowrap"
+                class="flex flex-col items-start ml-4 leading-none whitespace-nowrap"
               >
-                <span class="text-xs mb-1">Disponible sur</span>
-                <span class="title-font font-medium">Google Play</span>
+                <span class="mb-1 text-xs">Disponible sur</span>
+                <span class="font-medium title-font">Google Play</span>
               </span>
             </a>
           </div>
@@ -53,7 +60,7 @@
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
-              class="h-12 w-12 animate-bounce xyz-nested"
+              class="w-12 h-12 mx-auto animate-bounce xyz-nested md:ml-0"
               stroke="currentColor"
             >
               <path
