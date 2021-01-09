@@ -12,7 +12,7 @@
     <Contributors :content="content.contributors" />
     <Recruitement :content="content.recruitement" />
     <Faq :content="content.faq" />
-    <div class="bg-red-500 text-white p-8">Link Help center</div>
+    <HelpCenter :content="content.helpcenter" />
     <div class="bg-red-500 text-white p-8">Link contact page</div>
   </div>
 </template>

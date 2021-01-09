@@ -193,5 +193,13 @@
       "text": "Consulter la FAQ",
       "link": "/faq"
     }
+  },
+  "helpcenter": {
+    "title": "Un problème ?",
+    "content": "Pas de panique, nous avons un centre d'aide pour vous faciliter la vie",
+    "link": {
+      "text": "Centre d'aide",
+      "link": "/centre-d-aide"
+    }
   }
 }
