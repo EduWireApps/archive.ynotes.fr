@@ -59,7 +59,9 @@
         <div class="items-center hidden space-x-2 sm:flex">
           <HeaderButton link="/">Accueil</HeaderButton>
           <HeaderButton link="/faq">FAQ</HeaderButton>
-          <HeaderButton link="/centre-d-aide">Centre d'aide</HeaderButton>
+          <HeaderButton link="https://support.ynotes.fr" external
+            >Centre d'aide</HeaderButton
+          >
           <HeaderButton link="/contact">Contact</HeaderButton>
           <HeaderButton
             link="https://github.com/ModernChocolate/ynotes"
@@ -98,7 +100,9 @@
         <div class="px-2 pt-2 pb-3 space-y-1">
           <HeaderButton link="/">Accueil</HeaderButton>
           <HeaderButton link="/faq">FAQ</HeaderButton>
-          <HeaderButton link="/centre-d-aide">Centre d'aide</HeaderButton>
+          <HeaderButton link="https://support.ynotes.fr" external
+            >Centre d'aide</HeaderButton
+          >
           <HeaderButton link="/contact">Contact</HeaderButton>
           <HeaderButton
             link="https://github.com/ModernChocolate/ynotes"

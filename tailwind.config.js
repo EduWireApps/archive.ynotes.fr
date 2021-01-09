@@ -22,12 +22,6 @@ module.exports = {
           700: "#181B3D",
           800: "#11132B",
           900: "#0A0B19"
-        },
-        dark: "#1f1e1e",
-        dark: {
-          default: "#2c2c2c",
-          lighter: "#404040",
-          darker: "#1f1e1e"
         }
       },
       minHeight: {
@@ -38,5 +32,7 @@ module.exports = {
   variants: {
     extend: {}
   },
-  plugins: []
+  plugins: [
+    require('@tailwindcss/typography'),
+  ]
 };

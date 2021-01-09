@@ -1,3 +1,25 @@
 {
-    "title": "FAQ"
+  "title": "FAQ",
+  "categories": [
+    {
+      "id": 0,
+      "name": "Commencer"
+    },
+    {
+      "id": 1,
+      "name": "Fonctionnement"
+    },
+    {
+      "id": 2,
+      "name": "Pronote"
+    },
+    {
+      "id": 3,
+      "name": "Ecole Directe"
+    },
+    {
+      "id": 4,
+      "name": "Questions fréquentes"
+    }
+  ]
 }
