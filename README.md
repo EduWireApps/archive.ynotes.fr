@@ -30,7 +30,7 @@ Check out https://nuxtjs.org/docs/2.x/directory-structure/assets#webpack-assets.
 
 #### `/assets/content`
 
-Contains all the displayed texts on the website, you don't have to browse any other files (excepted for the Q&A).
+Contains all the displayed texts on the website, you don't have to browse any other files except for the Q&A, located in `/content/faq.md`. See [section](#content)
 
 ### `/components`
 
@@ -38,9 +38,7 @@ Contains all the components used in the site.
 
 ### `/content`
 
-Contains all the Q&A questions and answers available at `https://ynotes.fr/faq`. The name looks like `0-0.md`, following this structure : `{category_id}-{question_number}.md`. The `category_id` is also referenced in the yaml header of the md file.
-
-Categories can be customized in `/assets/content/faq.json`.
+`faq.md` contains all the Q&A questions and answers available at `https://ynotes.fr/faq`.
 
 ### `/layouts`
 
