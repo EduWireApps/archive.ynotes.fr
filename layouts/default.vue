@@ -1,7 +1,7 @@
 <template>
   <div class="min-h-screen bg-gray-50 flex flex-col">
     <Header />
-    <div :class="$store.state.header.marginTop ? 'mt-16' : null">
+    <div class="mt-16">
       <Nuxt />
     </div>
     <Footer />

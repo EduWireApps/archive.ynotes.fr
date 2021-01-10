@@ -79,10 +79,6 @@ export default {
     return {
       content: content
     };
-  },
-  mounted() {
-    this.$store.commit("header/settopStyle", { t: false });
-    this.$store.commit("header/setMarginTop", { m: true });
   }
 };
 </script>

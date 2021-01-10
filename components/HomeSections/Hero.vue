@@ -1,7 +1,7 @@
 <template>
   <XyzTransition appear duration="auto">
     <section
-      class="flex flex-col-reverse pt-16 lg:h-screen bg-gradient-to-b from-space-500 to-space-400 md:flex-row"
+      class="flex flex-col-reverse p-0 md:pb-10 lg:h-screen bg-gradient-to-b from-space-500 to-space-400 md:flex-row"
     >
       <div class="w-full h-full p-5 md:w-1/2 md:p-10">
         <img

@@ -19,10 +19,6 @@ export default {
       content: content
     };
   },
-  mounted() {
-    this.$store.commit("header/settopStyle", { t: false });
-    this.$store.commit("header/setMarginTop", { m: true });
-  },
   async asyncData({ $content, params }) {
     const questions = await $content().fetch();
     console.log(questions);

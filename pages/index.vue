@@ -1,9 +1,6 @@
 <template>
   <div class="home">
-    <Hero
-      v-observe-visibility="updateHeaderTransparency"
-      :content="content.hero"
-    />
+    <Hero :content="content.hero" />
     <Warning :content="content.warning" />
     <Project :content="content.project" />
     <HowItWorks :content="content.howitworks" />
@@ -23,15 +20,6 @@ export default {
     return {
       content: content
     };
-  },
-  mounted() {
-    this.$store.commit("header/settopStyle", { t: true });
-    this.$store.commit("header/setMarginTop", { m: false });
-  },
-  methods: {
-    updateHeaderTransparency(isVisible, entry) {
-      this.$store.commit("header/settopStyle", { t: isVisible });
-    }
   }
 };
 </script>

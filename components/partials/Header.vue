@@ -1,36 +1,23 @@
 <template>
   <header>
     <div
-      class="fixed top-0 left-0 z-50 flex items-center w-screen h-16 transition-colors sm:shadow-2xl"
-      :class="[
-        topStyle ? 'bg-space-500' : 'bg-white',
-        open ? null : 'shadow-2xl'
-      ]"
+      class="fixed top-0 left-0 z-50 flex items-center w-screen h-16 transition-colors sm:shadow-2xl bg-white"
+      :class="open ? null : 'shadow-2xl'"
     >
       <Container class="flex items-center justify-between">
         <nuxt-link to="/" class="flex items-center space-x-3">
           <img
-            :src="
-              require(`~/assets/images/logo${topStyle ? 'White' : 'Blue'}.png`)
-            "
+            src="~/assets/images/logoBlue.png"
             class="w-8 h-8 rounded"
             alt="Logo"
           />
-          <div
-            class="text-3xl font-semibold"
-            :class="topStyle ? 'text-white' : 'text-space-500'"
-          >
+          <div class="text-3xl font-semibold text-space-500">
             yNotes
           </div>
         </nuxt-link>
         <button
           @click="open = !open"
-          class="inline-flex items-center justify-center p-2 transition-colors rounded-full sm:hidden hover:bg-opacity-25 focus:outline-none"
-          :class="
-            topStyle
-              ? 'text-white hover:bg-white'
-              : 'text-space-500 hover:bg-space-200'
-          "
+          class="inline-flex items-center justify-center p-2 transition-colors rounded-full sm:hidden hover:bg-opacity-25 focus:outline-none text-space-500 hover:bg-space-200"
         >
           <span class="sr-only">Open main menu</span>
           <svg
@@ -93,8 +80,7 @@
       leave-to-class="transform scale-95 opacity-0"
     >
       <div
-        class="fixed left-0 w-full shadow-2xl sm:hidden top-16 z-40"
-        :class="topStyle ? 'bg-space-500' : 'bg-white'"
+        class="fixed left-0 w-full shadow-2xl sm:hidden top-16 z-40 bg-white"
         v-show="open"
       >
         <div class="px-2 pt-2 pb-3 space-y-1">
@@ -134,11 +120,6 @@ export default {
     return {
       open: false
     };
-  },
-  computed: {
-    topStyle() {
-      return this.$store.state.header.topStyle;
-    }
   }
 };
 </script>
