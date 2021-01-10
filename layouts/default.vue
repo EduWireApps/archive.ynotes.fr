@@ -4,6 +4,7 @@
     <div class="mt-16">
       <Nuxt />
     </div>
+    <ScrollTop />
     <Footer />
   </div>
 </template>
