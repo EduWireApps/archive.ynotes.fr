@@ -46,13 +46,11 @@
                 </div>
               </div>
             </div>
-            <Floating>
-              <img
-                :src="require(`~/assets/${imgPath}`)"
-                class="w-1/2 md:w-1/3 my-auto mx-auto lg:mx-20 lg:w-96 xyz-nested "
-                xyz="fade delay-4 up-3"
-              />
-            </Floating>
+            <img
+              :src="require(`~/assets/${imgPath}`)"
+              class="w-1/2 md:w-1/3 my-auto mx-auto lg:mx-20 lg:w-96 xyz-nested "
+              xyz="fade delay-4 up-3"
+            />
           </div>
         </XyzTransition>
       </div>
