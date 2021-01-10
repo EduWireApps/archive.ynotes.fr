@@ -9,7 +9,7 @@
                 class="px-4 py-4 bg-red-100 rounded-xl lg:px-8"
                 role="alert"
                 xyz="fade"
-                :class="props.show ? 'xyz-appear' : null"
+                :class="props.show ? 'xyz-in' : 'xyz-out'"
               >
                 <h3
                   class="flex items-center mb-2 text-xl font-bold text-red-600 lg:text-2xl"

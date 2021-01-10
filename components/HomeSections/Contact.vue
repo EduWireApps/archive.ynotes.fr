@@ -5,7 +5,7 @@
         <template>
           <div>
             <XyzTransition duration="auto">
-              <div xyz="fade delay-4" :class="props.show ? 'xyz-appear' : null">
+              <div xyz="fade delay-4" :class="props.show ? 'xyz-in' : 'xyz-out'">
                 <h2
                   xyz="fade up delay-3 duration-6"
                   class="mb-8 text-2xl font-bold text-center text-white sm:text-3xl lg:text-5xl xyz-nested"

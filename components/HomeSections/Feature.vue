@@ -5,7 +5,7 @@
         <XyzTransition duration="auto">
           <div
             class="flex flex-col mb-8 md:flex-row md:mb-0"
-            :class="[imgLeft ? 'md:flex-row-reverse' : null, props.show ? 'xyz-appear' : null]"
+            :class="[imgLeft ? 'md:flex-row-reverse' : null, props.show ? 'xyz-in' : 'xyz-out']"
             xyz="fade delay-4"
           >
             <div

@@ -1,5 +1,5 @@
 <template>
-  <XyzTransition duration="auto">
+  <XyzTransition appear duration="auto">
     <section
       class="flex flex-col-reverse p-0 md:pb-10 lg:h-screen bg-gradient-to-b from-space-500 to-space-400 md:flex-row"
     >
