@@ -1,6 +1,5 @@
 <template>
   <div
-    class="min-h-24"
     v-observe-visibility="{
       callback: checkVisibility,
       throttle: throttle,

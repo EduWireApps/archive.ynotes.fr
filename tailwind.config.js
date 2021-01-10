@@ -23,9 +23,6 @@ module.exports = {
           800: "#11132B",
           900: "#0A0B19"
         }
-      },
-      minHeight: {
-        "24": defaultTheme.spacing[24]
       }
     }
   },

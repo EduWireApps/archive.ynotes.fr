@@ -4,12 +4,12 @@
       <IsVisible v-slot="props" once>
         <template>
           <div>
-            <XyzTransition appear duration="auto">
+            <XyzTransition duration="auto">
               <div
                 class="px-4 py-4 bg-red-100 rounded-xl lg:px-8"
                 role="alert"
-                v-if="props.show"
                 xyz="fade"
+                :class="props.show ? 'xyz-appear' : null"
               >
                 <h3
                   class="flex items-center mb-2 text-xl font-bold text-red-600 lg:text-2xl"

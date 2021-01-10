@@ -2,11 +2,10 @@
   <IsVisible v-slot="props" once :theresold="0.5">
     <template>
       <div>
-        <XyzTransition appear duration="auto">
+        <XyzTransition duration="auto">
           <div
             class="flex flex-col mb-8 md:flex-row md:mb-0"
-            :class="imgLeft ? 'md:flex-row-reverse' : null"
-            v-if="props.show"
+            :class="[imgLeft ? 'md:flex-row-reverse' : null, props.show ? 'xyz-appear' : null]"
             xyz="fade delay-4"
           >
             <div
