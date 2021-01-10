@@ -5,7 +5,7 @@
       :class="open ? null : 'shadow-2xl'"
     >
       <Container class="flex items-center justify-between">
-        <nuxt-link to="/" class="flex items-center space-x-3">
+        <nuxt-link to="/" class="flex items-center space-x-3 focus:outline-none">
           <img
             src="~/assets/images/logoBlue.png"
             class="w-8 h-8 rounded"
