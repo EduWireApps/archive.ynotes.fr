@@ -5,7 +5,9 @@
     >
       {{ content.title }}
     </h1>
-    <div class="mx-auto prose text-justify sm:max-w-3xl md:prose-lg md:max-w-4xl lg:prose-xl lg:max-w-6xl">
+    <div
+      class="mx-auto prose text-justify sm:max-w-3xl md:prose-lg md:max-w-4xl lg:prose-xl lg:max-w-6xl"
+    >
       <div v-for="(c, index) in content.categories" :key="index">
         <h2>{{ c.name }}</h2>
         <div v-for="(q, i) in questions" :key="i">
@@ -22,6 +24,19 @@
 <script>
 import content from "@/assets/content/faq.json";
 export default {
+  head() {
+    return {
+      title: "FAQ",
+      meta: [
+        {
+          name: "description",
+          content:
+            "Des questions concernant yNotes ? Nous avons les réponses !",
+          hid: "description"
+        }
+      ]
+    };
+  },
   data() {
     return {
       content: content

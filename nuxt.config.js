@@ -7,11 +7,20 @@ export default {
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    title: "yNotes : votre application scolaire connectée",
+    titleTemplate: "yNotes | %s",
+    title: "Votre application scolaire connectée",
+    htmlAttrs: {
+      lang: "fr"
+    },
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { hid: "description", name: "description", content: "" }
+      {
+        hid: "description",
+        name: "description",
+        content:
+          "Gérez vos notes, vos devoirs et même votre emploi du temps ; Contrôlez votre contenu en toute sécurité ; Accédez à vos notes dans une interface élégante"
+      }
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
   },

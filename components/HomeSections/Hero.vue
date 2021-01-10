@@ -26,11 +26,11 @@
             xyz="fade up stagger ease-in-out delay-20"
             class="flex flex-col justify-center mb-4 lg:mb-8 md:justify-start"
           >
-            <h3
+            <h2
               class="mx-auto mb-3 text-xl font-semibold lg:text-3xl xyz-nested whitespace-nowrap md:ml-0"
             >
               {{ content.download }}
-            </h3>
+            </h2>
             <a
               href="https://play.google.com/store/apps/details?id=fr.ynotes"
               target="_blank"

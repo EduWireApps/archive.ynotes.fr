@@ -1,10 +1,10 @@
 <template>
-  <footer class="text-gray-600 mt-auto border-t">
-    <Container class="py-8 flex items-center md:flex-row flex-col">
+  <footer class="mt-auto text-gray-600 border-t">
+    <Container class="flex flex-col items-center py-8 md:flex-row">
       <nuxt-link to="/" class="flex items-center space-x-2">
         <img
           src="~/assets/images/logoBlue.png"
-          class="h-6 w-6 rounded"
+          class="w-6 h-6 rounded"
           alt="Logo"
         />
         <div class="text-2xl font-semibold text-space-500">
@@ -12,12 +12,12 @@
         </div>
       </nuxt-link>
       <p
-        class="text-sm text-gray-500 md:ml-4 md:pl-4 md:border-l-2 md:border-gray-200 md:py-2 md:mt-0 mt-4"
+        class="mt-4 text-sm text-gray-500 md:ml-4 md:pl-4 md:border-l-2 md:border-gray-200 md:py-2 md:mt-0"
       >
         © {{ new Date().getFullYear() }} yNotes
       </p>
       <span
-        class="inline-flex lg:ml-auto md:mt-0 md:ml-2 mt-4 flex-col md:flex-row justify-center lg:justify-start"
+        class="inline-flex flex-col justify-center mt-4 lg:ml-auto md:mt-0 md:ml-2 md:flex-row lg:justify-start"
       >
         <nuxt-link
           to="/legal/PDCYNotes.pdf"
@@ -35,17 +35,18 @@
         </nuxt-link>
       </span>
       <span
-        class="inline-flex ml-2 md:mt-0 mt-2 justify-center md:justify-start space-x-2"
+        class="inline-flex justify-center mt-2 ml-2 space-x-2 md:mt-0 md:justify-start"
       >
         <a
           :href="`mailto:${content.email}`"
           class="text-gray-500 transition-colors hover:text-space-500"
+          aria-label="Nous écrire un mail"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
-            class="h-5 w-5"
+            class="w-5 h-5"
             stroke="currentColor"
           >
             <path
@@ -60,6 +61,7 @@
           :href="content.discord"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="Rejoindre le serveur Discord"
           class="text-gray-500 transition-colors hover:text-space-500"
         >
           <svg

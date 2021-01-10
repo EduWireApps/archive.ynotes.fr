@@ -1,5 +1,5 @@
 <template>
-  <h3
+  <div
     class="lg:text-xl font-medium mb-6 lg:mb-12 flex flex-col space-y-3"
     xyz="fade up stagger ease-in-out delay-8"
   >
@@ -24,7 +24,7 @@
       </svg>
       <p class="ml-5 lg:ml-6 pl-2">{{ t }}</p>
     </div>
-  </h3>
+  </div>
 </template>
 
 <script>
