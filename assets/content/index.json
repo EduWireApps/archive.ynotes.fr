@@ -168,7 +168,12 @@
     "title": "Contributeurs",
     "content": "Un grand merci à tous les contributeurs de ce projet, à quelque échelle que ce soit.",
     "fetch": {
-      "excludedUsers": ["ModernChocolate"],
+      "excludedUsers": [
+        "ModernChocolate",
+        "allcontributors[bot]",
+        "NerofleLincoln",
+        "florian-lefebvre"
+      ],
       "customUsers": [
         {
           "login": "ModernChocolate (JsonLines)",
@@ -177,6 +182,14 @@
           "app": true,
           "website": true,
           "customSentence": "Initiateur du projet"
+        },
+        {
+          "login": "florian-lefebvre",
+          "html_url": "https://github.com/florian-lefebvre",
+          "avatar_url": "https://avatars1.githubusercontent.com/u/69633530?v=4",
+          "app": true,
+          "website": true,
+          "customSentence": ""
         }
       ]
     }

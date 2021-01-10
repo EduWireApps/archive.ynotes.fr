@@ -4,7 +4,7 @@
       <nuxt-link to="/" class="flex items-center space-x-2">
         <img
           src="~/assets/images/logoBlue.png"
-          class="w-6 h-6 rounded"
+          class="w-6 h-6 rounded-lg"
           alt="Logo"
         />
         <div class="text-2xl font-semibold text-space-500">

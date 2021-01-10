@@ -8,7 +8,7 @@
         <nuxt-link to="/" class="flex items-center space-x-3 focus:outline-none">
           <img
             src="~/assets/images/logoBlue.png"
-            class="w-8 h-8 rounded"
+            class="w-8 h-8 rounded-lg"
             alt="Logo"
           />
           <div class="text-3xl font-semibold text-space-500">
