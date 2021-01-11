@@ -4,7 +4,7 @@
 
 Win + R : `%SystemRoot%\system32\drivers\etc\hosts`
 
-Ajouter une ligne
+Add a line:
 ```
 127.0.0.1 support.localhost
 ```
