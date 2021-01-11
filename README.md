@@ -3,7 +3,7 @@
 ## Build setup
 
 ```bash
-$ yarn install # install dependencies
+$ yarn # install dependencies
 $ yarn dev # serve with hot reload at localhost:3000
 
 $ yarn generate # generate static project
