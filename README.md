@@ -2,6 +2,13 @@
 
 ## Build setup
 
+Win + R : `%SystemRoot%\system32\drivers\etc\hosts`
+
+Ajouter une ligne
+```
+127.0.0.1 support.localhost
+```
+
 ```bash
 $ yarn # install dependencies
 $ yarn dev # serve with hot reload at localhost:3000

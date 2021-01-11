@@ -5,7 +5,10 @@
       :class="open ? null : 'shadow-2xl'"
     >
       <Container class="flex items-center justify-between">
-        <nuxt-link to="/" class="flex items-center space-x-3 focus:outline-none">
+        <a
+          :href="$store.state.routing.mainUrl"
+          class="flex items-center space-x-3 focus:outline-none"
+        >
           <img
             src="~/assets/images/logoBlue.png"
             class="w-8 h-8 rounded-lg"
@@ -14,7 +17,7 @@
           <div class="text-3xl font-semibold text-space-500">
             yNotes
           </div>
-        </nuxt-link>
+        </a>
         <button
           @click="open = !open"
           class="inline-flex items-center justify-center p-2 transition-colors rounded-full sm:hidden hover:bg-opacity-25 focus:outline-none text-space-500 hover:bg-space-200"
@@ -44,12 +47,18 @@
           </svg>
         </button>
         <div class="items-center hidden space-x-2 sm:flex">
-          <HeaderButton link="/">Accueil</HeaderButton>
-          <HeaderButton link="/faq">FAQ</HeaderButton>
-          <HeaderButton link="https://support.ynotes.fr" external
+          <HeaderButton :link="$store.state.routing.mainUrl"
+            >Accueil</HeaderButton
+          >
+          <HeaderButton :link="$store.state.routing.mainUrl + '/faq'"
+            >FAQ</HeaderButton
+          >
+          <HeaderButton :link="$store.state.routing.subdomainUrl"
             >Centre d'aide</HeaderButton
           >
-          <HeaderButton link="/contact">Contact</HeaderButton>
+          <HeaderButton :link="$store.state.routing.mainUrl + '/contact'"
+            >Contact</HeaderButton
+          >
           <HeaderButton
             link="https://github.com/ModernChocolate/ynotes"
             :external="true"
@@ -84,12 +93,18 @@
         v-show="open"
       >
         <div class="px-2 pt-2 pb-3 space-y-1">
-          <HeaderButton link="/">Accueil</HeaderButton>
-          <HeaderButton link="/faq">FAQ</HeaderButton>
-          <HeaderButton link="https://support.ynotes.fr" external
+          <HeaderButton :link="$store.state.routing.mainUrl"
+            >Accueil</HeaderButton
+          >
+          <HeaderButton :link="$store.state.routing.mainUrl + '/faq'"
+            >FAQ</HeaderButton
+          >
+          <HeaderButton :link="$store.state.routing.subdomainUrl"
             >Centre d'aide</HeaderButton
           >
-          <HeaderButton link="/contact">Contact</HeaderButton>
+          <HeaderButton :link="$store.state.routing.mainUrl + '/contact'"
+            >Contact</HeaderButton
+          >
           <HeaderButton
             link="https://github.com/ModernChocolate/ynotes"
             :external="true"
