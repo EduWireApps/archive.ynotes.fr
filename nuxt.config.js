@@ -47,15 +47,7 @@ export default {
     // https://go.nuxtjs.dev/content
     "@nuxt/content",
     // https://github.com/rigor789/vue-scrollto
-    "vue-scrollto/nuxt",
-    [
-      "@nuxtjs/router",
-      {
-        path: "router",
-        fileName: "index.js",
-        keepDefaultRouter: true
-      }
-    ]
+    "vue-scrollto/nuxt"
   ],
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)

@@ -27,11 +27,7 @@
                   <a
                     v-for="(l, i) in content.links"
                     :key="i"
-                    :href="
-                      l.url === 'support'
-                        ? $store.state.routing.subdomainUrl
-                        : $store.state.routing.mainUrl + l.url
-                    "
+                    :href="l.url"
                     xyz="fade up delay-8 duration-6"
                     class="inline-block px-6 py-4 text-xl font-semibold text-center uppercase transition-colors duration-150 ease-in-out bg-white rounded-full xyz-nested focus:outline-none text-space-500 hover:bg-gray-200"
                   >
