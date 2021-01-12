@@ -1,5 +1,5 @@
 <template>
-  <footer class="mt-auto text-gray-600 border-t">
+  <footer class="mt-auto text-gray-600 border-t bg-white">
     <Container class="flex flex-col items-center py-8 md:flex-row">
       <nuxt-link
         to="/"

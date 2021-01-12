@@ -55,8 +55,8 @@
           <HeaderButton link="/contact">Contact</HeaderButton>
           <HeaderButton
             link="https://github.com/ModernChocolate/ynotes"
-            :external="true"
-            :button="true"
+            external
+            button
             class="transition-colors"
             >Github
             <svg
@@ -95,8 +95,8 @@
           <HeaderButton link="/contact">Contact</HeaderButton>
           <HeaderButton
             link="https://github.com/ModernChocolate/ynotes"
-            :external="true"
-            :button="true"
+            external
+            button
             class="transition-colors"
             >Github
             <svg
