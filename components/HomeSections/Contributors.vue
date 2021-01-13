@@ -5,7 +5,10 @@
         <template>
           <div>
             <XyzTransition duration="auto">
-              <div xyz="fade delay-4" :class="props.show ? 'xyz-in' : 'xyz-out'">
+              <div
+                xyz="fade delay-4"
+                :class="props.show ? 'xyz-in' : 'xyz-out'"
+              >
                 <h2
                   xyz="fade up delay-3 duration-6"
                   class="mb-8 text-2xl font-bold text-center text-white sm:text-3xl lg:text-5xl xyz-nested"
@@ -35,7 +38,9 @@
                       class="w-20 h-20 border-2 border-gray-300 rounded-full shadow-lg border-opacity-20"
                       alt=""
                     />
-                    <div class="flex flex-col justify-center px-4 overflow-hidden">
+                    <div
+                      class="flex flex-col justify-center px-4 overflow-hidden"
+                    >
                       <span class="text-lg font-semibold">{{
                         c.user.login
                       }}</span>
@@ -94,8 +99,6 @@ export default {
   },
   async created() {
     const contributors = [
-      // [],
-      // []
       await this.$axios.$get(
         "https://api.github.com/repos/ModernChocolate/ynotes/contributors"
       ),
@@ -113,45 +116,33 @@ export default {
         customSentence: el.customSentence
       });
     });
-    contributors[0].forEach(el => {
-      if (!this.excludedUsers.includes(el.login)) {
-        let website = false;
-        for (let index = 0; index < contributors[1].length; index++) {
-          if (!website) {
-            if (contributors[1][index].login == el.login) {
-              website = true;
-            }
-          }
-        }
-        this.addContributor({
-          login: el.login,
-          html_url: el.html_url,
-          avatar_url: el.avatar_url,
-          app: true,
-          website: website,
-          customSentence: ""
-        });
-      }
+    let ctbtApp = contributors[0].filter(
+      c => !this.excludedUsers.includes(c.login)
+    );
+    ctbtApp.forEach(el => {
+      this.addContributor({
+        login: el.login,
+        html_url: el.html_url,
+        avatar_url: el.avatar_url,
+        app: true,
+        website: contributors[1].some(c => c.login === el.login),
+        customSentence: ""
+      });
     });
-    contributors[1].forEach(el => {
-      let added = false;
-      for (let index = 0; index < this.contributors.length; index++) {
-        if (!added) {
-          if (this.contributors[index].user.login == el.login) {
-            added = true;
-          }
-        }
-      }
-      if (!this.excludedUsers.includes(el.login) && !added) {
-        this.addContributor({
-          login: el.login,
-          html_url: el.html_url,
-          avatar_url: el.avatar_url,
-          app: false,
-          website: true,
-          customSentence: ""
-        });
-      }
+    let ctbtWebsite = contributors[1].filter(
+      c =>
+        !this.excludedUsers.includes(c.login) &&
+        !ctbtApp.some(c2 => c2.login === c.login)
+    );
+    ctbtWebsite.forEach(el => {
+      this.addContributor({
+        login: el.login,
+        html_url: el.html_url,
+        avatar_url: el.avatar_url,
+        app: false,
+        website: true,
+        customSentence: ""
+      });
     });
   }
 };
