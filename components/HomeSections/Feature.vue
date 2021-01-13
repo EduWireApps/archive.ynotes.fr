@@ -1,5 +1,5 @@
 <template>
-  <IsVisible v-slot="props" once :theresold="0.5">
+  <IsVisible v-slot="props" once :theresold="0.5" class="md:mt-16">
     <template>
       <div>
         <XyzTransition duration="auto">
@@ -47,7 +47,8 @@
             </div>
             <img
               :src="require(`~/assets/${imgPath}`)"
-              class="w-1/2 md:w-1/3 my-auto mx-auto lg:mx-20 lg:w-96 xyz-nested "
+              class="w-1/2 md:w-1/3 my-auto mx-auto lg:mx-20 lg:w-96 xyz-nested"
+              :class="[`md:m${imgLeft ? 'r' : 'l'}-10`]"
               xyz="fade delay-4 up-3"
             />
           </div>
