@@ -1,8 +1,8 @@
 <template>
-  <footer class="mt-auto text-gray-600 border-t">
+  <footer class="mt-auto text-gray-600 border-t bg-white">
     <Container class="flex flex-col items-center py-8 md:flex-row">
-      <a
-        :href="$store.state.routing.mainUrl"
+      <nuxt-link
+        to="/"
         class="flex items-center space-x-2"
       >
         <img
@@ -13,7 +13,7 @@
         <div class="text-2xl font-semibold text-space-500">
           yNotes
         </div>
-      </a>
+      </nuxt-link>
       <p
         class="mt-4 text-sm text-gray-500 md:ml-4 md:pl-4 md:border-l-2 md:border-gray-200 md:py-2 md:mt-0"
       >
@@ -22,20 +22,20 @@
       <span
         class="inline-flex flex-col justify-center mt-4 lg:ml-auto md:mt-0 md:ml-2 md:flex-row lg:justify-start"
       >
-        <a
-          :href="$store.state.routing.mainUrl + '/legal/PDCYNotes.pdf'"
+        <nuxt-link
+          to="/legal/PDCYNotes.pdf"
           target="_blank"
           class="text-gray-500"
         >
           Politique de confidentialité
-        </a>
-        <a
-          :href="$store.state.routing.mainUrl + '/legal/CGUYNotes.pdf'"
+        </nuxt-link>
+        <nuxt-link
+          to="/legal/CGUYNotes.pdf"
           target="_blank"
           class="ml-3 text-gray-500"
         >
           Conditions d'utilisation
-        </a>
+        </nuxt-link>
       </span>
       <span
         class="inline-flex justify-center mt-2 ml-2 space-x-2 md:mt-0 md:justify-start"
