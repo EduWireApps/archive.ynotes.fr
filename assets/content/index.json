@@ -21,12 +21,12 @@
         "Vos devoirs",
         "Votre agenda"
       ],
-      "imgPath": "images/phoneScreen.png",
+      "imgPath": "images/3Dassets/timetable.png",
       "imgLeft": false
     },
     {
       "title": "...et bien plus encore !",
-      "imgPath": "images/phoneScreen.png",
+      "imgPath": "images/3Dassets/homework.png",
       "imgLeft": true,
       "text": "yNotes apporte un grand nombre de fonctionnalités très pratiques !"
     },
@@ -37,7 +37,7 @@
         "Impact d'une note sur la moyenne de la matière concernée et la moyenne générale",
         "Et bien d'autres à venir..."
       ],
-      "imgPath": "images/phoneScreen.png",
+      "imgPath": "images/3Dassets/stats.png",
       "imgLeft": false,
       "textBefore": true,
       "text": "Les gestionnaires de vie scolaire proposent bien quelques statistiques... mais c'est loin d'être suffisant. yNotes palie à ce manque en vous proposant quelques statistiques utiles !",
@@ -67,7 +67,7 @@
         "Notification de nouvelle note",
         "Notification de nouvel email"
       ],
-      "imgPath": "images/phoneScreen.png",
+      "imgPath": "images/3Dassets/bell.png",
       "imgLeft": false,
       "textBefore": true,
       "status": {
