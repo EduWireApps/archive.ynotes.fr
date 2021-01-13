@@ -2,9 +2,10 @@
   "hero": {
     "cta": "Votre application scolaire connectée",
     "keypoints": [
-      "Gérez vos notes, vos devoirs et même votre emploi du temps",
+      "Gérez vos notes, vos devoirs, votre emploi du temps et bien plus encore",
       "Contrôlez votre contenu en toute sécurité",
-      "Accédez à vos notes dans une interface élégante"
+      "Accédez à vos données dans une interface élégante",
+      "Un accent mis sur la sécurité et la confidentialité de vos"
     ],
     "download": "Téléchargez-la dès maintenant !"
   },
@@ -17,16 +18,15 @@
       "title": "Toutes les fonctionnalités de base...",
       "keypoints": [
         "Vos notes",
-        "Votre messagerie",
-        "Votre agenda",
-        "Vos devoirs"
+        "Vos devoirs",
+        "Votre agenda"
       ],
-      "imgPath": "images/phoneScreen.png",
+      "imgPath": "images/3Dassets/timetable.png",
       "imgLeft": false
     },
     {
       "title": "...et bien plus encore !",
-      "imgPath": "images/phoneScreen.png",
+      "imgPath": "images/3Dassets/homework.png",
       "imgLeft": true,
       "text": "yNotes apporte un grand nombre de fonctionnalités très pratiques !"
     },
@@ -37,10 +37,10 @@
         "Impact d'une note sur la moyenne de la matière concernée et la moyenne générale",
         "Et bien d'autres à venir..."
       ],
-      "imgPath": "images/phoneScreen.png",
+      "imgPath": "images/3Dassets/stats.png",
       "imgLeft": false,
       "textBefore": true,
-      "text": "Les gestionnaires de vie scolaire proposent bien quelques statistiques... mais c'est loin d'être suffisant. yNotes palie ce manque en vous proposant de superbes stats !",
+      "text": "Les gestionnaires de vie scolaire proposent bien quelques statistiques... mais c'est loin d'être suffisant. yNotes palie à ce manque en vous proposant quelques statistiques utiles !",
       "status": {
         "variant": "warning",
         "text": "En cours"
@@ -62,24 +62,23 @@
       }
     },
     {
-      "title": "Soyez notifiez en (quasi) temps réel",
+      "title": "Restez à jour",
       "keypoints": [
         "Notification de nouvelle note",
         "Notification de nouvel email"
       ],
-      "imgPath": "images/phoneScreen.png",
+      "imgPath": "images/3Dassets/bell.png",
       "imgLeft": false,
       "textBefore": true,
       "status": {
         "variant": "warning",
         "text": "En cours"
       },
-      "text": "Vous aimeriez être au courant lorsqu'une nouvelle note est disponible ? C'est désormais possible, et ce n'est pas tout !"
+      "text": "yNotes vous notifie des nouvelles notes et des nouveaux messages."
     },
     {
       "title": "Gestionnaire de fichiers amélioré",
       "keypoints": [
-        "Téléchargez votre document une seule fois",
         "Organisez vos documents dans des dossiers",
         "Renommez vos fichiers",
         "Supprimez-les"
@@ -91,7 +90,7 @@
         "variant": "warning",
         "text": "En cours"
       },
-      "text": "Télécharger des documents, c'est bien. Savoir où ils sont enregistrés et pouvoir les modifier depuis l'application, c'est mieux."
+      "text": "Télécharger des documents, c'est bien. Savoir où ils sont enregistrés et pouvoir les gérer depuis l'application, c'est mieux."
     }
   ],
   "project": {
@@ -197,7 +196,10 @@
   "recruitement": {
     "title": "Nous avons besoin de vous !",
     "content": "Pour mener à bien ce projet, nous avons besoin de vous et de vos compétences !",
-    "keypoints": ["Des développeurs", "Des graphistes"]
+    "keypoints": [
+      "Des développeurs",
+      "Des graphistes"
+    ]
   },
   "contact": {
     "title": "Question, problème ou autre ?",
