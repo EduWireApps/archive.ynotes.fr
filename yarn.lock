@@ -2,17 +2,17 @@
 # yarn lockfile v1
 
 
-"@animxyz/core@^0.3.0":
-  version "0.3.0"
-  resolved "https://registry.npmjs.org/@animxyz/core/-/core-0.3.0.tgz#3f4a7c5e3e5bacb935820c155a8b7c7bfa0027af"
-  integrity sha512-U5rvWyfHMSTvLxYu/GFwJMFTeV0TifY4IvVGYH0oEb2Gcs+f+hS0hh5HIDCFu/yOdeJ5Y1IL1MCskUIq3xIdPg==
+"@animxyz/core@^0.4.0":
+  version "0.4.0"
+  resolved "https://registry.npmjs.org/@animxyz/core/-/core-0.4.0.tgz#d1be459cf9c265e1525523b252e2ea6e3a974412"
+  integrity sha512-Q4B5y/T+hjutRMmpMjXS+t5UkAapUZdFxfYEMY/IEGlLLEl/23pO8Z+bmQdB425zRDJYptlXrP04JAz3X8axEQ==
 
-"@animxyz/vue@^0.3.0":
-  version "0.3.0"
-  resolved "https://registry.npmjs.org/@animxyz/vue/-/vue-0.3.0.tgz#23a260190f392fec8dde79ef692c5c9653b50f35"
-  integrity sha512-+tGhKZairgORafsRzsAriUhIAtMW3RD4K7vo5ymFIsHKPLeX3yAJImZLcfKcQy7/7u/HHAHKPaHPiNHVNXU7pw==
+"@animxyz/vue@^0.4.0":
+  version "0.4.0"
+  resolved "https://registry.npmjs.org/@animxyz/vue/-/vue-0.4.0.tgz#00c31dae580402ba4270d47cdba02248f1e53a56"
+  integrity sha512-217qx0PTxNuBXc3ukeYAQDnWCYaSF39MthymNbVstQ0FtOvOHsh2CROcWfvRfFWiIzyHFwvgEruwBruWQHsnxQ==
   dependencies:
-    "@animxyz/core" "^0.3.0"
+    "@animxyz/core" "^0.4.0"
     clsx "^1.1.1"
     vue-functional-data-merge "^3.1.0"
 
@@ -9257,11 +9257,6 @@ vue-no-ssr@^1.1.1:
   version "1.1.1"
   resolved "https://registry.npmjs.org/vue-no-ssr/-/vue-no-ssr-1.1.1.tgz#875f3be6fb0ae41568a837f3ac1a80eaa137b998"
   integrity sha512-ZMjqRpWabMPqPc7gIrG0Nw6vRf1+itwf0Itft7LbMXs2g3Zs/NFmevjZGN1x7K3Q95GmIjWbQZTVerxiBxI+0g==
-
-vue-observe-visibility@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.npmjs.org/vue-observe-visibility/-/vue-observe-visibility-1.0.0.tgz#17cf1b2caf74022f0f3c95371468ddf2b9573152"
-  integrity sha512-s5TFh3s3h3Mhd3jaz3zGzkVHKHnc/0C/gNr30olO99+yw2hl3WBhK3ng3/f9OF+qkW4+l7GkmwfAzDAcY3lCFg==
 
 vue-router@^3.4.9:
   version "3.4.9"
