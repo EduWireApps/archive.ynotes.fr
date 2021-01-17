@@ -23,6 +23,9 @@ module.exports = {
           800: "#11132B",
           900: "#0A0B19"
         }
+      },
+      fontFamily: {
+        sans: ["Asap", ...defaultTheme.fontFamily.sans]
       }
     }
   },

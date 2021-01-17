@@ -22,7 +22,18 @@ export default {
           "Gérez vos notes, vos devoirs et même votre emploi du temps ; Contrôlez votre contenu en toute sécurité ; Accédez à vos notes dans une interface élégante"
       }
     ],
-    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
+    link: [
+      { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
+      { rel: "preconnect", href: "https://fonts.gstatic.com" },
+      {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css2?family=Asap&display=swap"
+      }
+      // {
+      //   rel: "stylesheet",
+      //   href: "https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      // }
+    ]
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
