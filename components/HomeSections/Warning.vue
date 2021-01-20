@@ -3,12 +3,12 @@
     <Container>
       <XyzTransition appear-visible duration="auto">
         <div
-          class="px-4 py-8 border-l-8 border-red-600 bg-space-500 rounded-xl lg:px-8 text-space-100 relative"
+          class="relative px-4 py-8 border-l-8 border-red-600 bg-space-500 rounded-xl lg:px-8 text-space-100 shadow-lg"
           role="alert"
           xyz="fade"
         >
           <span
-            class="-top-3 right-10 absolute px-2 bg-red-600 rounded-md shadow text-red-50"
+            class="absolute px-2 bg-red-600 rounded-md shadow -top-3 right-10 text-red-50"
             v-html="content.title"
           ></span>
           <p

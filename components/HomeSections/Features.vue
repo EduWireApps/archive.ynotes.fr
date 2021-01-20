@@ -12,6 +12,7 @@
         :textBefore="f.textBefore"
         :status="f.status"
         :index="index"
+        :checkSVG="f.checkSVG"
       />
     </Container>
   </section>

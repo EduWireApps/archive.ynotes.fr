@@ -22,7 +22,7 @@
             v-html="title"
           ></h2>
           <div class="flex" :class="`flex-col${textBefore ? '-reverse' : ''}`">
-            <List v-if="els" :texts="els" class="mx-auto md:ml-0 text-left" />
+            <List v-if="els" :texts="els" :checkSVG="checkSVG" class="mx-auto md:ml-0 text-left" />
             <p
               v-if="text"
               class="mb-6 md:text-lg lg:text-xl xyz-nested"
@@ -57,7 +57,8 @@ export default {
         return {};
       }
     },
-    index: Number
+    index: Number,
+    checkSVG: Boolean
   },
   computed: {
     statusClass() {

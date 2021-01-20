@@ -16,10 +16,18 @@
         class="w-5 h-5 lg:h-6 lg:w-6 absolute"
       >
         <path
+          v-if="checkSVG"
           stroke-linecap="round"
           stroke-linejoin="round"
           stroke-width="2"
           d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+        />
+        <path
+          v-else
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
         />
       </svg>
       <p class="ml-5 lg:ml-6 pl-2" v-html="t"></p>
@@ -30,7 +38,8 @@
 <script>
 export default {
   props: {
-    texts: Array
+    texts: Array,
+    checkSVG: Boolean
   }
 };
 </script>

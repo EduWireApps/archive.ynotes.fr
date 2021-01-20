@@ -20,7 +20,7 @@
             xyz="fade up delay-3 duration-6"
             v-html="content.cta"
           ></h1>
-          <List :texts="content.keypoints" />
+          <List :texts="content.keypoints" :checkSVG="content.checkSVG" />
           <div
             xyz="fade up stagger ease-in-out delay-20"
             class="flex flex-col justify-center mb-4 lg:mb-8 md:justify-start"

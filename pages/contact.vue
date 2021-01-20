@@ -2,8 +2,8 @@
   <Container class="py-12 text-center">
     <h1
       class="mb-4 text-3xl font-bold sm:text-4xl lg:text-6xl md:mb-8 text-space-500"
+      v-html="content.title"
     >
-      {{ content.title }}
     </h1>
     <div
       class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-4 text-white mt-6"

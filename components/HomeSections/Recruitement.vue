@@ -15,7 +15,7 @@
           ></p>
           <div class="flex justify-center text-white">
             <div class="inline-block">
-              <List :texts="content.keypoints" />
+              <List :texts="content.keypoints" :checkSVG="content.checkSVG" />
             </div>
           </div>
         </div>
