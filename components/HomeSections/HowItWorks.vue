@@ -6,9 +6,8 @@
           <h2
             xyz="fade up delay-3 duration-6"
             class="mb-8 text-2xl font-bold text-center text-white sm:text-3xl lg:text-5xl xyz-nested"
-          >
-            {{ content.title }}
-          </h2>
+            v-html="content.title"
+          ></h2>
           <div
             class="max-w-3xl pt-8 lg:pt-16 mx-auto text-white"
             xyz="fade up stagger ease-in-out delay-8"

@@ -6,15 +6,13 @@
           <h2
             xyz="fade up delay-3 duration-6"
             class="mb-8 text-2xl font-bold text-center text-white sm:text-3xl lg:text-5xl xyz-nested"
-          >
-            {{ content.title }}
-          </h2>
+            v-html="content.title"
+          ></h2>
           <p
             xyz="fade up delay-6 duration-6"
             class="mb-10 text-center text-white md:text-lg lg:text-xl xyz-nested"
-          >
-            {{ content.content }}
-          </p>
+            v-html="content.content"
+          ></p>
           <div class="flex justify-center text-white">
             <div class="inline-block">
               <List :texts="content.keypoints" />

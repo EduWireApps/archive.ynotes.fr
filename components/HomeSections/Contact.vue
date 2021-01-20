@@ -6,15 +6,13 @@
           <h2
             xyz="fade up delay-3 duration-6"
             class="mb-8 text-2xl font-bold text-center text-white sm:text-3xl lg:text-5xl xyz-nested"
-          >
-            {{ content.title }}
-          </h2>
+            v-html="content.title"
+          ></h2>
           <p
             xyz="fade up delay-6 duration-6"
             class="mb-12 text-center text-white md:text-lg lg:text-xl xyz-nested"
-          >
-            {{ content.content }}
-          </p>
+            v-html="content.content"
+          ></p>
           <div
             class="flex flex-col justify-center space-y-4 md:flex-row md:space-y-0 md:space-x-4"
           >
@@ -24,8 +22,8 @@
               :href="l.url"
               xyz="fade up delay-8 duration-6"
               class="inline-block px-6 py-4 text-xl font-semibold text-center uppercase transition-colors duration-150 ease-in-out bg-white rounded-full xyz-nested focus:outline-none text-space-500 hover:bg-gray-200"
+              v-html="l.text"
             >
-              {{ l.text }}
             </a>
           </div>
         </div>

@@ -3,30 +3,16 @@
     <Container>
       <XyzTransition appear-visible duration="auto">
         <div
-          class="px-4 py-4 bg-red-100 rounded-xl lg:px-8"
+          class="px-4 py-8 border-l-8 border-red-600 bg-space-500 rounded-xl lg:px-8 text-space-100 relative"
           role="alert"
           xyz="fade"
         >
-          <h3
-            class="flex items-center mb-2 text-xl font-bold text-red-600 lg:text-2xl"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              class="w-8 h-8 mr-2"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"
-              /></svg
-            >{{ content.title }}
-          </h3>
+          <span
+            class="-top-3 right-10 absolute px-2 bg-red-600 rounded-md shadow text-red-50"
+            v-html="content.title"
+          ></span>
           <p
-            class="font-medium text-justify text-red-500 lg:text-lg"
+            class="font-medium text-justify lg:text-lg"
             v-html="content.text"
           ></p>
         </div>

@@ -22,7 +22,7 @@
           d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
         />
       </svg>
-      <p class="ml-5 lg:ml-6 pl-2">{{ t }}</p>
+      <p class="ml-5 lg:ml-6 pl-2" v-html="t"></p>
     </div>
   </div>
 </template>

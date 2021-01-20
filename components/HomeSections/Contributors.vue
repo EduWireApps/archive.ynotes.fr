@@ -6,15 +6,13 @@
           <h2
             xyz="fade up delay-3 duration-6"
             class="mb-8 text-2xl font-bold text-center text-white sm:text-3xl lg:text-5xl xyz-nested"
-          >
-            {{ content.title }}
-          </h2>
+            v-html="content.title"
+          ></h2>
           <p
             xyz="fade up delay-6 duration-6"
             class="mb-6 text-center text-white md:text-lg lg:text-xl xyz-nested"
-          >
-            {{ content.content }}
-          </p>
+            v-html="content.content"
+          ></p>
           <div
             class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 pb-12"
             v-if="contributors.length > 0"
@@ -34,17 +32,16 @@
                 alt=""
               />
               <div class="flex flex-col justify-center px-4 overflow-hidden">
-                <span class="text-lg font-semibold">{{ c.user.login }}</span>
-                <p v-if="c.customSentence !== ''">
-                  {{ c.customSentence }}
-                </p>
+                <span
+                  class="text-lg font-semibold"
+                  v-html="c.user.login"
+                ></span>
+                <p v-if="c.customSentence !== ''" v-html="c.customSentence"></p>
                 <p v-else>
                   A contribué
-                  {{ c.contributed.app ? "à l'application" : null }}
-                  {{
-                    c.contributed.app && c.contributed.website ? " et " : null
-                  }}
-                  {{ c.contributed.website ? "au site internet" : null }}
+                  <span v-html="c.contributed.app ? 'à l\'application' : null"></span>
+                  <span v-html="c.contributed.app && c.contributed.website ? ' et ' : null"></span>
+                  <span v-html="c.contributed.website ? 'au site internet' : null"></span>
                 </p>
               </div>
             </a>

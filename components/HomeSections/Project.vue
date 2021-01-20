@@ -6,9 +6,8 @@
           <h2
             xyz="fade up delay-3 duration-6"
             class="text-2xl sm:text-3xl lg:text-5xl font-bold mb-8 text-white text-center xyz-nested"
-          >
-            {{ content.title }}
-          </h2>
+            v-html="content.title"
+          ></h2>
           <div class="space-y-8" xyz="fade up-2 delay-8 duration-10 stagger">
             <div
               v-for="(e, index) in content.items"
@@ -30,12 +29,12 @@
               <div class="w-full text-white lg:px-20 mt-6 lg:mt-0">
                 <h3
                   class="text-xl md:text-2xl lg:text-4xl font-semibold mb-3 text-center lg:text-left"
-                >
-                  {{ e.title }}
-                </h3>
-                <p class="mb-6 md:text-lg lg:text-xl text-justify">
-                  {{ e.content }}
-                </p>
+                  v-html="e.title"
+                ></h3>
+                <p
+                  class="mb-6 md:text-lg lg:text-xl text-justify"
+                  v-html="e.content"
+                ></p>
               </div>
             </div>
           </div>

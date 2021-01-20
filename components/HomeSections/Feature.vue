@@ -14,24 +14,21 @@
             class="inline-block px-3 py-1 mb-2 font-semibold uppercase rounded-full shadow xyz-nested"
             xyz="fade up delay-8 duration-8"
             :class="statusClass"
-          >
-            {{ status.text }}
-          </div>
+            v-html="status.text"
+          ></div>
           <h2
             class="mb-8 text-2xl font-bold sm:text-3xl lg:text-5xl xyz-nested"
             xyz="fade up delay-3 duration-6"
-          >
-            {{ title }}
-          </h2>
+            v-html="title"
+          ></h2>
           <div class="flex" :class="`flex-col${textBefore ? '-reverse' : ''}`">
             <List v-if="els" :texts="els" class="mx-auto md:ml-0 text-left" />
             <p
               v-if="text"
               class="mb-6 md:text-lg lg:text-xl xyz-nested"
               xyz="fade up delay-6 duration-6"
-            >
-              {{ text }}
-            </p>
+              v-html="text"
+            ></p>
           </div>
         </div>
       </div>

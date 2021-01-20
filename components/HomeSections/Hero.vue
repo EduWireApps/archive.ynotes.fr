@@ -18,9 +18,8 @@
           <h1
             class="mb-4 text-3xl font-bold text-center sm:text-4xl lg:text-6xl md:mb-8 xyz-nested md:text-left"
             xyz="fade up delay-3 duration-6"
-          >
-            {{ content.cta }}
-          </h1>
+            v-html="content.cta"
+          ></h1>
           <List :texts="content.keypoints" />
           <div
             xyz="fade up stagger ease-in-out delay-20"
@@ -28,9 +27,8 @@
           >
             <h2
               class="mx-auto mb-3 text-xl font-semibold lg:text-3xl xyz-nested whitespace-nowrap md:ml-0"
-            >
-              {{ content.download }}
-            </h2>
+              v-html="content.download"
+            ></h2>
             <a
               href="https://play.google.com/store/apps/details?id=fr.ynotes"
               target="_blank"
