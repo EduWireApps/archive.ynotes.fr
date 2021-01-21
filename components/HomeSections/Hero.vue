@@ -36,12 +36,12 @@
           >
             <span class="xyz-nested" v-html="content.title[1]"></span>
             <span
-              class="block text-transparent bg-clip-text bg-gradient-to-r from-space-300 to-purple-500 xyz-nested"
+              class="block text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-purple-500 to-purple-500 xyz-nested"
               v-html="content.title[2]"
             ></span>
           </h1>
           <p
-            class="mb-6 text-base sm:text-xl lg:text-lg xl:text-xl font-medium text-justify text-space-300 xyz-nested max-w-lg mx-auto sm:max-w-xl md:max-w-none"
+            class="mb-6 text-base sm:text-xl lg:text-lg xl:text-xl font-medium text-justify text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-purple-400 to-purple-500 xyz-nested max-w-lg mx-auto sm:max-w-xl md:max-w-none"
             xyz="fade delay-15 duration-10"
             v-html="content.text"
           >
