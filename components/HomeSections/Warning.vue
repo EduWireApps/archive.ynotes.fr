@@ -1,9 +1,9 @@
 <template>
-  <section class="py-32 bg-gray-100">
+  <section class="pt-32 pb-16 bg-white">
     <Container>
       <XyzTransition appear-visible duration="auto">
         <div
-          class="relative px-4 py-8 border-l-8 border-red-600 bg-gray-200 rounded-xl lg:px-8 text-gray-800 shadow"
+          class="relative px-4 py-8 border-l-8 border-red-600 bg-gray-100 rounded-xl lg:px-8 text-gray-800 shadow"
           role="alert"
           xyz="fade scale delay-2 duration-8"
         >

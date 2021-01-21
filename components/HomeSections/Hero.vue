@@ -1,17 +1,17 @@
 <template>
   <XyzTransition appear duration="auto">
     <section class="md:h-screen bg-space-700">
-      <Container class="flex h-full py-16 flex-col md:flex-row-reverse">
+      <Container class="flex flex-col h-full py-16 md:flex-row-reverse">
         <div class="flex flex-col justify-center flex-1">
           <a
             :href="require('~/assets/content/contact.json').repo"
             target="_blank"
             rel="noopener noreferrer"
             xyz="fade delay-15 duration-8"
-            class="flex items-center mx-auto md:ml-0 h-7 text-sm lg:text-base lg:h-8 p-1 pr-2 mb-4 space-x-3 text-white transition-colors rounded-full shadow-lg xyz-nested bg-space-400 w-max hover:bg-space-300 group hover:shadow-2xl"
+            class="flex items-center p-1 pr-2 mx-auto mb-4 space-x-3 text-sm text-white transition-colors rounded-full shadow-lg md:ml-0 h-7 lg:text-base lg:h-8 xyz-nested bg-space-400 w-max hover:bg-space-300 group hover:shadow-2xl"
           >
             <span
-              class="px-2 py-1 text-xs lg:text-sm leading-tight uppercase transition-colors rounded-full bg-space-500 leading-1 group-hover:bg-space-400"
+              class="px-2 py-1 text-xs leading-tight uppercase transition-colors rounded-full lg:text-sm bg-space-500 leading-1 group-hover:bg-space-400"
               v-html="content.badge.badge"
             ></span
             ><span v-html="content.badge.text"></span
@@ -31,23 +31,25 @@
             </svg>
           </a>
           <h1
-            class="mb-4 font-extrabold text-white text-4xl sm:text-6xl text-center md:text-left md:text-4xl lg:text-5xl xl:text-7xl xyz-nested"
+            class="mb-4 text-4xl font-extrabold text-center sm:text-6xl md:text-left md:text-4xl lg:text-5xl xl:text-7xl xyz-nested"
             xyz="fade down-1 delay-3 duration-15 stagger"
           >
-            <span class="xyz-nested" v-html="content.title[1]"></span>
+            <span
+              class="text-white xyz-nested"
+              v-html="content.title[1]"
+            ></span>
             <span
               class="block text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-purple-500 to-purple-500 xyz-nested"
               v-html="content.title[2]"
             ></span>
           </h1>
           <p
-            class="mb-6 text-base sm:text-xl lg:text-lg xl:text-xl font-medium text-justify text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-purple-400 to-purple-500 xyz-nested max-w-lg mx-auto sm:max-w-xl md:max-w-none"
+            class="max-w-lg mx-auto mb-6 text-base font-medium text-justify sm:text-xl lg:text-lg xl:text-xl text-space-100 xyz-nested sm:max-w-xl md:max-w-none"
             xyz="fade delay-15 duration-10"
             v-html="content.text"
-          >
-          </p>
+          ></p>
           <div
-            class="block xyz-nested mx-auto md:ml-0"
+            class="block mx-auto xyz-nested md:ml-0"
             xyz="fade down-1 duration-15 delay-20"
           >
             <a
@@ -76,7 +78,7 @@
         <div class="flex-1">
           <img
             src="~/assets/images/phoneScreen.png"
-            class="w-full sm:w-3/4 md:w-auto md:h-full mx-auto xyz-nested"
+            class="w-full mx-auto sm:w-3/4 md:w-auto md:h-full xyz-nested"
             xyz="fade left-4 delay-10 duration-10"
             alt=""
           />
