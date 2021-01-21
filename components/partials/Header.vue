@@ -1,7 +1,7 @@
 <template>
   <header>
     <div
-      class="fixed top-0 left-0 z-50 flex items-center w-screen h-16 transition-colors sm:shadow-2xl bg-white"
+      class="fixed top-0 left-0 z-50 flex items-center w-screen h-16 transition-colors sm:shadow-2xl bg-white bg-opacity-95"
       :class="open ? null : 'shadow-2xl'"
     >
       <Container class="flex items-center justify-between">

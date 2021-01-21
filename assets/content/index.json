@@ -1,14 +1,14 @@
 {
   "hero": {
-    "cta": "Votre application scolaire connectée",
-    "keypoints": [
-      "Gérez vos notes, vos devoirs, votre emploi du temps et bien plus encore",
-      "Contrôlez votre contenu en toute sécurité",
-      "Accédez à vos données dans une interface élégante",
-      "Un accent mis sur la sécurité et la confidentialité de vos données"
-    ],
-    "checkSVG": true,
-    "download": "Téléchargez-la dès maintenant !"
+    "badge": {
+      "badge": "Open source",
+      "text": "Consulter sur Github"
+    },
+    "title": {
+      "1": "Votre application",
+      "2": "scolaire connectée"
+    },
+    "text": "Accédez à vos notes, vos devoirs, votre emploi du temps et bien d'autres fonctionnalités dans une interface élégante. Soyez notifié(e) en temps réel. Et tout ceci en respectant la confidentialité de vos données."
   },
   "warning": {
     "title": "Avertissement",
