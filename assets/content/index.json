@@ -15,9 +15,9 @@
     "text": "yNotes est un client open-source <strong>non-officiel</strong> actuellement compatible avec les services EcoleDirecte et Pronote qui sont deux produits déposés. Nous sommes en train d'implémenter les différentes fonctionnalités déjà mises à disposition par ces services. Cependant, des modifications peuvent avoir lieu <strong>suite à une décision des services officiels</strong>."
   },
   "project": {
-    "title": "L'histoire d'yNotes",
-    "subtitle": "C'est quoi cette application ?",
-    "text": "yNotes, prononcé <i>why notes</i> (vous noterez l'humour incroyable des développeurs), a vu son développement débuter en 2019.",
+    "title": "L'histoire de yNotes",
+    "subtitle": "A quoi ça sert ?",
+    "text": "Tout commence en 2019...",
     "items": [
       {
         "title": "Répondre à un besoin",
@@ -26,12 +26,12 @@
       },
       {
         "title": "Une application moderne",
-        "content": "Les applications de base ont une interface qui laisse à désirer : pas très attrayante ni ergonomique ni fluide. Heureusement, yNotes est là ! Réalisée avec Flutter, préparez-vous à en prendre plein les yeux !",
+        "content": "Les applications officielles de vie scolaire possèdent des interfaces souvent peu attrayantes. Heureusement, yNotes est là, conçue avec le puissant framework Flutter. Préparez-vous à en prendre plein les yeux !</a>",
         "icon": "code"
       },
       {
         "title": "Un projet open-source",
-        "content": "Le code de l'application est disponible sur Github. Vous pouvez donc apporter votre contribution ou bien vérifier comment sont stockées vos données si vous n'avez pas confiance en nous...",
+        "content": "Le code de l'application est disponible sur Github. Apportez votre pierre à l'édifice, ou jetez tout simplement un coup d'oeil.",
         "icon": "globe"
       }
     ]
