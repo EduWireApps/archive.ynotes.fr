@@ -25,7 +25,7 @@
         "icon": "conversation"
       },
       {
-        "title": "La beauté c'est subjectif mais quand même...",
+        "title": "Une application moderne",
         "content": "Les applications de base ont une interface qui laisse à désirer : pas très attrayante ni ergonomique ni fluide. Heureusement, yNotes est là ! Réalisée avec Flutter, préparez-vous à en prendre plein les yeux !",
         "icon": "code"
       },
@@ -55,28 +55,6 @@
         "title": "C'est prêt !",
         "content": "Vos données sont téléchargées, vous pouvez profiter pleinement d'yNotes et de toutes ses fonctionnalités",
         "icon": null
-      }
-    ],
-    "steps": [
-      {
-        "svg": "login",
-        "title": "Etape 1",
-        "content": "Vous vous connectez avec vos identifiants scolaires (EcoleDirecte ou Pronote) qui sont conservés localement."
-      },
-      {
-        "svg": "cog",
-        "title": "Etape 2",
-        "content": "Nous utilisons les APIs des services pour accéder à vos notes."
-      },
-      {
-        "svg": "cloud-download",
-        "title": "Etape 3",
-        "content": "Nous récupérons vos données scolaires (toujours localement) et vous y accédez librement."
-      },
-      {
-        "svg": "tick",
-        "title": "Prêt !",
-        "content": "Vous accédez à vos données et profitez des fonctionnalités de yNotes !"
       }
     ]
   },
