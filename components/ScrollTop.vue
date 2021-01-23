@@ -8,7 +8,7 @@
     leave-to-class="opacity-0"
   >
     <button
-      class="fixed z-50 w-10 h-10 p-2 text-white rounded-full bg-space-300 bottom-4 right-4 hover:bg-opacity-75 transition-all transform hover:scale-110 focus:outline-none"
+      class="fixed z-50 w-10 h-10 p-2 text-white transition-all transform rounded-full bg-gradient-to-r from-indigo-500 to-purple-500 bottom-4 right-4 hover:bg-opacity-75 hover:scale-110 focus:outline-none"
       type="button"
       v-show="visible"
       aria-label="Scroll to top"

@@ -61,3 +61,8 @@ Legal files are stored here.
 ## Deployment WIP
 
 https://nuxtjs.org/faq/vercel-deployment
+
+
+## Icons
+
+from Zondicons http://www.zondicons.com/icons.html

@@ -22,7 +22,7 @@
       {
         "title": "Répondre à un besoin",
         "content": "Les applications fournies par les services de gestion de vie étudiante sont incomplètes et peu pratiques. yNotes vient donc ajouter des fonctionnalités et intègre mieux celles déjà existantes.",
-        "icon": "academic-cap"
+        "icon": "conversation"
       },
       {
         "title": "La beauté c'est subjectif mais quand même...",
@@ -32,18 +32,58 @@
       {
         "title": "Un projet open-source",
         "content": "Le code de l'application est disponible sur Github. Vous pouvez donc apporter votre contribution ou bien vérifier comment sont stockées vos données si vous n'avez pas confiance en nous...",
-        "icon": "chat-alt-2"
+        "icon": "globe"
+      }
+    ]
+  },
+  "howitworks": {
+    "title": "Comment ça marche ?",
+    "subtitle": "Fonctionnement",
+    "text": "Ça peut sembler obscur mais en fait c'est très simple, regardez !",
+    "items": [
+      {
+        "title": "Connexion",
+        "content": "Vous renseignez vos identifiants scolaires. Ils seront conservés localement, de manière sécurisée",
+        "icon": null
+      },
+      {
+        "title": "Récupération de vos données",
+        "content": "Nous nous connectons aux APIs des services scolaires pour récupérer vos données, stockées localement",
+        "icon": null
+      },
+      {
+        "title": "C'est prêt !",
+        "content": "Vos données sont téléchargées, vous pouvez profiter pleinement d'yNotes et de toutes ses fonctionnalités",
+        "icon": null
+      }
+    ],
+    "steps": [
+      {
+        "svg": "login",
+        "title": "Etape 1",
+        "content": "Vous vous connectez avec vos identifiants scolaires (EcoleDirecte ou Pronote) qui sont conservés localement."
+      },
+      {
+        "svg": "cog",
+        "title": "Etape 2",
+        "content": "Nous utilisons les APIs des services pour accéder à vos notes."
+      },
+      {
+        "svg": "cloud-download",
+        "title": "Etape 3",
+        "content": "Nous récupérons vos données scolaires (toujours localement) et vous y accédez librement."
+      },
+      {
+        "svg": "tick",
+        "title": "Prêt !",
+        "content": "Vous accédez à vos données et profitez des fonctionnalités de yNotes !"
       }
     ]
   },
   "features": [
     {
       "title": "Toutes les fonctionnalités de base...",
-      "keypoints": [
-        "Vos notes",
-        "Vos devoirs",
-        "Votre agenda"
-      ],
+      "keypoints": ["Vos notes", "Vos devoirs", "Votre agenda"],
       "imgPath": "images/3Dassets/timetable.png",
       "imgLeft": false
     },
@@ -116,31 +156,6 @@
       "text": "Télécharger des documents, c'est bien. Savoir où ils sont enregistrés et pouvoir les gérer depuis l'application, c'est mieux."
     }
   ],
-  "howitworks": {
-    "title": "Comment ça marche ?",
-    "steps": [
-      {
-        "svg": "login",
-        "title": "Etape 1",
-        "content": "Vous vous connectez avec vos identifiants scolaires (EcoleDirecte ou Pronote) qui sont conservés localement."
-      },
-      {
-        "svg": "cog",
-        "title": "Etape 2",
-        "content": "Nous utilisons les APIs des services pour accéder à vos notes."
-      },
-      {
-        "svg": "cloud-download",
-        "title": "Etape 3",
-        "content": "Nous récupérons vos données scolaires (toujours localement) et vous y accédez librement."
-      },
-      {
-        "svg": "tick",
-        "title": "Prêt !",
-        "content": "Vous accédez à vos données et profitez des fonctionnalités de yNotes !"
-      }
-    ]
-  },
   "datapolicy": {
     "title": "Nous n'exploitons pas vos données",
     "steps": [
@@ -199,10 +214,7 @@
   "recruitement": {
     "title": "Nous avons besoin de vous !",
     "content": "Pour mener à bien ce projet, nous avons besoin de vous et de vos compétences !",
-    "keypoints": [
-      "Des développeurs",
-      "Des graphistes"
-    ]
+    "keypoints": ["Des développeurs", "Des graphistes"]
   },
   "contact": {
     "title": "Question, problème ou autre ?",
