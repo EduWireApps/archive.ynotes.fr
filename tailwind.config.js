@@ -26,7 +26,7 @@ module.exports = {
       },
       fontFamily: {
         sans: ["Asap", ...defaultTheme.fontFamily.sans]
-      }
+      },
     }
   },
   variants: {

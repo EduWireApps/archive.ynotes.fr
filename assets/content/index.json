@@ -15,7 +15,7 @@
     "text": "yNotes est un client open-source <strong>non-officiel</strong> actuellement compatible avec les services EcoleDirecte et Pronote qui sont deux produits déposés. Nous sommes en train d'implémenter les différentes fonctionnalités déjà mises à disposition par ces services. Cependant, des modifications peuvent avoir lieu <strong>suite à une décision des services officiels</strong>."
   },
   "project": {
-    "title": "L'histoire de yNotes",
+    "title": "L'histoire d'yNotes",
     "subtitle": "A quoi ça sert ?",
     "text": "Tout commence en 2019...",
     "items": [
@@ -136,26 +136,23 @@
   ],
   "datapolicy": {
     "title": "Nous n'exploitons pas vos données",
-    "steps": [
+    "subtitle": "Notre politique",
+    "text": "Vos données n'appartiennent qu'à vous",
+    "items": [
       {
-        "svg": "folder",
         "title": "Stockage",
-        "content": "Vos données sont et restent stockées localement sur votre appareil."
+        "content": "Vos données sont et restent stockées localement sur votre appareil",
+        "icon": "folder"
       },
       {
-        "svg": "cloud-upload",
-        "title": "Collecte",
-        "content": "Les services que nous utilisons ne collectent pas vos données."
+        "title": "Services tiers",
+        "content": "Les services que nous utilisons ne collectent pas vos données",
+        "icon": "block"
       },
       {
-        "svg": "currency-dollar",
         "title": "Vente",
-        "content": "Pas de cookies, de publicités, d'espionnage ou de vente de quoi que ce soit vous concernant. Ce qui est à vous reste à vous."
-      },
-      {
-        "svg": "question-mark-circle",
-        "title": "Toujours pas convaincu ?",
-        "content": "Un doute concernant l'utilisation de vos données ? Rendez-vous sur Github pour consulter le code source."
+        "content": "Pas de cookies, pas de publicités, pas d'espionnage, pas de vente",
+        "icon": "currency-dollar"
       }
     ]
   },
