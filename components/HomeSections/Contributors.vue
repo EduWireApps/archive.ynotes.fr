@@ -1,50 +1,89 @@
 <template>
-  <section class="py-12 bg-space-500">
+  <section class="py-12 bg-white">
     <Container>
       <XyzTransition appear-visible duration="auto">
-        <div xyz="fade delay-4">
-          <h2
-            xyz="fade up delay-3 duration-6"
-            class="mb-8 text-2xl font-bold text-center text-white sm:text-3xl lg:text-5xl xyz-nested"
-            v-html="content.title"
-          ></h2>
-          <p
-            xyz="fade up delay-6 duration-6"
-            class="mb-6 text-center text-white md:text-lg lg:text-xl xyz-nested"
-            v-html="content.content"
-          ></p>
-          <div
-            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 pb-12"
-            v-if="contributors.length > 0"
-            xyz="fade stagger-2 ease-in-out delay-8"
-          >
-            <a
-              v-for="(c, index) in contributors"
-              :key="index"
-              class="flex items-center p-4 bg-white shadow-xl rounded-2xl xyz-nested"
-              :href="c.user.html_url"
-              target="_blank"
-              rel="noopener noreferrer"
+        <div class="flex flex-col h-full py-16 md:flex-row">
+          <div class="flex flex-col justify-center flex-1 mx-6 mb-6">
+            <div class="text-left">
+              <h2
+                class="text-3xl font-extrabold leading-8 tracking-tight text-center text-gray-900 sm:text-5xl md:text-left xyz-nested"
+                xyz="fade down-1 delay-3 duration-15"
+                v-html="content.title"
+              ></h2>
+              <p
+                class="max-w-2xl mt-8 mb-4 text-lg leading-8 text-justify text-gray-700 lg:text-xl xyz-nested"
+                xyz="fade down-1 delay-6 duration-15"
+                v-html="content.content"
+              ></p>
+              <a
+                class="inline-flex items-center text-lg font-medium tracking-wide text-transparent transition-colors duration-200 bg-clip-text bg-gradient-to-br from-indigo-600 to-purple-600 focus:outline-none hover:opacity-85 xyz-nested"
+                :href="require('~/assets/content/contact.json').repo"
+                target="_blank"
+                rel="noopener noreferrer"
+                xyz="fade down-1 delay-8 duration-15"
+              >
+                <span v-html="content.link.text"></span>
+                <Zondicon
+                  icon="cheveron-right"
+                  class="w-5 h-5 text-purple-600 fill-current"
+              /></a>
+            </div>
+          </div>
+          <div class="inline-flex items-center justify-center flex-1">
+            <div
+              class="grid grid-cols-1 gap-4 pb-12"
+              v-if="contributors.length > 0"
+              xyz="fade down-1 stagger-2 delay-8"
             >
-              <img
-                :src="c.user.avatar_url"
-                class="w-20 h-20 border-2 border-gray-300 rounded-full shadow-lg border-opacity-20"
-                alt=""
-              />
-              <div class="flex flex-col justify-center px-4 overflow-hidden">
-                <span
-                  class="text-lg font-semibold"
-                  v-html="c.user.login"
-                ></span>
-                <p v-if="c.customSentence !== ''" v-html="c.customSentence"></p>
-                <p v-else>
-                  A contribué
-                  <span v-html="c.contributed.app ? 'à l\'application' : null"></span>
-                  <span v-html="c.contributed.app && c.contributed.website ? ' et ' : null"></span>
-                  <span v-html="c.contributed.website ? 'au site internet' : null"></span>
-                </p>
-              </div>
-            </a>
+              <a
+                v-for="(c, index) in contributors"
+                :key="index"
+                class="flex items-center p-4 transition-transform transform bg-gray-100 rounded-2xl xyz-nested md:hover:scale-105"
+                :href="c.user.html_url"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div
+                  class="p-1 rounded-full bg-gradient-to-tr from-indigo-500 to-purple-500"
+                >
+                  <img
+                    :src="c.user.avatar_url"
+                    class="block w-20 h-20 p-1 bg-gray-100 rounded-full"
+                    :alt="c.user.login + ' avatar'"
+                  />
+                </div>
+                <div class="flex flex-col justify-center px-4 overflow-hidden">
+                  <span
+                    class="text-xl font-medium leading-6 text-gray-900"
+                    v-html="c.user.login"
+                  ></span>
+                  <p class="text-lg text-gray-500">
+                    <span
+                      v-if="c.customSentence !== ''"
+                      v-html="c.customSentence"
+                    ></span>
+                    <span v-else>
+                      A contribué
+                      <span
+                        v-html="c.contributed.app ? 'à l\'application' : null"
+                      ></span>
+                      <span
+                        v-html="
+                          c.contributed.app && c.contributed.website
+                            ? ' et '
+                            : null
+                        "
+                      ></span>
+                      <span
+                        v-html="
+                          c.contributed.website ? 'au site internet' : null
+                        "
+                      ></span>
+                    </span>
+                  </p>
+                </div>
+              </a>
+            </div>
           </div>
         </div>
       </XyzTransition>

@@ -90,82 +90,6 @@
       "imgPath": "images/undraw/undraw_features_overview_jg7a.svg"
     }
   ],
-  "features2": [
-    {
-      "title": "Toutes les fonctionnalités de base...",
-      "keypoints": ["Vos notes", "Vos devoirs", "Votre agenda"],
-      "imgPath": "images/3Dassets/timetable.png",
-      "imgLeft": false
-    },
-    {
-      "title": "...et bien plus encore !",
-      "imgPath": "images/3Dassets/homework.png",
-      "imgLeft": true,
-      "text": "yNotes apporte un grand nombre de fonctionnalités très pratiques !"
-    },
-    {
-      "title": "SpaceStats : statistiques avancées",
-      "keypoints": [
-        "Evolution des notes sur le trimestre",
-        "Impact d'une note sur la moyenne de la matière concernée et la moyenne générale",
-        "Et bien d'autres à venir..."
-      ],
-      "imgPath": "images/3Dassets/stats.png",
-      "imgLeft": false,
-      "textBefore": true,
-      "text": "Les gestionnaires de vie scolaire proposent bien quelques statistiques... mais c'est loin d'être suffisant. yNotes palie à ce manque en vous proposant quelques statistiques utiles !",
-      "status": {
-        "variant": "warning",
-        "text": "En cours"
-      }
-    },
-    {
-      "title": "Un agenda amélioré",
-      "keypoints": [
-        "Ajoutez un évènement sur le temps scolaire",
-        "Organisez votre temps extrascolaire sans passer par d'autres applications"
-      ],
-      "imgPath": "images/phoneScreen.png",
-      "imgLeft": true,
-      "textBefore": true,
-      "text": "En plus de l'agenda fourni par les services, yNotes rajoute des fonctionnalités très pratique !",
-      "status": {
-        "variant": "warning",
-        "text": "En cours"
-      }
-    },
-    {
-      "title": "Restez à jour",
-      "keypoints": [
-        "Notification de nouvelle note",
-        "Notification de nouvel email"
-      ],
-      "imgPath": "images/3Dassets/bell.png",
-      "imgLeft": false,
-      "textBefore": true,
-      "status": {
-        "variant": "warning",
-        "text": "En cours"
-      },
-      "text": "yNotes vous notifie des nouvelles notes et des nouveaux messages."
-    },
-    {
-      "title": "Gestionnaire de fichiers amélioré",
-      "keypoints": [
-        "Organisez vos documents dans des dossiers",
-        "Renommez vos fichiers",
-        "Supprimez-les"
-      ],
-      "imgPath": "images/phoneScreen.png",
-      "imgLeft": true,
-      "textBefore": true,
-      "status": {
-        "variant": "warning",
-        "text": "En cours"
-      },
-      "text": "Télécharger des documents, c'est bien. Savoir où ils sont enregistrés et pouvoir les gérer depuis l'application, c'est mieux."
-    }
-  ],
   "datapolicy": {
     "title": "Nous n'exploitons pas vos données",
     "subtitle": "Notre politique",
@@ -189,8 +113,11 @@
     ]
   },
   "contributors": {
-    "title": "Contributeurs",
-    "content": "Un grand merci à tous les contributeurs de ce projet, à quelque échelle que ce soit.",
+    "title": "Un projet maintenu par des bénévoles",
+    "content": "yNotes est un projet open-source. Cela signifie que le code source de l'application est consultable en ligne. Cela veut surtout dire que ce projet est <strong>développé et maintenu par des développeurs passionnés</strong>. Tous ont apporté (et apportent encore) des modifications gratuitement, un grand merci à eux.",
+    "link": {
+      "text": "Voir la page Github"
+    },
     "fetch": {
       "excludedUsers": [
         "ModernChocolate",

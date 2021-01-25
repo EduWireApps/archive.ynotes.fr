@@ -14,13 +14,6 @@
       :content="e"
       :left="index % 2 === 0"
     />
-    <!-- <div>Résumé</div>
-    <div>Notes</div>
-    <div>Agenda</div>
-    <div>Stats</div>
-    <div>Notifications</div>
-    <div>Autre : devoirs, fichiers, messagerie</div>
-    <Features :content="content.features2" /> -->
     <FeaturesSection :content="content.datapolicy" />
     <Contributors :content="content.contributors" />
     <Recruitement :content="content.recruitement" />
