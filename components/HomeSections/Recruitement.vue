@@ -21,7 +21,7 @@
             ></p>
           </div>
           <div class="mt-16 xyz-nested" xyz="delay-15">
-            <dl
+            <div
               class="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10 xyz-nested"
               xyz="fade down-1 delay-6 duration-15 stagger"
             >
@@ -35,11 +35,11 @@
                 >
                   <Zondicon :icon="e.icon" class="fill-current h-6 w-6" />
                 </div>
-                <dt
+                <div
                   class="text-xl font-medium leading-6 text-gray-900"
                   v-html="e.title"
-                ></dt>
-                <dd class="mt-2 text-lg text-gray-500" v-html="e.content"></dd>
+                ></div>
+                <div class="mt-2 text-lg text-gray-500" v-html="e.content"></div>
                 <img
                   :src="require(`~/assets/${e.imgPath}`)"
                   class="mt-6 w-3/4 md:w-96 xyz-nested mx-auto"
@@ -47,7 +47,7 @@
                   alt="Illustration"
                 />
               </div>
-            </dl>
+            </div>
           </div>
         </div>
       </XyzTransition>

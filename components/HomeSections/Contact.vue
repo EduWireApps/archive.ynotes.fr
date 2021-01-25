@@ -21,7 +21,7 @@
             ></p>
           </div>
           <div class="mt-16 xyz-nested" xyz="delay-15">
-            <dl
+            <div
               class="space-y-10 md:space-y-0 md:grid md:grid-cols-3 md:gap-x-8 md:gap-y-10 xyz-nested"
               xyz="fade down-1 delay-6 duration-15 stagger"
             >
@@ -43,12 +43,12 @@
                     class="fill-current h-6 w-6"
                   />
                 </div>
-                <dt
+                <div
                   class="text-xl font-medium leading-6 text-gray-900"
                   v-html="e.text"
-                ></dt>
+                ></div>
               </a>
-            </dl>
+            </div>
           </div>
         </div>
       </XyzTransition>

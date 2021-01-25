@@ -4,11 +4,11 @@
       <XyzTransition appear-visible duration="auto">
         <div>
           <div class="text-center">
-            <h3
+            <div
               class="text-base font-semibold tracking-wide uppercase text-transparent bg-clip-text bg-gradient-to-br from-indigo-500 to-purple-500 inline-block xyz-nested"
               xyz="fade down-1 delay-6 duration-15"
               v-html="content.subtitle"
-            ></h3>
+            ></div>
             <h2
               class="mt-2 text-3xl font-extrabold leading-8 tracking-tight text-gray-900 sm:text-5xl xyz-nested"
               xyz="fade down-1 delay-3 duration-15"
@@ -21,7 +21,7 @@
             ></p>
           </div>
           <div class="mt-16 xyz-nested" xyz="delay-15">
-            <dl
+            <div
               class="space-y-10 md:space-y-0 md:grid md:grid-cols-3 md:gap-x-8 md:gap-y-10 xyz-nested"
               xyz="fade down-1 delay-6 duration-15 stagger"
             >
@@ -40,13 +40,13 @@
                     class="fill-current h-6 w-6"
                   />
                 </div>
-                <dt
+                <div
                   class="text-xl font-medium leading-6 text-gray-900"
                   v-html="e.title"
-                ></dt>
-                <dd class="mt-2 text-lg text-gray-500" v-html="e.content"></dd>
+                ></div>
+                <div class="mt-2 text-lg text-gray-500" v-html="e.content"></div>
               </div>
-            </dl>
+            </div>
           </div>
         </div>
       </XyzTransition>
