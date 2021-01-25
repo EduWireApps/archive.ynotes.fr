@@ -8,11 +8,11 @@
       "1": "Votre application",
       "2": "scolaire connectée"
     },
-    "text": "Accédez à vos notes, vos devoirs, votre emploi du temps et bien d'autres fonctionnalités dans une interface élégante. Soyez notifié(e) en temps réel. Et tout ceci en respectant la confidentialité de vos données."
+    "text": "Accédez à vos notes, devoirs, emplois du temps et bien d'autres fonctionnalités dans une interface élégante. Soyez notifié.e en temps réel. Et tout ceci en respectant la confidentialité de vos données."
   },
   "warning": {
     "title": "Avertissement",
-    "text": "yNotes est un client open-source <strong>non-officiel</strong> actuellement compatible avec les services EcoleDirecte et Pronote qui sont deux produits déposés. Nous sommes en train d'implémenter les différentes fonctionnalités déjà mises à disposition par ces services. Cependant, des modifications peuvent avoir lieu <strong>suite à une décision des services officiels</strong>."
+    "text": "yNotes est un client open-source <strong>non-officiel</strong> actuellement compatible avec les services EcoleDirecte et Pronote qui sont deux produits déposés. Nous sommes en train d'implémenter les différentes fonctionnalités déjà mises à disposition par ces services. Cependant, des modifications sont susceptibles d'avoir lieu <strong>suite à une décision des services officiels</strong>."
   },
   "project": {
     "title": "L'histoire d'yNotes",
@@ -21,12 +21,12 @@
     "items": [
       {
         "title": "Répondre à un besoin",
-        "content": "Les applications fournies par les services de gestion de vie étudiante sont incomplètes et peu pratiques. yNotes vient donc ajouter des fonctionnalités et intègre mieux celles déjà existantes.",
+        "content": "Les applications fournies par les services de gestion de vie étudiante sont basiques et peu ergonomiques. yNotes vient donc ajouter des fonctionnalités tout en intégrant mieux celles qui existent déjà.",
         "icon": "conversation"
       },
       {
         "title": "Une application moderne",
-        "content": "Les applications officielles de vie scolaire possèdent des interfaces souvent peu attrayantes. Heureusement, yNotes est là, conçue avec le puissant framework Flutter. Préparez-vous à en prendre plein les yeux !</a>",
+        "content": "Les applications officielles de vie scolaire possèdent des interfaces peu attrayantes. Heureusement, yNotes est là, conçue avec le puissant framework Flutter. Préparez-vous à en prendre plein les yeux !</a>",
         "icon": "code"
       },
       {
@@ -43,78 +43,78 @@
     "items": [
       {
         "title": "Connexion",
-        "content": "Vous renseignez vos identifiants scolaires. Ils seront conservés localement, de manière sécurisée",
+        "content": "Vous renseignez vos identifiants scolaires. Ils seront conservés localement, de manière sécurisée.",
         "icon": null
       },
       {
         "title": "Récupération de vos données",
-        "content": "Nous nous connectons aux APIs des services scolaires pour récupérer vos données, stockées localement",
+        "content": "Nous nous connectons aux services scolaires pour y récupérer vos données, et les stockons localement.",
         "icon": null
       },
       {
         "title": "C'est prêt !",
-        "content": "Vos données sont téléchargées, vous pouvez profiter pleinement d'yNotes et de toutes ses fonctionnalités",
+        "content": "Vos données sont téléchargées : vous pouvez profiter pleinement d'yNotes et de toutes ses fonctionnalités !",
         "icon": null
       }
     ]
   },
   "features": [
     {
-      "title": "Résumé",
-      "text": "Graphiques, dernières notes et derniers devoirs, ne perdez pas de temps et accédez à l'essentiel en un coup d'oeil !",
+      "title": "Votre résumé",
+      "text": "Accédez à l'essentiel en un coup d'oeil : prochains devoirs, dernières notes et évolution temporelle...",
       "imgPath": "images/undraw/undraw_Progress_overview_re_tvcl.svg"
     },
     {
-      "title": "Notes",
+      "title": "Vos notes",
       "text": "Accédez à toutes vos notes rapidement dans une interface ergonomique. Vos moyennes sont calculées en temps réel.",
       "imgPath": "images/undraw/undraw_stock_prices_afrt.svg"
     },
     {
-      "title": "Agenda",
-      "text": "Organiser l'intégralité de vos journées dans l'application ! Vous pouvez créer des évènements sur le temps scolaire et extrascolaire, plus besoin de passer par différentes applications pour une organisation efficace.",
+      "title": "Votre agenda",
+      "text": "Organisez l'intégralité de vos journées dans l'application ! Dans votre emploi du temps, ajoutez des évènements sur les temps scolaire et extrascolaire !",
       "imgPath": "images/undraw/undraw_events_2p66.svg"
     },
     {
-      "title": "Statistiques",
-      "text": "Bénéficiez de statistiques super pratiques ! Evolution des dernières notes, impact d'une note sur la moyenne de la matière concernée et la moyenne générale, et bien d'autre à venir...",
+      "title": "Vos statistiques",
+      "text": "Bénéficiez de statistiques super pratiques ! Evolution temporelle, impact d'une note sur la moyenne de la matière concernée et sur la moyenne générale, et bien d'autres à venir...",
       "imgPath": "images/undraw/undraw_all_the_data_h4ki.svg"
     },
     {
-      "title": "Notifications",
-      "text": "Restez à jour ! Avec yNotes, vous êtes notifié en (quasi) temps réel ! Nouvelle note ou bien nouveau mail, rien ne vous échapperas plus désormais...",
+      "title": "Vos notifications",
+      "text": "Nouvelle note, nouveau mail ? Avec yNotes, vous êtes notifié.e en temps réel ! Rien ne vous échappera plus désormais...",
       "imgPath": "images/undraw/undraw_add_tasks_mxew.svg"
     },
     {
-      "title": "Et ce n'est pas tout !",
-      "text": "Vous pensiez avoir tout vu ? yNotes bénéficie d'autres fonctionnalités : gestionnaire de fichiers améliorés, vie scolaire...Et d'autre sont encore dans les tuyaux !",
+      "title": "Mais encore...",
+      "text": "Vous pensiez avoir tout vu ? yNotes bénéficie d'autres fonctionnalités : gestionnaire de fichiers amélioré, vie scolaire... Et bientôt plus !",
       "imgPath": "images/undraw/undraw_features_overview_jg7a.svg"
     }
   ],
   "datapolicy": {
     "title": "Nous n'exploitons pas vos données",
     "subtitle": "Notre politique",
-    "text": "Vos données n'appartiennent qu'à vous",
+    "text": "Elles n'appartiennent qu'à vous",
     "items": [
       {
         "title": "Stockage",
-        "content": "Vos données sont et restent stockées localement sur votre appareil",
+        "content": "Vos données sont et restent stockées localement sur votre appareil.",
         "icon": "folder"
       },
       {
         "title": "Services tiers",
-        "content": "Les services que nous utilisons ne collectent pas vos données",
+        "content": "Les services tiers que nous utilisons ne collectent pas vos données.",
         "icon": "wrench"
       },
       {
-        "title": "Vente",
-        "content": "Pas de cookies, pas de publicités, pas d'espionnage, pas de vente",
+        "title": "Pas de revente",
+        "content": "Pas de cookies, pas de publicité, pas d'espionnage.",
         "icon": "currency-dollar"
       }
     ]
   },
   "contributors": {
-    "title": "Un projet maintenu par des bénévoles",
-    "content": "yNotes est un projet open-source. Cela signifie que le code source de l'application est consultable en ligne. Cela veut surtout dire que ce projet est <strong>développé et maintenu par des développeurs passionnés</strong>. Tous ont apporté (et apportent encore) des modifications, un grand merci à eux.",
+    "title": "Un projet réalisé par des bénévoles",
+    "content": "yNotes est un projet open-source. Cela signifie que le code source de l'application est consultable en ligne. Cela veut surtout dire que ce projet est <strong>développé et maintenu par des développeurs passionnés et désintéressés</strong>. Tous ont apporté (et continuent d'apporter) des modifications. <i>Un grand merci à eux !</i>",
     "link": {
       "text": "Voir la page Github"
     },
@@ -148,7 +148,7 @@
   "recruitement": {
     "title": "Nous avons besoin de vous !",
     "subtitle": "Votre aide est précieuse",
-    "text": "yNotes est un projet de grande ampleur, et nous avons besoin de votre aide",
+    "text": "yNotes est un projet de grande ampleur qui recherche des talents pour avancer",
     "items": [
       {
         "title": "Développeurs",
@@ -157,7 +157,7 @@
         "imgPath": "images/undraw/undraw_developer_activity_bv83.svg"
       },
       {
-        "title": "Designer",
+        "title": "Designers",
         "content": "En interne, nous utilisons Figma pour réaliser des maquettes.",
         "icon": "edit-pencil",
         "imgPath": "images/undraw/undraw_Designer_mindset_re_2w1k.svg"
@@ -181,7 +181,7 @@
         "external": true
       },
       {
-        "text": "Contactez-nous",
+        "text": "Contactez-nous !",
         "url": "/contact",
         "icon": "phone",
         "external": false

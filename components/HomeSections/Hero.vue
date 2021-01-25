@@ -62,10 +62,10 @@
             </a>
           </div>
         </div>
-        <div class="flex-1">
+        <div class="flex-1 flex items-center">
           <img
             src="~/assets/images/phoneScreen.png"
-            class="w-full mx-auto sm:w-3/4 md:w-auto md:h-full xyz-nested"
+            class="w-full mx-auto sm:w-3/4 md:w-auto lg:h-full xyz-nested"
             xyz="fade left-4 delay-10 duration-10"
             alt=""
           />

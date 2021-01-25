@@ -61,7 +61,7 @@
                       v-html="c.customSentence"
                     ></span>
                     <span v-else>
-                      A contribué
+                      Contributeur
                       <span
                         v-html="c.contributed.app ? 'à l\'application' : null"
                       ></span>

@@ -31,7 +31,7 @@
                 :href="e.url"
                 :target="e.external ? '_blank' : null"
                 :rel="e.external ? 'noreferrer noopener' : null"
-                class="inline-block p-6 pt-0 text-center transition-transform transform bg-gray-100 md:hover:scale-105 xyz-nested rounded-2xl"
+                class="inline-block p-6 pt-0 text-center transition-transform transform bg-gray-100 md:hover:scale-105 xyz-nested rounded-2xl w-full"
               >
                 <div
                   class="relative flex items-center justify-center w-12 h-12 mx-auto mb-6 -mt-6 text-2xl font-semibold text-white rounded-md shadow-xl bg-gradient-to-r from-indigo-500 to-purple-500"
