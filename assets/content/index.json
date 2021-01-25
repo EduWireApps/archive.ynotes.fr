@@ -147,8 +147,22 @@
   },
   "recruitement": {
     "title": "Nous avons besoin de vous !",
-    "content": "Pour mener à bien ce projet, nous avons besoin de vous et de vos compétences !",
-    "keypoints": ["Des développeurs", "Des graphistes"]
+    "subtitle": "Votre aide est précieuse",
+    "text": "yNotes est un projet de grande ampleur, et nous avons besoin de votre aide",
+    "items": [
+      {
+        "title": "Développeurs",
+        "content": "L'application est codée avec Flutter, un framework réalisé avec Dart.",
+        "icon": "code",
+        "imgPath": "images/undraw/undraw_developer_activity_bv83.svg"
+      },
+      {
+        "title": "Designer",
+        "content": "En interne, nous utilisons Figma pour réaliser des maquettes.",
+        "icon": "edit-pencil",
+        "imgPath": "images/undraw/undraw_Designer_mindset_re_2w1k.svg"
+      }
+    ]
   },
   "contact": {
     "title": "Question, problème ou autre ?",

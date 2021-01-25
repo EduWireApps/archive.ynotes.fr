@@ -16,7 +16,7 @@
                 v-html="content.content"
               ></p>
               <a
-                class="inline-flex items-center text-lg font-medium tracking-wide text-transparent transition-colors duration-200 bg-clip-text bg-gradient-to-br from-indigo-600 to-purple-600 focus:outline-none hover:opacity-85 xyz-nested"
+                class="inline-flex items-center text-lg font-medium tracking-wide text-transparent transition-colors duration-200 bg-clip-text bg-gradient-to-br from-indigo-600 to-purple-600 focus:outline-none hover:opacity-80 xyz-nested"
                 :href="require('~/assets/content/contact.json').repo"
                 target="_blank"
                 rel="noopener noreferrer"
