@@ -60,6 +60,38 @@
   },
   "features": [
     {
+      "title": "Résumé",
+      "text": "Graphiques, dernières notes et derniers devoirs, ne perdez pas de temps et accédez à l'essentiel en un coup d'oeil !",
+      "imgPath": "images/undraw/undraw_Progress_overview_re_tvcl.svg"
+    },
+    {
+      "title": "Notes",
+      "text": "Accédez à toutes vos notes rapidement dans une interface ergonomique. Vos moyennes sont calculées en temps réel.",
+      "imgPath": "images/undraw/undraw_stock_prices_afrt.svg"
+    },
+    {
+      "title": "Agenda",
+      "text": "Organiser l'intégralité de vos journées dans l'application ! Vous pouvez créer des évènements sur le temps scolaire et extrascolaire, plus besoin de passer par différentes applications pour une organisation efficace.",
+      "imgPath": "images/undraw/undraw_events_2p66.svg"
+    },
+    {
+      "title": "Statistiques",
+      "text": "Bénéficiez de statistiques super pratiques ! Evolution des dernières notes, impact d'une note sur la moyenne de la matière concernée et la moyenne générale, et bien d'autre à venir...",
+      "imgPath": "images/undraw/undraw_all_the_data_h4ki.svg"
+    },
+    {
+      "title": "Notifications",
+      "text": "Restez à jour ! Avec yNotes, vous êtes notifié en (quasi) temps réel ! Nouvelle note ou bien nouveau mail, rien ne vous échapperas plus désormais...",
+      "imgPath": "images/undraw/undraw_add_tasks_mxew.svg"
+    },
+    {
+      "title": "Et ce n'est pas tout !",
+      "text": "Vous pensiez avoir tout vu ? yNotes bénéficie d'autres fonctionnalités : gestionnaire de fichiers améliorés, vie scolaire...Et d'autre sont encore dans les tuyaux !",
+      "imgPath": "images/undraw/undraw_features_overview_jg7a.svg"
+    }
+  ],
+  "features2": [
+    {
       "title": "Toutes les fonctionnalités de base...",
       "keypoints": ["Vos notes", "Vos devoirs", "Votre agenda"],
       "imgPath": "images/3Dassets/timetable.png",
@@ -147,7 +179,7 @@
       {
         "title": "Services tiers",
         "content": "Les services que nous utilisons ne collectent pas vos données",
-        "icon": "block"
+        "icon": "wrench"
       },
       {
         "title": "Vente",

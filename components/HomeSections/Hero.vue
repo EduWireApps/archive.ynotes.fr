@@ -43,7 +43,7 @@
               href="https://play.google.com/store/apps/details?id=fr.ynotes"
               target="_blank"
               rel="noopener noreferrer"
-              class="inline-flex items-center px-5 py-3 transition-colors bg-white rounded-lg shadow hover:bg-gray-100 focus:outline-none whitespace-nowrap text-space-600 hover:shadow-xl"
+              class="inline-flex items-center px-5 py-3 transition-all bg-white rounded-lg shadow hover:bg-gray-100 focus:outline-none whitespace-nowrap text-space-600 hover:shadow-xl transform hover:scale-105"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
