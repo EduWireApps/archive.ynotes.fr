@@ -114,7 +114,7 @@
   },
   "contributors": {
     "title": "Un projet maintenu par des bénévoles",
-    "content": "yNotes est un projet open-source. Cela signifie que le code source de l'application est consultable en ligne. Cela veut surtout dire que ce projet est <strong>développé et maintenu par des développeurs passionnés</strong>. Tous ont apporté (et apportent encore) des modifications gratuitement, un grand merci à eux.",
+    "content": "yNotes est un projet open-source. Cela signifie que le code source de l'application est consultable en ligne. Cela veut surtout dire que ce projet est <strong>développé et maintenu par des développeurs passionnés</strong>. Tous ont apporté (et apportent encore) des modifications, un grand merci à eux.",
     "link": {
       "text": "Voir la page Github"
     },
@@ -170,15 +170,21 @@
     "links": [
       {
         "text": "FAQ",
-        "url": "/faq"
+        "url": "/faq",
+        "icon": "question",
+        "external": false
       },
       {
         "text": "Centre d'aide",
-        "url": "https://support.ynotes.fr"
+        "url": "https://support.ynotes.fr",
+        "icon": "wrench",
+        "external": true
       },
       {
         "text": "Contactez-nous",
-        "url": "/contact"
+        "url": "/contact",
+        "icon": "phone",
+        "external": false
       }
     ]
   }

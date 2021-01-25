@@ -29,16 +29,14 @@
               /></a>
             </div>
           </div>
-          <div class="inline-flex items-center justify-center flex-1">
+          <div class="inline-flex items-center justify-center flex-1 xyz-nested" xyz="fade delay-8">
             <div
               class="grid grid-cols-1 gap-4 pb-12"
-              v-if="contributors.length > 0"
-              xyz="fade down-1 stagger-2 delay-8"
             >
               <a
                 v-for="(c, index) in contributors"
                 :key="index"
-                class="flex items-center p-4 transition-transform transform bg-gray-100 rounded-2xl xyz-nested md:hover:scale-105"
+                class="flex items-center p-4 transition-transform transform bg-gray-100 rounded-2xl md:hover:scale-105"
                 :href="c.user.html_url"
                 target="_blank"
                 rel="noopener noreferrer"
