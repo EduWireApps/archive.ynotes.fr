@@ -50,7 +50,7 @@
                     :alt="c.user.login + ' avatar'"
                   />
                 </div>
-                <div class="flex flex-col justify-center px-4 overflow-hidden">
+                <div class="flex flex-col flex-1 justify-center px-4 overflow-hidden">
                   <span
                     class="text-xl font-medium leading-6 text-gray-900"
                     v-html="c.user.login"
