@@ -42,12 +42,12 @@ export default {
 </script>
 
 <style>
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+.nuxt-content h1,
+.nuxt-content h2,
+.nuxt-content h3,
+.nuxt-content h4,
+.nuxt-content h5,
+.nuxt-content h6 {
   @apply text-left;
 }
 </style>
