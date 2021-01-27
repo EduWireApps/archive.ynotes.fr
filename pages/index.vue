@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div>
     <Hero :content="content.hero" />
     <Warning :content="content.warning" />
     <FeaturesSection :content="content.project" />

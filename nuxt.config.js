@@ -18,8 +18,7 @@ export default {
       {
         hid: "description",
         name: "description",
-        content:
-          "Gérez vos notes, vos devoirs et même votre emploi du temps ; Contrôlez votre contenu en toute sécurité ; Accédez à vos notes dans une interface élégante"
+        content: require("./assets/content/index.json").hero.text
       }
     ],
     link: [

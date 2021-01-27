@@ -1,6 +1,6 @@
 <template>
   <XyzTransition appear duration="auto">
-    <section class="md:h-screen bg-gradient-to-b from-space-700 to-space-500">
+    <section class="min-h-screen md:h-screen bg-gradient-to-b from-space-700 to-space-500">
       <Container class="flex flex-col h-full py-16 md:flex-row-reverse">
         <div class="flex flex-col justify-center flex-1">
           <a
@@ -39,27 +39,37 @@
             class="block mx-auto xyz-nested md:ml-0"
             xyz="fade down-1 duration-15 delay-20"
           >
-            <a
-              href="https://play.google.com/store/apps/details?id=fr.ynotes"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="inline-flex items-center px-5 py-3 transition-all bg-white rounded-lg shadow hover:bg-gray-100 focus:outline-none whitespace-nowrap text-space-600 hover:shadow-xl transform hover:scale-105"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="currentColor"
-                class="w-6 h-6"
-                viewBox="0 0 512 512"
+            <div class="flex flex-col items-center md:items-start">
+              <a
+                href="https://play.google.com/store/apps/details?id=fr.ynotes"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center px-5 py-3 transition-all bg-white rounded-lg shadow hover:bg-gray-100 focus:outline-none whitespace-nowrap text-space-600 hover:shadow-xl transform hover:scale-105"
               >
-                <path
-                  d="M99.617 8.057a50.191 50.191 0 00-38.815-6.713l230.932 230.933 74.846-74.846L99.617 8.057zM32.139 20.116c-6.441 8.563-10.148 19.077-10.148 30.199v411.358c0 11.123 3.708 21.636 10.148 30.199l235.877-235.877L32.139 20.116zM464.261 212.087l-67.266-37.637-81.544 81.544 81.548 81.548 67.273-37.64c16.117-9.03 25.738-25.442 25.738-43.908s-9.621-34.877-25.749-43.907zM291.733 279.711L60.815 510.629c3.786.891 7.639 1.371 11.492 1.371a50.275 50.275 0 0027.31-8.07l266.965-149.372-74.849-74.847z"
-                ></path>
-              </svg>
-              <span class="flex flex-col items-start ml-4 leading-none">
-                <span class="mb-1 text-xs">Disponible sur</span>
-                <span class="font-medium">Google Play</span>
-              </span>
-            </a>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  class="w-6 h-6"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    d="M99.617 8.057a50.191 50.191 0 00-38.815-6.713l230.932 230.933 74.846-74.846L99.617 8.057zM32.139 20.116c-6.441 8.563-10.148 19.077-10.148 30.199v411.358c0 11.123 3.708 21.636 10.148 30.199l235.877-235.877L32.139 20.116zM464.261 212.087l-67.266-37.637-81.544 81.544 81.548 81.548 67.273-37.64c16.117-9.03 25.738-25.442 25.738-43.908s-9.621-34.877-25.749-43.907zM291.733 279.711L60.815 510.629c3.786.891 7.639 1.371 11.492 1.371a50.275 50.275 0 0027.31-8.07l266.965-149.372-74.849-74.847z"
+                  ></path>
+                </svg>
+                <span class="flex flex-col items-start ml-4 leading-none">
+                  <span class="mb-1 text-xs">Disponible sur</span>
+                  <span class="font-medium">Google Play</span>
+                </span>
+              </a>
+              <a
+                :href="content.subdownload.url"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="mt-2 text-sm text-space-100 hover:text-white transition-colors inline-flex items-center space-x-1"
+                ><span v-html="content.subdownload.text"></span
+                ><Zondicon icon="cheveron-right" class="fill-current w-5 h-5" />
+              </a>
+            </div>
           </div>
         </div>
         <div class="flex-1 flex items-center">

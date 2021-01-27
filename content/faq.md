@@ -1,12 +1,8 @@
----
-title: FAQ
----
-
 ## Commencer
 
 ### Où télécharger yNotes ?
 
-YNotes est actuellement disponible sur le [Play Store](https://play.google.com/store/apps/details?id=fr.ynotes).
+YNotes est actuellement disponible sur le [Play Store](https://play.google.com/store/apps/details?id=fr.ynotes). Vous pouvez aussi télécharger le fichier .apk sur [Github](https://github.com/ModernChocolate/ynotes/releases).
 
 ### Comment accéder à mon espace scolaire ?
 
@@ -34,59 +30,6 @@ yNotes est un client open source : le code est accessible au grand public et don
 
 Nous sommes en plein travail pour rendre la majorité des fonctionnalités essentielles proposées par les services scolaires. Ainsi certaines fonctionnalités ne sont pas encore accessibles à ce jour pour des raisons techniques ou parce qu'elles ne sont pas prévues au développement. Pour en savoir plus, rendez-vous dans la section relative à votre service.
 
-## Pronote
-
-### Comment puis-je me connecter
-
-Au démarrage de yNotes, choisissez Pronote, vous devrez ensuite remplir les champs demandés par l'application : votre <u>identifiant</u>, votre <u>mot de passe</u>, <u>l'adresse URL nécessaire pour vous connecter à votre espace Pronote</u>, et votre <u>CAS (ou ENT)</u>. Pour protéger votre confidentialité, tous ces identifants sont stockées et cryptées au sein même de votre appareil.
-
-### Quelle est mon adresse Pronote ?
-
-Votre adresse Pronote est une adresse "URL" qui vous permet d'accéder à votre adresse Pronote. Elle est normalement fournie par votre établissement. Si ce n'est pas le cas ou que vous ne vous en souvenez plus, connectez vous normalement à votre espace Pronote et effectuez les étapes suivantes.
-
-- **J'utilise Pronote sans ENT :** si vous utilisez Pronote sans ENT vous ne passez par aucun portail pour vous connecter à Pronote et arrivez directement
-  sur la page de connexion proposée par Pronote. (comme https://demo.index-education.net/pronote/eleve.html).
-  Il vous suffit de copier l'adresse dans la barre de recherche en haut de votre navigateur lorsque vous êtes sur la page de connexion. Elle se finit normalement par "index-education.net/pronote/eleve.html" si vous êtes un élève. Notez que la connexion avec un compte parent fonctionne également.
-- **J'utilise Pronote avec un ENT :**
-  si vous utilisez Pronote avec ENT, vous passerez par un portail et ne vous connecterez jamais directement par la page de connexion proposée par Pronote. L'adresse URL à utiliser est celle qui s'affichera dans la barre
-  de recherche de votre navigateur après que vous vous soyez connecté au service Pronote via l'ENT.
-  Elle se finit normalement par `index-education.net/pronote/eleve.html` si vous êtes un élève.
-  Notez que la connexion avec un compte parent fonctionne également.
-
-### Quelles sont les fonctionnalités de base disponibles ?
-
-**Édité le 7 juillet 2020**
-
-yNotes est en cours de développement, toutes les fonctionnalités ne sont donc pas encore disponibles.
-
-- L'affichage des notes
-- L'affichage des devoirs (sans la possibilité de télécharger les pièces jointes)
-
-### J'ai oublié mon mot de passe, que dois-je faire ?
-
-yNotes ne gère pas les mots de passe et ne vous permet pas de le modifier ni de le réinitialiser. Contactez Pronote ou votre académie pour retrouver vos identifiants.
-
-## Ecole Directe
-
-### Comment puis-je me connecter ?
-
-Au démarrage de yNotes, choisissez <u>Ecole Directe</u>, vous devrez ensuite remplir les champs demandés par l'application : votre <u>identifiant</u> et votre <u>mot de passe</u>. Pour protéger votre confidentialité, tous ces identifants sont stockées et cryptées au sein même de votre appareil.
-
-### Quelles sont les fonctionnalités de base disponibles ?
-
-**Édité le 8 juillet 2020**
-
-yNotes est en cours de développement mais la majorité des fonctionnalités est déjà disponible.
-
-- L'affichage des notes
-- L'affichage des devoirs
-- L'affichage des emails
-- L'affichage du cloud
-
-### J'ai oublié mon mot de passe, que dois-je faire ?
-
-yNotes ne gère pas les mots de passe et ne vous permet pas de le modifier ni de le réinitialiser. Contactez Ecole Directe ou votre école pour retrouver vos identifiants.
-
 ## Questions fréquentes
 
 ### Où mes identifiants sont-ils stockés ?
@@ -110,3 +53,5 @@ Nous nous excusons d'avance pour la gêne occasionnée. Pour nous aider à élim
 ### Comment les notifications de nouvelle note fonctionnent-elles ?
 
 Les notifications de nouvelles notes et de nouveaux mails fonctionnent sur un concept très simple : l'application sauvegarde le nombre actuel de notes et de mails et toutes les 15 minutes en arrière plan, elle vérifie si aucun n'a été ajouté. Il est impossible de réduire le temps d'actualisation des notifications. Sur iOS il se peut que ces actualisations soient moins courantes si vous n'utilisez que très peu l'application, cela est du aux exigences du système d'exploitation que nous ne pouvons contourner.
+
+## Vous n'avez pas trouvé ce que vous cherchiez ? Consultez le [centre d'aide](https://support.ynotes.fr) ou [contactez-nous](mailto:contact@ynotes.fr).
