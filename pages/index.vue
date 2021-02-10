@@ -4,10 +4,6 @@
     <Warning :content="content.warning" />
     <FeaturesSection :content="content.project" />
     <FeaturesSection :content="content.howitworks" />
-    <!-- <ShowcaseSection
-      :content="content.howitworks"
-      componentName="ShowHomework"
-    /> -->
     <FeatureSection
       v-for="(e, index) in content.features"
       :key="index"
