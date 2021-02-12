@@ -60,7 +60,7 @@ Legal files are stored here.
 
 ## Deployment
 
-Merge `develop` in `master` and push. A Github action will run to deploy to `gh_pages` branch.
+Merge `develop` in `master` and push. A Github action will run to deploy to `gh-pages` branch.
 
 ## Icons
 

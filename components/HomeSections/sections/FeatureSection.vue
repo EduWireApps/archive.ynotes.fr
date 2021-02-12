@@ -28,7 +28,7 @@
             >
               <img
                 :src="require(`~/assets/${content.imgPath}`)"
-                class="w-3/4 md:w-96"
+                class="w-3/4 mx-auto md:w-96"
                 alt="Illustration"
               />
             </XyzConflict>
