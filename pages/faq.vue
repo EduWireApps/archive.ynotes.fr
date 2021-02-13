@@ -1,28 +1,33 @@
 <template>
-  <Container class="py-12">
-    <h1
-      class="mb-4 text-3xl font-bold text-center sm:text-4xl lg:text-6xl md:mb-8 text-space-500"
-      v-html="content.title"
-    ></h1>
-    <div
-      class="mx-auto prose text-justify sm:max-w-3xl md:prose-lg md:max-w-4xl lg:prose-xl lg:max-w-6xl"
-    >
-      <nuxt-content :document="content" />
-    </div>
-  </Container>
+  <div>
+    <PageHeader :title="infos.title" :subtitle="infos.description" />
+    <Container class="py-12">
+      <div
+        class="mx-auto prose text-justify sm:max-w-3xl md:prose-lg md:max-w-4xl lg:prose-xl lg:max-w-6xl"
+      >
+        <nuxt-content :document="content" />
+      </div>
+    </Container>
+  </div>
 </template>
 
 <script>
+import infos from "@/assets/content/faq.json";
+
 export default {
+  data() {
+    return {
+      infos: infos
+    };
+  },
   head() {
     return {
-      title: "FAQ",
+      title: this.infos.title,
       meta: [
         {
           name: "description",
-          content:
-            "Des questions concernant yNotes ? Nous avons les réponses !",
-          hid: "description"
+          hid: "description",
+          content: this.infos.description
         }
       ]
     };
@@ -30,9 +35,19 @@ export default {
   async asyncData({ $content, params }) {
     const files = await $content().fetch(),
       content = files[0];
+    console.log(content);
     return { content };
   }
 };
 </script>
 
-<style></style>
+<style>
+.nuxt-content h1,
+.nuxt-content h2,
+.nuxt-content h3,
+.nuxt-content h4,
+.nuxt-content h5,
+.nuxt-content h6 {
+  @apply text-left;
+}
+</style>

@@ -54,14 +54,13 @@ Contains all plugins, referenced in `/nuxt.config.js`.
 
 ### `/static`
 
-Contains all static files such as `favicon.ico`, accessible from `https://ynotes.fr/favicon.ico`.
+Contains all static files such as `favicon.ico` and `CNAME`, accessible from `https://ynotes.fr/favicon.ico`.
 
 Legal files are stored here.
 
-## Deployment WIP
+## Deployment
 
-https://nuxtjs.org/faq/vercel-deployment
-
+Merge `develop` in `master` and push. A Github action will run to deploy to `gh-pages` branch.
 
 ## Icons
 

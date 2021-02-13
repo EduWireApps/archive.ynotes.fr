@@ -21,12 +21,17 @@
             </div>
           </div>
           <div class="inline-flex items-center justify-center flex-1">
-            <img
-              :src="require(`~/assets/${content.imgPath}`)"
-              class="w-3/4 md:w-96 xyz-nested transform transition-transform md:hover:-translate-y-4 duration-500"
+            <XyzConflict
               xyz="fade down-1 delay-6 duration-15"
-              alt="Illustration"
-            />
+              class="transform transition-transform duration-500"
+              endClass="md:hover:-translate-y-4"
+            >
+              <img
+                :src="require(`~/assets/${content.imgPath}`)"
+                class="w-3/4 mx-auto md:w-96"
+                alt="Illustration"
+              />
+            </XyzConflict>
           </div>
         </div>
       </XyzTransition>

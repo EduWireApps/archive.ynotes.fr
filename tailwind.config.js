@@ -26,11 +26,11 @@ module.exports = {
       },
       fontFamily: {
         sans: ["Asap", ...defaultTheme.fontFamily.sans]
-      },
+      }
     }
   },
   variants: {
     extend: {}
   },
-  plugins: [require("@tailwindcss/typography")]
+  plugins: [require("@tailwindcss/typography"), require("@tailwindcss/forms")]
 };

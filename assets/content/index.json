@@ -8,7 +8,11 @@
       "1": "Votre application",
       "2": "scolaire connectée"
     },
-    "text": "Accédez à vos notes, devoirs, emplois du temps et bien d'autres fonctionnalités dans une interface élégante. Soyez notifié.e en temps réel. Et tout ceci en respectant la confidentialité de vos données."
+    "text": "Accédez à vos notes, devoirs, emplois du temps et bien d'autres fonctionnalités dans une interface élégante. Soyez notifié.e en temps réel. Et tout ceci en respectant la confidentialité de vos données.",
+    "subdownload": {
+      "url": "https://github.com/ModernChocolate/ynotes/releases",
+      "text": "Release Github"
+    }
   },
   "warning": {
     "title": "Avertissement",

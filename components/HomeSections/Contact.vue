@@ -25,29 +25,34 @@
               class="space-y-10 md:space-y-0 md:grid md:grid-cols-3 md:gap-x-8 md:gap-y-10 xyz-nested"
               xyz="fade down-1 delay-6 duration-15 stagger"
             >
-              <a
+              <XyzConflict
                 v-for="(e, index) in content.links"
                 :key="index"
-                :href="e.url"
-                :target="e.external ? '_blank' : null"
-                :rel="e.external ? 'noreferrer noopener' : null"
-                class="inline-block p-6 pt-0 text-center transition-transform transform bg-gray-100 md:hover:scale-105 xyz-nested rounded-2xl w-full"
+                class="transition-transform transform"
+                endClass="md:hover:scale-105"
               >
-                <div
-                  class="relative flex items-center justify-center w-12 h-12 mx-auto mb-6 -mt-6 text-2xl font-semibold text-white rounded-md shadow-xl bg-gradient-to-r from-indigo-500 to-purple-500"
+                <a
+                  :href="e.url"
+                  :target="e.external ? '_blank' : null"
+                  :rel="e.external ? 'noreferrer noopener' : null"
+                  class="inline-block p-6 pt-0 text-center bg-gray-100 rounded-2xl w-full"
                 >
-                  <span v-if="e.icon === null" v-html="index + 1"></span>
-                  <Zondicon
-                    v-else
-                    :icon="e.icon"
-                    class="fill-current h-6 w-6"
-                  />
-                </div>
-                <div
-                  class="text-xl font-medium leading-6 text-gray-900"
-                  v-html="e.text"
-                ></div>
-              </a>
+                  <div
+                    class="relative flex items-center justify-center w-12 h-12 mx-auto mb-6 -mt-6 text-2xl font-semibold text-white rounded-md shadow-xl bg-gradient-to-r from-indigo-500 to-purple-500"
+                  >
+                    <span v-if="e.icon === null" v-html="index + 1"></span>
+                    <Zondicon
+                      v-else
+                      :icon="e.icon"
+                      class="fill-current h-6 w-6"
+                    />
+                  </div>
+                  <div
+                    class="text-xl font-medium leading-6 text-gray-900"
+                    v-html="e.text"
+                  ></div>
+                </a>
+              </XyzConflict>
             </div>
           </div>
         </div>

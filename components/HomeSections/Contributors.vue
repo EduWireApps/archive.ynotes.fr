@@ -2,7 +2,7 @@
   <section class="py-12 bg-white">
     <Container>
       <XyzTransition appear-visible duration="auto">
-        <div class="flex flex-col h-full py-16 md:flex-row">
+        <div class="flex flex-col h-full py-16 lg:flex-row">
           <div class="flex flex-col justify-center flex-1 mx-6 mb-6">
             <div class="text-left">
               <h2
@@ -17,7 +17,10 @@
               ></p>
               <a
                 class="inline-flex items-center text-lg font-medium tracking-wide text-transparent transition-colors duration-200 bg-clip-text bg-gradient-to-br from-indigo-600 to-purple-600 focus:outline-none hover:opacity-80 xyz-nested"
-                :href="require('~/assets/content/contact.json').repo"
+                :href="
+                  require('~/assets/content/contact.json').repo +
+                    '#contributeurs-'
+                "
                 target="_blank"
                 rel="noopener noreferrer"
                 xyz="fade down-1 delay-8 duration-15"
@@ -34,54 +37,62 @@
             xyz="fade delay-8"
           >
             <div class="grid grid-cols-1 gap-4 pb-12">
-              <a
+              <XyzConflict
                 v-for="(c, index) in contributors"
                 :key="index"
-                class="flex items-center p-4 transition-transform transform bg-gray-100 rounded-2xl md:hover:scale-105"
-                :href="c.user.html_url"
-                target="_blank"
-                rel="noopener noreferrer"
+                class="transition-transform transform"
+                xyz="fade stagger-4"
+                endClass="md:hover:translate-x-4"
               >
-                <div
-                  class="p-1 md:flex rounded-full bg-gradient-to-tr from-indigo-500 to-purple-500"
+                <a
+                  class="flex flex-col bg-purple-100 rounded-2xl"
+                  :href="c.user.html_url"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  <img
-                    :src="c.user.avatar_url"
-                    class="block md:w-auto h-20 p-1 bg-gray-100 rounded-full"
-                    :alt="c.user.login + ' avatar'"
-                  />
-                </div>
-                <div class="flex flex-col justify-center px-4 overflow-hidden">
-                  <span
-                    class="text-xl font-medium leading-6 text-gray-900"
-                    v-html="c.user.login"
-                  ></span>
-                  <p class="text-lg text-gray-500">
+                  <div
+                    class="bg-gradient-to-tr from-indigo-500 to-purple-500 h-16 rounded-t-2xl"
+                  >
+                    <img
+                      :src="c.user.avatar_url"
+                      class="block w-24 h-24 p-1 bg-purple-100 rounded-full ml-8 mt-4"
+                      :alt="c.user.login + ' avatar'"
+                    />
+                  </div>
+                  <div
+                    class="flex flex-col flex-1 justify-center py-4 px-8 ml-28 relative"
+                  >
                     <span
-                      v-if="c.customSentence !== ''"
-                      v-html="c.customSentence"
+                      class="text-xl font-medium leading-6 text-space-500"
+                      v-html="c.user.login"
                     ></span>
-                    <span v-else>
-                      Contributeur
+                    <p class="text-lg text-gray-700 mt-2">
                       <span
-                        v-html="c.contributed.app ? 'à l\'application' : null"
+                        v-if="c.customSentence !== ''"
+                        v-html="c.customSentence"
                       ></span>
-                      <span
-                        v-html="
-                          c.contributed.app && c.contributed.website
-                            ? ' et '
-                            : null
-                        "
-                      ></span>
-                      <span
-                        v-html="
-                          c.contributed.website ? 'au site internet' : null
-                        "
-                      ></span>
-                    </span>
-                  </p>
-                </div>
-              </a>
+                      <span v-else>
+                        Contributeur
+                        <span
+                          v-html="c.contributed.app ? 'à l\'application' : null"
+                        ></span>
+                        <span
+                          v-html="
+                            c.contributed.app && c.contributed.website
+                              ? ' et '
+                              : null
+                          "
+                        ></span>
+                        <span
+                          v-html="
+                            c.contributed.website ? 'au site internet' : null
+                          "
+                        ></span>
+                      </span>
+                    </p>
+                  </div>
+                </a>
+              </XyzConflict>
             </div>
           </div>
         </div>

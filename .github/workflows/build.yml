@@ -9,7 +9,7 @@ on:
       - master
 
 jobs:
-  docs:
+  deployment:
     runs-on: ${{ matrix.os }}
 
     strategy:
