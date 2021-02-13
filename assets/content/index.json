@@ -20,7 +20,7 @@
     "text": "Tout commence en 2019...",
     "items": [
       {
-        "title": "Répondre à un besoin",
+        "title": "Une réponse à un besoin",
         "content": "Les applications fournies par les services de gestion de vie étudiante sont basiques et peu ergonomiques. yNotes vient donc ajouter des fonctionnalités tout en intégrant mieux celles qui existent déjà.",
         "icon": "conversation"
       },
@@ -113,7 +113,7 @@
     ]
   },
   "contributors": {
-    "title": "Un projet réalisé par des bénévoles",
+    "title": "Un projet ouvert à tous",
     "content": "yNotes est un projet open-source. Cela signifie que le code source de l'application est consultable en ligne. Cela veut surtout dire que ce projet est <strong>développé et maintenu par des développeurs passionnés et désintéressés</strong>. Tous ont apporté (et continuent d'apporter) des modifications. <i>Un grand merci à eux !</i>",
     "link": {
       "text": "Voir la page Github"
@@ -140,7 +140,7 @@
           "avatar_url": "https://avatars1.githubusercontent.com/u/69633530?v=4",
           "app": true,
           "website": true,
-          "customSentence": ""
+          "customSentence": "Développeur du site web"
         }
       ]
     }

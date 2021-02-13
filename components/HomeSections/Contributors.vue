@@ -29,10 +29,11 @@
               /></a>
             </div>
           </div>
-          <div class="inline-flex items-center justify-center flex-1 xyz-nested" xyz="fade delay-8">
-            <div
-              class="grid grid-cols-1 gap-4 pb-12"
-            >
+          <div
+            class="inline-flex items-center justify-center flex-1 xyz-nested"
+            xyz="fade delay-8"
+          >
+            <div class="grid grid-cols-1 gap-4 pb-12">
               <a
                 v-for="(c, index) in contributors"
                 :key="index"
@@ -42,11 +43,11 @@
                 rel="noopener noreferrer"
               >
                 <div
-                  class="p-1 rounded-full bg-gradient-to-tr from-indigo-500 to-purple-500"
+                  class="p-1 md:flex rounded-full bg-gradient-to-tr from-indigo-500 to-purple-500"
                 >
                   <img
                     :src="c.user.avatar_url"
-                    class="block w-20 h-20 p-1 bg-gray-100 rounded-full"
+                    class="block md:w-auto h-20 p-1 bg-gray-100 rounded-full"
                     :alt="c.user.login + ' avatar'"
                   />
                 </div>
@@ -95,11 +96,11 @@ export default {
     return {
       excludedUsers: this.content.fetch.excludedUsers,
       customUsers: this.content.fetch.customUsers,
-      contributors: []
+      contributors: [],
     };
   },
   props: {
-    content: Object
+    content: Object,
   },
   methods: {
     addContributor(el) {
@@ -107,15 +108,15 @@ export default {
         user: {
           login: el.login,
           html_url: el.html_url,
-          avatar_url: el.avatar_url
+          avatar_url: el.avatar_url,
         },
         contributed: {
           app: el.app,
-          website: el.website
+          website: el.website,
         },
-        customSentence: el.customSentence
+        customSentence: el.customSentence,
       });
-    }
+    },
   },
   async created() {
     const contributors = [
@@ -124,47 +125,47 @@ export default {
       ),
       await this.$axios.$get(
         "https://api.github.com/repos/ModernChocolate/ynotes-website/contributors"
-      )
+      ),
     ];
-    this.customUsers.forEach(el => {
+    this.customUsers.forEach((el) => {
       this.addContributor({
         login: el.login,
         html_url: el.html_url,
         avatar_url: el.avatar_url,
         app: el.app,
         website: el.website,
-        customSentence: el.customSentence
+        customSentence: el.customSentence,
       });
     });
     let ctbtApp = contributors[0].filter(
-      c => !this.excludedUsers.includes(c.login)
+      (c) => !this.excludedUsers.includes(c.login)
     );
-    ctbtApp.forEach(el => {
+    ctbtApp.forEach((el) => {
       this.addContributor({
         login: el.login,
         html_url: el.html_url,
         avatar_url: el.avatar_url,
         app: true,
-        website: contributors[1].some(c => c.login === el.login),
-        customSentence: ""
+        website: contributors[1].some((c) => c.login === el.login),
+        customSentence: "",
       });
     });
     let ctbtWebsite = contributors[1].filter(
-      c =>
+      (c) =>
         !this.excludedUsers.includes(c.login) &&
-        !ctbtApp.some(c2 => c2.login === c.login)
+        !ctbtApp.some((c2) => c2.login === c.login)
     );
-    ctbtWebsite.forEach(el => {
+    ctbtWebsite.forEach((el) => {
       this.addContributor({
         login: el.login,
         html_url: el.html_url,
         avatar_url: el.avatar_url,
         app: false,
         website: true,
-        customSentence: ""
+        customSentence: "",
       });
     });
-  }
+  },
 };
 </script>
 
