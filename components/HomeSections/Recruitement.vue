@@ -54,74 +54,7 @@
             </div>
           </div>
           <div class="mt-16">
-            <form
-              @submit.prevent="submitForm"
-              xyz="fade down-1 duration-10 delay-20"
-              class="grid grid-cols-1 gap-6 max-w-xl mx-auto xyz-nested"
-            >
-              <label class="block">
-                <span class="text-gray-700">Votre nom</span>
-                <input
-                  type="text"
-                  name="name"
-                  v-model="form.name"
-                  class="mt-1 block w-full rounded-md bg-gray-100 border-transparent focus:border-gray-300 focus:bg-gray-50 focus:ring-0 hover:bg-gray-200 transition-colors"
-                  placeholder=""
-                  required
-                />
-              </label>
-              <label class="block">
-                <span class="text-gray-700">Votre adresse e-mail</span>
-                <input
-                  type="email"
-                  name="email"
-                  v-model="form.email"
-                  class="mt-1 block w-full rounded-md bg-gray-100 border-transparent focus:border-gray-300 focus:bg-gray-50 focus:ring-0 hover:bg-gray-200 transition-colors"
-                  placeholder="john@exemple.com"
-                  required
-                />
-              </label>
-              <label class="block">
-                <span class="text-gray-700"
-                  >Votre introduction et ce que vous pouvez apporter</span
-                >
-                <textarea
-                  name="message"
-                  v-model="form.message"
-                  class="mt-1 h-64 block w-full rounded-md bg-gray-100 border-transparent focus:border-gray-300 focus:bg-gray-50 focus:ring-0 hover:bg-gray-200 transition-colors resize-none"
-                  required
-                ></textarea>
-              </label>
-              <div class="block mx-auto">
-                <input
-                  type="submit"
-                  :value="
-                    status === ''
-                      ? 'Envoyer'
-                      : status === 'success'
-                      ? 'Envoyé !'
-                      : status === 'error'
-                      ? 'Une erreur est survenue'
-                      : 'En cours'
-                  "
-                  class="rounded-md text-white px-6 py-2 text-md uppercase font-medium focus:outline-none transition-shadow"
-                  :class="{
-                    'bg-gradient-to-r from-indigo-500 to-purple-500 hover:shadow-xl cursor-pointer':
-                      status === '' &&
-                      form.name !== '' &&
-                      form.email !== '' &&
-                      form.message !== '',
-                    'bg-green-600': status === 'success',
-                    'bg-red-600': status === 'error',
-                    'bg-gray-400 cursor-not-allowed':
-                      form.name === '' ||
-                      form.email === '' ||
-                      form.message === '' ||
-                      status === 'loading'
-                  }"
-                />
-              </div>
-            </form>
+            <RecruitementForm />
           </div>
         </div>
       </XyzTransition>
@@ -133,57 +66,6 @@
 export default {
   props: {
     content: Object
-  },
-  data() {
-    return {
-      subjectText: " a demandé à rejoindre l'équipe via le site web",
-      form: {
-        apikey: "d2df98b1-e917-4f54-b48f-19f006401317",
-        subject: "",
-        name: "",
-        email: "",
-        message: ""
-      },
-      status: ""
-    };
-  },
-  computed: {
-    name() {
-      return this.form.name;
-    }
-  },
-  watch: {
-    name(newData, oldData) {
-      this.form.subject = newData + this.subjectText;
-    }
-  },
-  methods: {
-    async submitForm(e) {
-      if (this.status !== "") return;
-      this.status = "loading";
-      this.$axios.setHeader("Content-Type", "application/json");
-      this.$axios.setHeader("Accept", "application/json");
-      await this.$axios
-        .$post("https://api.web3forms.com/submit", this.form)
-        .then(response => {
-          if (response.success) {
-            this.status = "success";
-          } else {
-            this.status = "error";
-          }
-        })
-        .catch(error => {
-          this.status = "error";
-        });
-      if (this.status !== "error") {
-        this.form.name = "";
-        this.form.email = "";
-        this.form.message = "";
-      }
-      setTimeout(() => {
-        this.status = "";
-      }, 3000);
-    }
   }
 };
 </script>
