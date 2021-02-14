@@ -53,7 +53,7 @@
               </XyzConflict>
             </div>
           </div>
-          <div class="mt-16">
+          <div class="mt-16 xyz-nested" xyz="delay-15 fade down-1 duration-10">
             <RecruitementForm />
           </div>
         </div>
