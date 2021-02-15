@@ -166,7 +166,35 @@
         "icon": "edit-pencil",
         "imgPath": "images/undraw/undraw_Designer_mindset_re_2w1k.svg"
       }
-    ]
+    ],
+    "form": {
+      "title": "Décidé ?",
+      "revealButton": {
+        "open": "Masquer",
+        "close": "Afficher",
+        "base": "le formulaire"
+      },
+      "inputs": {
+        "name": {
+          "label": "Votre nom/pseudo",
+          "placeholder": "John Doe"
+        },
+        "email": {
+          "label": "Votre adresse e-mail",
+          "placeholder": "john.doe@gmail.com"
+        },
+        "message": {
+          "label": "Votre introduction et ce que vous pouvez apporter",
+          "placeholder": "Je m'appelle John et je développe avec Flutter depuis maintenant 6 mois. J'aimerais implémenter la connexion à toutes les circonscriptions de Pronote."
+        }
+      },
+      "submitButton": {
+        "DEFAULT": "Envoyer",
+        "success": "Envoyé !",
+        "error": "Une erreur est survenue",
+        "loading": "En cours"
+      }
+    }
   },
   "contact": {
     "title": "Question, problème ou autre ?",
