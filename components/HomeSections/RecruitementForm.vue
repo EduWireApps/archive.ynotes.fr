@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="formulaire">
     <div
       class="flex flex-col items-center justify-center px-4 py-12 mx-auto max-w-7xl sm:px-6 lg:py-16 lg:px-8"
     >
