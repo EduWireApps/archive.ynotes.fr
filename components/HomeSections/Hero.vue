@@ -1,6 +1,8 @@
 <template>
   <XyzTransition appear duration="auto">
-    <section class="min-h-screen md:h-screen bg-gradient-to-b from-space-700 to-space-500">
+    <section
+      class="min-h-screen md:h-screen bg-gradient-to-b from-space-700 to-space-500"
+    >
       <Container class="flex flex-col h-full py-16 md:flex-row-reverse">
         <div class="flex flex-col justify-center flex-1">
           <a
@@ -15,7 +17,7 @@
               v-html="content.badge.badge"
             ></span
             ><span v-html="content.badge.text"></span
-            ><Zondicon icon="cheveron-right" class="fill-current w-5 h-5" />
+            ><Zondicon icon="cheveron-right" class="w-5 h-5 fill-current" />
           </a>
           <h1
             class="mb-4 text-4xl font-extrabold text-center sm:text-6xl md:text-left md:text-4xl lg:text-5xl xl:text-7xl xyz-nested"
@@ -36,43 +38,82 @@
             v-html="content.text"
           ></p>
           <div
-            class="block mx-auto xyz-nested md:ml-0"
+            class="w-full xyz-nested md:ml-0"
             xyz="fade down-1 duration-15 delay-20"
           >
-            <div class="flex flex-col items-center md:items-start">
-              <a
-                href="https://play.google.com/store/apps/details?id=fr.ynotes"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="inline-flex items-center px-5 py-3 transition-all bg-white rounded-lg shadow focus:outline-none whitespace-nowrap text-space-400 hover:shadow-xl transform hover:-translate-y-1"
+            <div class="flex flex-col justify-between md:flex-row">
+              <div>
+                <div class="flex flex-col items-center md:items-start">
+                  <a
+                    href="https://play.google.com/store/apps/details?id=fr.ynotes"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="inline-flex items-center px-5 py-3 transition-all transform bg-white rounded-lg shadow focus:outline-none whitespace-nowrap text-space-400 hover:shadow-xl hover:-translate-y-1"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      class="w-6 h-6"
+                      viewBox="0 0 512 512"
+                    >
+                      <path
+                        d="M99.617 8.057a50.191 50.191 0 00-38.815-6.713l230.932 230.933 74.846-74.846L99.617 8.057zM32.139 20.116c-6.441 8.563-10.148 19.077-10.148 30.199v411.358c0 11.123 3.708 21.636 10.148 30.199l235.877-235.877L32.139 20.116zM464.261 212.087l-67.266-37.637-81.544 81.544 81.548 81.548 67.273-37.64c16.117-9.03 25.738-25.442 25.738-43.908s-9.621-34.877-25.749-43.907zM291.733 279.711L60.815 510.629c3.786.891 7.639 1.371 11.492 1.371a50.275 50.275 0 0027.31-8.07l266.965-149.372-74.849-74.847z"
+                      ></path>
+                    </svg>
+                    <span class="flex flex-col items-start ml-4 leading-none">
+                      <span class="mb-1 text-xs">Disponible sur</span>
+                      <span class="font-medium">Google Play</span>
+                    </span>
+                  </a>
+                  <a
+                    :href="content.subdownload.url"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="inline-flex items-center mt-2 space-x-1 text-sm transition-colors text-space-100 hover:text-white"
+                    ><span v-html="content.subdownload.text"></span
+                    ><Zondicon
+                      icon="cheveron-right"
+                      class="w-5 h-5 fill-current"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div
+                class="p-4 mx-auto mt-6 bg-white shadow-md md:mr-0 rounded-2xl md:mt-0"
               >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="currentColor"
-                  class="w-6 h-6"
-                  viewBox="0 0 512 512"
-                >
-                  <path
-                    d="M99.617 8.057a50.191 50.191 0 00-38.815-6.713l230.932 230.933 74.846-74.846L99.617 8.057zM32.139 20.116c-6.441 8.563-10.148 19.077-10.148 30.199v411.358c0 11.123 3.708 21.636 10.148 30.199l235.877-235.877L32.139 20.116zM464.261 212.087l-67.266-37.637-81.544 81.544 81.548 81.548 67.273-37.64c16.117-9.03 25.738-25.442 25.738-43.908s-9.621-34.877-25.749-43.907zM291.733 279.711L60.815 510.629c3.786.891 7.639 1.371 11.492 1.371a50.275 50.275 0 0027.31-8.07l266.965-149.372-74.849-74.847z"
-                  ></path>
-                </svg>
-                <span class="flex flex-col items-start ml-4 leading-none">
-                  <span class="mb-1 text-xs">Disponible sur</span>
-                  <span class="font-medium">Google Play</span>
-                </span>
-              </a>
-              <a
-                :href="content.subdownload.url"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="mt-2 text-sm text-space-100 hover:text-white transition-colors inline-flex items-center space-x-1"
-                ><span v-html="content.subdownload.text"></span
-                ><Zondicon icon="cheveron-right" class="fill-current w-5 h-5" />
-              </a>
+                <div
+                  class="text-base font-semibold tracking-wide text-center text-transparent uppercase bg-clip-text bg-gradient-to-br from-indigo-500 to-purple-500 "
+                  v-html="content.services"
+                ></div>
+                <div class="flex items-center justify-between space-x-2">
+                  <a
+                    href="https://www.ecoledirecte.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src="~/assets/images/logo_ecoledirecte.png"
+                      class="w-20"
+                      alt="Logo Ecole Directe"
+                    />
+                  </a>
+                  <a
+                    href="https://www.index-education.com/fr/logiciel-gestion-vie-scolaire.php"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src="~/assets/images/logo_pronote.png"
+                      class="w-16"
+                      alt="logo Pronote"
+                    />
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="flex-1 flex items-center">
+        <div class="flex items-center flex-1">
           <img
             src="~/assets/images/phoneScreen.png"
             class="w-full mx-auto sm:w-3/4 md:w-auto lg:h-full xyz-nested"

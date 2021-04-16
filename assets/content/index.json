@@ -12,7 +12,8 @@
     "subdownload": {
       "url": "https://github.com/ynotesapp/ynotes/releases",
       "text": "Release Github"
-    }
+    },
+    "services": "Compatible avec"
   },
   "warning": {
     "title": "Avertissement",
