@@ -79,10 +79,10 @@
                 </div>
               </div>
               <div
-                class="p-4 mx-auto mt-6 bg-white shadow-md md:mr-0 rounded-2xl md:mt-0"
+                class="p-3 mx-auto mt-6 bg-white shadow-md md:mr-0 rounded-xl md:mt-0"
               >
                 <div
-                  class="text-base font-semibold tracking-wide text-center text-transparent uppercase bg-clip-text bg-gradient-to-br from-indigo-500 to-purple-500 "
+                  class="text-base font-semibold tracking-wide text-center text-transparent uppercase bg-clip-text bg-gradient-to-br from-indigo-500 to-purple-500 mb-1"
                   v-html="content.services"
                 ></div>
                 <div class="flex items-center justify-between space-x-2">
@@ -93,7 +93,7 @@
                   >
                     <img
                       src="~/assets/images/logo_ecoledirecte.png"
-                      class="w-20"
+                      class="w-16"
                       alt="Logo Ecole Directe"
                     />
                   </a>
@@ -104,7 +104,7 @@
                   >
                     <img
                       src="~/assets/images/logo_pronote.png"
-                      class="w-16"
+                      class="w-12"
                       alt="logo Pronote"
                     />
                   </a>

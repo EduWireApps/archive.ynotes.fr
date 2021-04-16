@@ -11,7 +11,7 @@
         >
           <img
             src="~/assets/images/logoBlue.png"
-            class="w-8 h-8 rounded-lg"
+            class="w-8 h-8 rounded-xl"
             alt="Logo"
           />
           <div class="text-3xl font-semibold text-space-500">
