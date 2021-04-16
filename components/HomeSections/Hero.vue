@@ -44,7 +44,7 @@
                 href="https://play.google.com/store/apps/details?id=fr.ynotes"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="inline-flex items-center px-5 py-3 transition-all bg-white rounded-lg shadow hover:bg-gray-100 focus:outline-none whitespace-nowrap text-space-600 hover:shadow-xl transform hover:scale-105"
+                class="inline-flex items-center px-5 py-3 transition-all bg-white rounded-lg shadow focus:outline-none whitespace-nowrap text-space-400 hover:shadow-xl transform hover:-translate-y-1"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -77,7 +77,7 @@
             src="~/assets/images/phoneScreen.png"
             class="w-full mx-auto sm:w-3/4 md:w-auto lg:h-full xyz-nested"
             xyz="fade left-4 delay-10 duration-10"
-            alt=""
+            alt="Phone mockups"
           />
         </div>
       </Container>

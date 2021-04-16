@@ -1,19 +1,19 @@
 <template>
   <div>
-    <Hero :content="content.hero" />
-    <Warning :content="content.warning" />
-    <FeaturesSection :content="content.project" />
-    <FeaturesSection :content="content.howitworks" />
-    <FeatureSection
+    <HomeSectionsHero :content="content.hero" />
+    <HomeSectionsWarning :content="content.warning" />
+    <HomeSectionsSectionsFeaturesSection :content="content.project" />
+    <HomeSectionsSectionsFeaturesSection :content="content.howitworks" />
+    <HomeSectionsSectionsFeatureSection
       v-for="(e, index) in content.features"
       :key="index"
       :content="e"
       :left="index % 2 === 0"
     />
-    <FeaturesSection :content="content.datapolicy" />
-    <Contributors :content="content.contributors" />
-    <Recruitement :content="content.recruitement" />
-    <Contact :content="content.contact" class="pb-48" />
+    <HomeSectionsSectionsFeaturesSection :content="content.datapolicy" />
+    <HomeSectionsContributors :content="content.contributors" />
+    <HomeSectionsRecruitement :content="content.recruitement" />
+    <HomeSectionsContact :content="content.contact" class="pb-48" />
   </div>
 </template>
 

@@ -54,7 +54,7 @@
             </div>
           </div>
           <div class="mt-16 xyz-nested" xyz="delay-15 fade down-1 duration-10">
-            <RecruitementForm :content="content.form"/>
+            <RecruitementForm :content="content.form" />
           </div>
         </div>
       </XyzTransition>
@@ -63,7 +63,10 @@
 </template>
 
 <script>
+import RecruitementForm from "./RecruitementForm.vue";
+
 export default {
+  components: { RecruitementForm },
   props: {
     content: Object
   }
