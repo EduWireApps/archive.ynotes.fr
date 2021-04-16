@@ -54,7 +54,7 @@
           >
           <HeaderButton link="/contact">Contact</HeaderButton>
           <HeaderButton
-            link="https://github.com/ModernChocolate/ynotes"
+            :link="require('~/assets/content/contact.json').repo"
             external
             button
             class="transition-colors"
@@ -94,7 +94,7 @@
           >
           <HeaderButton link="/contact">Contact</HeaderButton>
           <HeaderButton
-            link="https://github.com/ModernChocolate/ynotes"
+            :link="require('~/assets/content/contact.json').repo"
             external
             button
             class="transition-colors"

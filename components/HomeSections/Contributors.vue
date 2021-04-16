@@ -132,10 +132,10 @@ export default {
   async created() {
     const contributors = [
       await this.$axios.$get(
-        "https://api.github.com/repos/ModernChocolate/ynotes/contributors"
+        "https://api.github.com/repos/ynotesapp/ynotes/contributors"
       ),
       await this.$axios.$get(
-        "https://api.github.com/repos/ModernChocolate/ynotes-website/contributors"
+        "https://api.github.com/repos/ynotesapp/ynotes-website/contributors"
       ),
     ];
     this.customUsers.forEach((el) => {
