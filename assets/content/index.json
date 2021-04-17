@@ -132,9 +132,10 @@
       ],
       "customUsers": [
         {
-          "login": "ModernChocolate (JsonLines)",
+          "login": "ModernChocolate",
           "html_url": "https://github.com/ModernChocolate",
           "avatar_url": "https://avatars1.githubusercontent.com/u/45465075?v=4",
+          "require_image": false,
           "app": true,
           "website": true,
           "customSentence": "Initiateur du projet"
@@ -143,9 +144,19 @@
           "login": "florian-lefebvre",
           "html_url": "https://github.com/florian-lefebvre",
           "avatar_url": "https://avatars1.githubusercontent.com/u/69633530?v=4",
+          "require_image": false,
           "app": true,
           "website": true,
-          "customSentence": "Développeur du site web & UX/UI designer"
+          "customSentence": "Développeur web / UX & UI designer"
+        },
+        {
+          "login": "Gabriel FAUDOU",
+          "html_url": "https://www.instagram.com/gabriel_faudou",
+          "avatar_url": "images/gabriel_faudou.jpg",
+          "require_image": true,
+          "app": false,
+          "website": false,
+          "customSentence": "Communication"
         }
       ]
     }
