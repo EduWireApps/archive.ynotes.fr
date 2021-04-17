@@ -78,11 +78,9 @@
                   </a>
                 </div>
               </div>
-              <div
-                class="p-3 mx-auto mt-6 bg-white shadow-md md:mr-0 rounded-xl md:mt-0"
-              >
+              <div class="mx-auto mt-6 md:mr-0 md:mt-0">
                 <div
-                  class="text-base font-semibold tracking-wide text-center text-transparent uppercase bg-clip-text bg-gradient-to-br from-indigo-500 to-purple-500 mb-1"
+                  class="mb-1 text-sm text-space-100"
                   v-html="content.services"
                 ></div>
                 <div class="flex items-center justify-between space-x-2">
