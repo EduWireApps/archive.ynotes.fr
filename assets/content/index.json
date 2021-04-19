@@ -136,7 +136,7 @@
     "events": [
       {
         "title": "Début du projet",
-        "content": "J'écris les premières lignes de code de ce projet.",
+        "content": "ModernChocolate écrit les premières lignes de code de ce projet.",
         "date": "21 Janvier 2020"
       },
       {
@@ -151,7 +151,7 @@
       },
       {
         "title": "Ajout des notifications",
-        "content": "J'ajoute les notifications des nouveaux mails et devoirs.",
+        "content": "ModernChocolate ajoute les notifications des nouveaux mails et devoirs.",
         "date": "Juin 2020"
       },
       {
@@ -161,13 +161,18 @@
       },
       {
         "title": "Ajout de la compatibilité Pronote",
-        "content": "Les premiers babillements de l'API Pronote.",
+        "content": "Les premiers balbutiements de l'API Pronote.",
         "date": "Juillet 2020"
       },
       {
-        "title": "Publication sur le Google Play Store",
-        "content": "🥳",
+        "title": "Publication sur le Google Play Store 🥳",
+        "content": "",
         "date": "3 Août 2020"
+      },
+      {
+        "title": "Florian LEFEBVRE rejoint le projet",
+        "content": "Il s'occupe des sites internets et aide pour l'interface de l'application.",
+        "date": "Octobre 2020"
       },
       {
         "title": "Ajout d'une pipeline",
@@ -175,11 +180,15 @@
         "date": "Janvier 2021"
       },
       {
+        "title": "Florian met en ligne le nouveau site",
+        "content": "",
+        "date": "25 Janvier 2021"
+      },
+      {
         "title": "Ajout du support HTTP sur Pronote",
         "content": "yNotes supporte désormais tous les types de connexion Pronote (HTTP, HTTPS, ENT).",
         "date": "Avril 2021"
       }
-      
     ]
   },
   "contributors": {
@@ -206,7 +215,7 @@
           "customSentence": "Initiateur du projet"
         },
         {
-          "login": "florian-lefebvre",
+          "login": "Florian LEFEBVRE",
           "html_url": "https://github.com/florian-lefebvre",
           "avatar_url": "https://avatars1.githubusercontent.com/u/69633530?v=4",
           "require_image": false,
