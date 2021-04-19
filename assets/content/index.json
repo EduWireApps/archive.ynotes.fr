@@ -135,15 +135,51 @@
     "title": "Chronologie",
     "events": [
       {
-        "title": "Lorem ipsum",
-        "content": "Lorem ipsum",
-        "date": "January 2018"
+        "title": "Début du projet",
+        "content": "J'écris les premières lignes de code de ce projet.",
+        "date": "21 Janvier 2020"
       },
       {
-        "title": "Lorem ipsum",
+        "title": "Support des notes Ecole Directe",
         "content": "",
-        "date": "Lorem ipsum"
+        "date": "Février 2020"
+      },
+      {
+        "title": "Support des devoirs Ecole Directe",
+        "content": "",
+        "date": "Avril 2020"
+      },
+      {
+        "title": "Ajout des notifications",
+        "content": "J'ajoute les notifications des nouveaux mails et devoirs.",
+        "date": "Juin 2020"
+      },
+      {
+        "title": "Ajout des mails, cloud, et d'autres fonctionnalités",
+        "content": "Beaucoup de mises à jour et de fonctionnalités sont déployées.",
+        "date": "Juin 2020"
+      },
+      {
+        "title": "Ajout de la compatibilité Pronote",
+        "content": "Les premiers babillements de l'API Pronote.",
+        "date": "Juillet 2020"
+      },
+      {
+        "title": "Publication sur le Google Play Store",
+        "content": "🥳",
+        "date": "3 Août 2020"
+      },
+      {
+        "title": "Ajout d'une pipeline",
+        "content": "Les mises à jour sont déployées à la vitesse de lumière !",
+        "date": "Janvier 2021"
+      },
+      {
+        "title": "Ajout du support HTTP sur Pronote",
+        "content": "yNotes supporte désormais tous les types de connexion Pronote (HTTP, HTTPS, ENT).",
+        "date": "Avril 2021"
       }
+      
     ]
   },
   "contributors": {
