@@ -45,10 +45,9 @@
             duration="auto"
             :style="`--xyz-index: ${i};`"
           >
-            <XyzConflict
+            <div
               xyz="fade down-1 stagger-4 duration-8"
-              class="relative p-4 my-6 text-gray-800 transition-transform transform bg-gray-200 rounded-xl"
-              endClass="md:hover:-translate-y-2"
+              class="relative p-4 my-6 text-gray-800 bg-gray-200 rounded-xl"
               :class="
                 i % 2 === 0
                   ? 'col-start-1 col-end-5 mr-auto md:mr-0 md:ml-auto'
@@ -68,7 +67,7 @@
                 class="absolute text-sm text-gray-400 -top-5 left-2 whitespace-nowrap"
                 v-html="e.date"
               ></span>
-            </XyzConflict>
+            </div>
           </XyzTransition>
           <div
             v-if="i % 2 === 0"
