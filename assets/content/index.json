@@ -13,7 +13,21 @@
       "url": "https://github.com/ynotesapp/ynotes/releases",
       "text": "Release Github"
     },
-    "services": "Compatible avec"
+    "services": {
+      "text": "Compatible avec",
+      "list": [
+        {
+          "url": "https://www.ecoledirecte.com/",
+          "src": "images/logo_ecoledirecte.png",
+          "alt": "Logo Ecole Directe"
+        },
+        {
+          "url": "https://www.index-education.com/fr/logiciel-gestion-vie-scolaire.php",
+          "src": "images/logo_pronote.png",
+          "alt": "logo Pronote"
+        }
+      ]
+    }
   },
   "warning": {
     "title": "Avertissement",
