@@ -131,6 +131,21 @@
       }
     ]
   },
+  "timeline": {
+    "title": "Chronologie",
+    "events": [
+      {
+        "title": "Lorem ipsum",
+        "content": "Lorem ipsum",
+        "date": "January 2018"
+      },
+      {
+        "title": "Lorem ipsum",
+        "content": "",
+        "date": "Lorem ipsum"
+      }
+    ]
+  },
   "contributors": {
     "title": "Un projet ouvert à tous",
     "content": "yNotes est un projet open-source. Cela signifie que le code source de l'application est consultable en ligne. Cela veut surtout dire que ce projet est <strong>développé et maintenu par des développeurs passionnés et désintéressés</strong>. Tous ont apporté (et continuent d'apporter) des modifications. <i>Un grand merci à eux !</i>",

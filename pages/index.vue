@@ -11,6 +11,7 @@
       :left="index % 2 === 0"
     />
     <HomeSectionsSectionsFeaturesSection :content="content.datapolicy" />
+    <HomeSectionsTimeline :content="content.timeline" />
     <HomeSectionsContributors :content="content.contributors" />
     <HomeSectionsRecruitement :content="content.recruitement" />
     <HomeSectionsContact :content="content.contact" class="pb-48" />
