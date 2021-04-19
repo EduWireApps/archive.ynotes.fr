@@ -30,7 +30,9 @@
                 class="w-5 h-5 text-purple-600 fill-current"
             /></a>
           </div>
-          <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap gap-y-8 gap-x-2 mt-8">
+          <div
+            class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap gap-y-8 gap-x-2 mt-8"
+          >
             <a
               v-for="(c, index) in contributors"
               :key="index"
