@@ -221,7 +221,16 @@
           "require_image": false,
           "app": true,
           "website": true,
-          "customSentence": "Développeur web / UX & UI designer"
+          "customSentence": ""
+        },
+        {
+          "login": "Androz",
+          "html_url": "https://github.com/Androz2091",
+          "avatar_url": "https://avatars.githubusercontent.com/u/42497995?v=4",
+          "require_image": false,
+          "app": true,
+          "website": false,
+          "customSentence": ""
         },
         {
           "login": "Gabriel FAUDOU",
