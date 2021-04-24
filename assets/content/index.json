@@ -10,8 +10,12 @@
     },
     "text": "Accédez à vos notes, devoirs, emplois du temps et bien d'autres fonctionnalités dans une interface élégante. Soyez notifié.e en temps réel. Et tout ceci en respectant la confidentialité de vos données.",
     "subdownload": {
-      "url": "https://github.com/ynotesapp/ynotes/releases",
+      "url": "https://github.com/EduWireApps/ynotes/releases",
       "text": "Release Github"
+    },
+    "stores": {
+      "google": "https://play.google.com/store/apps/details?id=fr.ynotes",
+      "apple": "https://apps.apple.com/fr/app/ynotes/id1563624059"
     },
     "services": {
       "text": "Compatible avec",

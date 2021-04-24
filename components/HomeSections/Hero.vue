@@ -47,7 +47,7 @@
               <div class="flex flex-col items-center md:items-start">
                 <div class="flex space-x-2">
                   <a
-                    href="https://play.google.com/store/apps/details?id=fr.ynotes"
+                    :href="content.stores.google"
                     target="_blank"
                     rel="noopener noreferrer"
                     class="inline-flex items-center px-5 py-3 transition-shadow bg-white rounded-lg shadow focus:outline-none whitespace-nowrap text-space-400 hover:shadow-2xl"
@@ -67,8 +67,11 @@
                       <span class="font-medium">Google Play</span>
                     </span>
                   </a>
-                  <button
-                    class="inline-flex items-center px-5 py-3 bg-white rounded-lg shadow opacity-75 cursor-not-allowed focus:outline-none whitespace-nowrap text-space-400"
+                  <a
+                    :href="content.stores.apple"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="inline-flex items-center px-5 py-3 transition-shadow bg-white rounded-lg shadow focus:outline-none whitespace-nowrap text-space-400 hover:shadow-2xl"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -84,10 +87,10 @@
                       ></path>
                     </svg>
                     <span class="flex flex-col items-start ml-4 leading-none">
-                      <span class="mb-1 text-xs">Bientôt sur</span>
+                      <span class="mb-1 text-xs">Disponible sur</span>
                       <span class="font-medium">App Store</span>
                     </span>
-                  </button>
+                  </a>
                 </div>
                 <a
                   :href="content.subdownload.url"

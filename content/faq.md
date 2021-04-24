@@ -2,7 +2,7 @@
 
 ### Où télécharger yNotes ?
 
-YNotes est actuellement disponible sur le [Play Store](https://play.google.com/store/apps/details?id=fr.ynotes). Vous pouvez aussi télécharger le fichier .apk sur [Github](https://github.com/ynotesapp/ynotes/releases).
+YNotes est actuellement disponible sur le [Play Store](https://play.google.com/store/apps/details?id=fr.ynotes). Vous pouvez aussi télécharger le fichier .apk sur [Github](https://github.com/EduWireApps/ynotes/releases).
 
 ### Comment accéder à mon espace scolaire ?
 
