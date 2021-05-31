@@ -37,7 +37,7 @@
               ></div>
             </div>
             <div
-              class="absolute w-6 h-6 -mt-3 bg-gray-400 border-4 border-white rounded-full top-1/2"
+              class="absolute w-6 h-6 -mt-3 bg-gradient-to-r from-indigo-500 to-purple-500 border-4 border-white rounded-full top-1/2"
             ></div>
           </div>
           <XyzTransition
@@ -88,7 +88,7 @@
               ></div>
             </div>
             <div
-              class="absolute w-6 h-6 -mt-3 bg-gray-400 border-4 border-white rounded-full top-1/2"
+              class="absolute w-6 h-6 -mt-3 bg-gradient-to-r from-indigo-500 to-purple-500 border-4 border-white rounded-full top-1/2"
             ></div>
           </div>
         </div>
