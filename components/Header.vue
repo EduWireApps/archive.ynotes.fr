@@ -53,6 +53,7 @@
             >Centre d'aide</HeaderButton
           >
           <HeaderButton link="/contact">Contact</HeaderButton>
+          <HeaderButton link="/downloads">Téléchargements</HeaderButton>
           <HeaderButton
             :link="require('~/assets/content/contact.json').repo"
             external

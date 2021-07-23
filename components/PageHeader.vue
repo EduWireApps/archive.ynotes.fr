@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex items-center justify-center py-20 bg-gradient-to-b from-space-700 to-space-500 relative"
+    class="flex items-center justify-center py-12 bg-gradient-to-b from-space-700 to-space-500 relative"
   >
     <div
       class="max-w-lg mx-auto text-center text-white sm:max-w-xl md:max-w-none"
