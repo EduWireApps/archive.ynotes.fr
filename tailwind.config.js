@@ -1,6 +1,7 @@
 const defaultTheme = require("./node_modules/tailwindcss/defaultTheme");
 
 module.exports = {
+  mode: "jit",
   purge: [
     "./components/**/*.{vue,js}",
     "./layouts/**/*.vue",
