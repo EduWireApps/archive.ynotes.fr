@@ -20,7 +20,7 @@
         </nuxt-link>
         <button
           @click="open = !open"
-          class="inline-flex items-center justify-center p-2 transition-colors rounded-full sm:hidden hover:bg-opacity-25 focus:outline-none text-space-500 hover:bg-space-200"
+          class="inline-flex items-center justify-center p-2 transition-colors rounded-full md:hidden hover:bg-opacity-25 focus:outline-none text-space-500 hover:bg-space-200"
         >
           <span class="sr-only">Open main menu</span>
           <svg
@@ -46,14 +46,14 @@
             />
           </svg>
         </button>
-        <div class="items-center hidden space-x-2 sm:flex">
+        <div class="items-center hidden space-x-2 md:flex">
           <HeaderButton link="/">Accueil</HeaderButton>
           <HeaderButton link="/faq">FAQ</HeaderButton>
           <HeaderButton link="https://support.ynotes.fr" external
             >Centre d'aide</HeaderButton
           >
           <HeaderButton link="/contact">Contact</HeaderButton>
-          <HeaderButton link="/downloads">Téléchargements</HeaderButton>
+          <HeaderButton link="/telechargements">Téléchargements</HeaderButton>
           <HeaderButton
             :link="require('~/assets/content/contact.json').repo"
             external
@@ -84,7 +84,7 @@
       leave-to-class="transform scale-95 opacity-0"
     >
       <div
-        class="fixed left-0 w-full shadow-2xl sm:hidden top-16 z-40 bg-white"
+        class="fixed left-0 w-full shadow-2xl md:hidden top-16 z-40 bg-white"
         v-show="open"
       >
         <div class="px-2 pt-2 pb-3 space-y-1">
@@ -94,6 +94,7 @@
             >Centre d'aide</HeaderButton
           >
           <HeaderButton link="/contact">Contact</HeaderButton>
+          <HeaderButton link="/telechargements">Téléchargements</HeaderButton>
           <HeaderButton
             :link="require('~/assets/content/contact.json').repo"
             external

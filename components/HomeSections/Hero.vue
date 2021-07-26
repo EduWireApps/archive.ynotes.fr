@@ -1,7 +1,7 @@
 <template>
   <XyzTransition appear duration="auto">
     <section
-      class="min-h-screen md:h-screen bg-gradient-to-b from-space-700 to-space-500"
+      class="bg-gradient-to-b from-space-700 to-space-500"
     >
       <Container class="flex flex-col h-full py-16 md:flex-row-reverse">
         <div class="flex flex-col justify-center flex-1 md:flex-auto md:w-3/5">
@@ -45,7 +45,7 @@
               class="flex flex-col justify-between items-center md:items-start space-y-6 md:space-y-4 lg:space-y-6"
             >
               <div class="flex flex-col items-center md:items-start">
-                <div class="flex space-x-2">
+                <div class="grid sm:grid-cols-3 md:grid-cols-2 lg:grid-cols-3 gap-2">
                   <a
                     :href="content.stores.google"
                     target="_blank"

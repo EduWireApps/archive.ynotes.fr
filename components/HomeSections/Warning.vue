@@ -1,5 +1,5 @@
 <template>
-  <section class="pt-32 pb-16 bg-white">
+  <section class="pt-20 pb-16 bg-white">
     <Container>
       <XyzTransition appear-visible duration="auto">
         <div

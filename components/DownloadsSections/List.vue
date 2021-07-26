@@ -1,67 +1,86 @@
 <template>
-<Container class="w-500 h-200 rounded bg-gray-300 text-center p-2 grid  auto-col-auto ">
-
-    <div v-for="(e, index) in filterReleases()" :key="index" class=" flex-grow inline-flex align-middle justify-star mt-2 mb-2 text-left">
-        <br>
-        <div class="grid grid-flow-row auto-rows-max text-left flex-grow">
-            <div class="text-left" v-html="e.name"></div>
-            <div class="text-left text-lg text-gray-500" v-html="firstAsset(e).name + ' - ' +   new Date(firstAsset(e).updated_at).toLocaleDateString('fr-FR')"></div>
+  <div>
+    <div
+      v-if="hasSuffixFiles"
+      class="flex flex-col p-4 text-center bg-gray-200 rounded-md"
+    >
+      <div
+        v-for="(release, index) in releases"
+        :key="index"
+        class="flex flex-col"
+      >
+        <div class="flex flex-row justify-between">
+          <div class="flex flex-col items-start">
+            <div class="text-sm leading-none text-gray-500">
+              Publiée le
+              {{ new Date(release.published_at).toLocaleDateString("fr-FR") }}
+            </div>
+            <div class="text-xl font-semibold text-gray-900">
+              {{ release.name }}
+            </div>
+          </div>
+          <a :href="release.html_url" target="_blank">
+            <button
+              class="inline-flex items-center px-4 py-2 space-x-2 font-bold text-gray-800 transition-colors bg-gray-300 rounded hover:bg-gray-100"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-4 h-4"
+                viewBox="0 0 16 16"
+                fill="currentColor"
+              >
+                <path
+                  d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"
+                ></path>
+              </svg>
+              <span>Voir sur Github</span>
+            </button>
+          </a>
         </div>
-         <a :href="e.html_url" target="_blank">
-        <button class="ml-2 bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center" v-bind:class="selected?'border-4 border-space-400':''">
-            <svg class="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                <path d="M21,6V8H3V6H21M3,18H12V16H3V18M3,13H21V11H3V13Z" /></svg>
-            <span>Détails</span>
-        </button>
-        </a>
-        <a :href="firstAsset(e).browser_download_url" target="_blank">
-        <button class="ml-2 bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center" v-bind:class="selected?'border-4 border-space-400':''">
-            <svg class="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                <path d="M5,20H19V18H5M19,9H15V3H9V9H5L12,16L19,9Z" /></svg>
-            <span>Télécharger</span>
-        </button>
-        </a>
+        <div class="grid gap-2 mt-2">
+          <div v-for="(asset, i) in release.assets" :key="i">
+            <a
+              :href="asset.browser_download_url"
+              class="inline-flex items-center px-4 py-2 space-x-4 font-mono text-gray-800 transition-colors bg-gray-300 bg-opacity-50 rounded hover:bg-gray-100 w-full"
+              download
+              ><svg
+                class="w-4 h-4 fill-current"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+              >
+                <path d="M5,20H19V18H5M19,9H15V3H9V9H5L12,16L19,9Z" /></svg
+              ><span>{{ asset.name }}</span></a
+            >
+          </div>
+        </div>
+        <div class="h-0.5 bg-gray-300 my-6"></div>
+      </div>
     </div>
-    <div v-if="filterReleases().length == 0" class="text-center">Aucun téléchargement disponible</div>
-</Container>
+    <div v-else class="text-xl text-center">
+      Aucun téléchargement disponible
+    </div>
+  </div>
 </template>
 
 <script>
 export default {
-
-    data() {
-        return {
-            releases: [],
-
-            //find the first asset with the right suffix
-            firstAsset: function (release) {
-                return release.assets.find(element => element.name.includes(this.content.suffix))
-            },
-            //filter releases with assets with the right suffix (.xxx)
-            filterReleases: function () {
-                console.log((this.releases ?? []).filter((a) => a.assets.some((e) => {
-                    e.name.includes(this.content.suffix)
-                })));
-                var suffix2 = this.content.suffix;
-                return (this.releases ?? []).filter(function (item) {
-                    const matchSuffix = (element) => element.name.includes(suffix2);
-                    return item.assets.some(matchSuffix);
-                })
-            }
-        }
+  computed: {
+    suffix() {
+      return this.content.suffix;
     },
-    //get the releases
-    async created() {
-        this.releases = await this.$axios.$get(
-            "https://api.github.com/repos/EduWireApps/ynotes/releases"
-        );
-    },
-
-    props: {
-        content: Object,
-    },
-
-}
+    hasSuffixFiles() {
+      let files = [];
+      this.releases.forEach(e => {
+        files = files.concat(e.assets);
+      });
+      return files.some(e => e.name.includes(this.suffix));
+    }
+  },
+  props: {
+    content: Object,
+    releases: Array
+  }
+};
 </script>
 
 <style></style>
