@@ -8,7 +8,7 @@
       "1": "Votre application",
       "2": "scolaire connectée"
     },
-    "text": "Accédez à vos notes, devoirs, emplois du temps et bien d'autres fonctionnalités dans une interface élégante. Soyez notifié.e en temps réel. Et tout ceci en respectant la confidentialité de vos données.",
+    "text": "Accédez à vos notes, devoirs, emplois du temps et bien d'autres fonctionnalités dans une interface élégante. Soyez notifié(e) en temps réel. Et tout ceci en respectant la confidentialité de vos données.",
     "subdownload": {
       "url": "https://github.com/EduWireApps/ynotes/releases",
       "text": "Release Github"
@@ -104,7 +104,7 @@
     },
     {
       "title": "Vos notifications",
-      "text": "Nouvelle note, nouveau mail ? Avec yNotes, vous êtes notifié.e en temps réel ! Rien ne vous échappera plus désormais...",
+      "text": "Nouvelle note, nouveau mail ? Avec yNotes, vous êtes notifié(e) en temps réel ! Rien ne vous échappera plus désormais...",
       "imgPath": "images/undraw/undraw_add_tasks_mxew.svg"
     },
     {
@@ -203,14 +203,16 @@
     },
     "fetch": {
       "excludedUsers": [
-        "ModernChocolate",
+        "JsonLinesCode",
         "allcontributors[bot]",
+        "dependabot[bot]",
+        "ModernChocolate",
         "NerofleLincoln",
         "florian-lefebvre"
       ],
       "customUsers": [
         {
-          "login": "ModernChocolate",
+          "login": "JsonLinesCode",
           "html_url": "https://github.com/ModernChocolate",
           "avatar_url": "https://avatars1.githubusercontent.com/u/45465075?v=4",
           "require_image": false,
