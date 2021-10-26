@@ -1,10 +1,10 @@
 <template>
-  <header>
-    <div
-      class="fixed top-0 left-0 z-50 flex items-center w-screen h-16 transition-colors sm:shadow-2xl bg-white bg-opacity-95"
-      :class="open ? null : 'shadow-2xl'"
-    >
-      <Container class="flex items-center justify-between">
+  <header
+    class="sticky top-0 z-50 w-full sm:shadow-2xl bg-white"
+    :class="open ? null : 'shadow-2xl'"
+  >
+    <div class="relative">
+      <Container class="flex items-center justify-between h-16">
         <nuxt-link
           to="/"
           class="flex items-center space-x-3 focus:outline-none"
@@ -74,20 +74,8 @@
           </HeaderButton>
         </div>
       </Container>
-    </div>
-    <transition
-      enter-active-class="transition duration-100 ease-out"
-      enter-class="transform scale-95 opacity-0"
-      enter-to-class="transform scale-100 opacity-100"
-      leave-active-class="transition duration-75 ease-in"
-      leave-class="transform scale-100 opacity-100"
-      leave-to-class="transform scale-95 opacity-0"
-    >
-      <div
-        class="fixed left-0 w-full shadow-2xl md:hidden top-16 z-40 bg-white"
-        v-show="open"
-      >
-        <div class="px-2 pt-2 pb-3 space-y-1">
+      <Container class="block md:hidden" v-show="open">
+        <div class="py-3 space-y-1">
           <HeaderButton link="/">Accueil</HeaderButton>
           <HeaderButton link="/faq">FAQ</HeaderButton>
           <HeaderButton link="https://support.ynotes.fr" external
@@ -114,8 +102,8 @@
             </svg>
           </HeaderButton>
         </div>
-      </div>
-    </transition>
+      </Container>
+    </div>
   </header>
 </template>
 

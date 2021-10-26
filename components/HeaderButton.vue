@@ -3,7 +3,7 @@
     :href="link"
     :target="external ? '_blank' : null"
     :rel="external ? 'noopener noreferrer' : null"
-    class="items-center px-3 py-2 text-base font-medium transition duration-150 ease-in-out rounded-md sm:font-semibold focus:outline-none sm:px-2 sm:py-1 sm:rounded-full"
+    class="items-center px-3 py-1.5 text-base font-medium transition duration-150 ease-in-out rounded-md md:font-semibold focus:outline-none md:px-2 md:py-1 md:rounded-full"
     :class="
       button
         ? 'bg-gradient-to-r from-space-400 to-space-500 text-white hover:opacity-80 inline-flex'

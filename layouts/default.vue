@@ -1,9 +1,8 @@
 <template>
-  <div class="min-h-screen bg-gray-50 flex flex-col">
+  <div class="flex flex-col min-h-screen bg-gray-50">
+    <Banner />
     <Header />
-    <div class="mt-16">
-      <Nuxt />
-    </div>
+    <Nuxt />
     <ScrollTop />
     <Footer />
   </div>
