@@ -1,6 +1,7 @@
 <template>
   <div>
     <HomeSectionsHero :content="content.hero" />
+    <HomeSectionsTrailer />
     <HomeSectionsWarning :content="content.warning" />
     <HomeSectionsSectionsFeaturesSection :content="content.project" />
     <HomeSectionsSectionsFeaturesSection :content="content.howitworks" />
