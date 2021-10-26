@@ -17,6 +17,7 @@
     "@tailwindcss/typography": "^0.4.0",
     "core-js": "^3.10.1",
     "nuxt": "^2.15.4",
+    "vue-plausible": "^1.2.1",
     "vue-scrollto": "^2.20.0",
     "vue-zondicons": "^0.1.10"
   },

@@ -34,7 +34,8 @@ export default {
   components: true,
   buildModules: [
     // https://go.nuxtjs.dev/tailwindcss
-    "@nuxtjs/tailwindcss"
+    "@nuxtjs/tailwindcss",
+    "vue-plausible"
   ],
   modules: [
     // https://go.nuxtjs.dev/axios
@@ -46,5 +47,10 @@ export default {
   ],
   tailwindcss: {
     viewer: false
+  },
+  publicRuntimeConfig: {
+    plausible: {
+      domain: "ynotes.fr",
+    }
   }
 };
