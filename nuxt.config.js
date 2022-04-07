@@ -50,7 +50,7 @@ export default {
   },
   publicRuntimeConfig: {
     plausible: {
-      domain: "ynotes.fr",
+      domain: "archive.ynotes.fr",
     }
   }
 };
